@@ -33,22 +33,22 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Sbox is
 Port ( 
-    S0_in: in std_logic_vector(3 downto 0);
-    S1_in: in std_logic_vector(3 downto 0);
-    S2_in: in std_logic_vector(3 downto 0);
-    S3_in: in std_logic_vector(3 downto 0);
-    S4_in: in std_logic_vector(3 downto 0);
-    S5_in: in std_logic_vector(3 downto 0);
-    S6_in: in std_logic_vector(3 downto 0);
     S7_in: in std_logic_vector(3 downto 0);
-    s0_out: out std_logic_vector(3 downto 0);
-    s1_out: out std_logic_vector(3 downto 0);
-    s2_out: out std_logic_vector(3 downto 0);
-    s3_out: out std_logic_vector(3 downto 0);
-    s4_out: out std_logic_vector(3 downto 0);
-    s5_out: out std_logic_vector(3 downto 0);
+    S6_in: in std_logic_vector(3 downto 0);
+    S5_in: in std_logic_vector(3 downto 0);
+    S4_in: in std_logic_vector(3 downto 0);
+    S3_in: in std_logic_vector(3 downto 0);
+    S2_in: in std_logic_vector(3 downto 0);
+    S1_in: in std_logic_vector(3 downto 0);
+    S0_in: in std_logic_vector(3 downto 0);
+    s7_out: out std_logic_vector(3 downto 0);
     s6_out: out std_logic_vector(3 downto 0);
-    s7_out: out std_logic_vector(3 downto 0)
+    s5_out: out std_logic_vector(3 downto 0);
+    s4_out: out std_logic_vector(3 downto 0);
+    s3_out: out std_logic_vector(3 downto 0);
+    s2_out: out std_logic_vector(3 downto 0);
+    s1_out: out std_logic_vector(3 downto 0);
+    s0_out: out std_logic_vector(3 downto 0)
     );
 end Sbox;
 
