@@ -5,10 +5,10 @@
 %\defcitealias{Mao0130669431ISBN}{Modern Cryptography: Theory and Practice.}
 \chapter{Programovatelné hradlové pole - FPGA}
 \section{FPGA}
-Programovatelná hradlová pole, neboli FPGA byli prvně představeny v 80. letech společností Xilinx, Inc. Do nedávna byly FPGA používány k prototypovaní a~emulacím při procesu návrhu a výroby integrovaných obvodů určených pro aplikaci neboli ASIC.\cite{Sekanina3540403779ISBN}
-Nicméně v~poslední době se FPGA čipy rozšířily mimo návrh ASIC obvodů a~jsou vyráběny v~mnoha variantách pro různá odvětví. Hlavní výhodou obvodů FPGA je možnost následného přeprogramovaní i~po výrobě.\cite{FPGAfromMIT}
+Programovatelná hradlová pole, neboli FPGA byli prvně představeny v 80. letech společností Xilinx, Inc. Do nedávna byly FPGA používány k prototypovaní a~emulacím při procesu návrhu a výroby integrovaných obvodů určených pro aplikaci tzv. ASIC.\cite{Sekanina3540403779ISBN}
+Nicméně v~poslední době se FPGA čipy rozšířily mimo návrh ASIC obvodů a~jsou vyráběny v~mnoha variantách pro různá odvětví. Hlavní výhodou obvodů FPGA je možnost následného přeprogramovaní i~po jejich výrobě.\cite{FPGAfromMIT}
 
-FPGA se skládají z~tří hlavních typů programovatelných stavebních bloků. Rozložení těchto tří bloků je zobrazeno na obrázku \ref{img:Architektura}.
+FPGA se skládají z~tří hlavních typů programovatelných stavebních bloků. Rozložení těchto tří bloků je zobrazeno na \obrazek{img:Architektura}.
 \begin{figure}[!h]
   \begin{center}
     \includegraphics[scale=0.5]{obrazky/FPGA-architekrura-vlastni.png}
@@ -23,11 +23,11 @@ FPGA se skládají z~tří hlavních typů programovatelných stavebních bloků
 \end{itemize}
 
 CLB mohou být naprogramovány tak, aby implementovaly různé logické funkce. Při propojení pomocí PIB vytvářejí velké logické okruhy. Vstupně výstupní bloky IOB propojují interní a externí zdroje. Na FPGA čipu se dále nachází SRAM\footnote{Statická paměť.\label{foot:sram}}, která uchovává konfiguraci CLB, PIB a IOB bloků.\cite{Sekanina3540403779ISBN}
-
+%TODO bakalarka rozvest na vic teorie detailnejsi popsani co je LUT atd
 \setcounter{footnote}{0}
 \section{Xilinx Zynq-7000}
 Čipy z~rodiny Zynq-7000 nabízí flexibilitu a~škálovatelnost FPGA čipů, zatímco poskytují sílu, výkon a použitelnost, která je často spojována s~ASIC čipy.
-O~výpočetní sílů se stará processing system (PS), který je založen na technologii ARM$\copyright$\footnote{Advanced RISC machine je typ procesoru, který má zmenšenou sadu instrukcí a~není energeticky náročný.\label{foot:ARM}} Cortex\textsuperscript{TM}-A9, který obsahuje paměť přímo na čipu, rozhraní pro externí paměť a~sadu periferních rozhraní. FPGA se často označuje jako programmable logic (PL), kde pro rodinu Zynq-7000 je založen na bázi 28nm výrobního procesu od firmy Xilinx. Výhodou rodiny Zynq-7000 je, že processing system a~programmable logic jsou integrovány na jednom čipu. Touto integrací lze dosáhnout většího výkonu než když jsou tyto dvě části rozděleny na více čipech. Vývoj pro všechny typy programmable logic od Xilinxu probíhá v~prostředí Vivado Design Suite.\cite{Zynq-7000}
+O~výpočetní sílů se stará processing system (PS), který je založen na technologii ARM$\copyright$\footnote{Advanced RISC machine je typ procesoru, který má zmenšenou sadu instrukcí a~není energeticky náročný.\label{foot:ARM}} Cortex\textsuperscript{TM}-A9, který obsahuje paměť přímo na čipu, rozhraní pro externí paměť a~sadu periferních rozhraní. FPGA se často označuje jako programmable logic (PL), kde pro Zynq-7000 je založen na bázi 28nm výrobního procesu od firmy Xilinx. Výhodou rodiny Zynq-7000 je, že processing system a~programmable logic jsou integrovány na jednom čipu. Touto integrací lze dosáhnout většího výkonu než když jsou tyto dvě části rozděleny na více čipech. Vývoj pro všechny typy programmable logic od Xilinxu probíhá v~prostředí Vivado Design Suite.\cite{Zynq-7000}
 \begin{figure}[!h]
   \begin{center}
     \includegraphics[scale=0.4]{obrazky/Zynq-7000-own.png}
@@ -51,7 +51,7 @@ O~výpočetní sílů se stará processing system (PS), který je založen na te
 \textbf{Dešifrování} se nazývá opačný proces šifrovaní neboli přetváříme šifrovaný text na původní zprávu.\cite{Mao0130669431ISBN} %wenbo mao  
 %\section{Historie} TODO bakalařka
 \section{Princip kryptosystémů}
-V~roce 1883 Auguste Kerchoffs sepsal podmínky pro vytváření kryptosystémů, kde jedna z~podmínek se rozšířila a~je uznávanou konvencí známou jako Kerchoffsův princip. Který říká: \newline\begin{quote}
+V~roce 1883 Auguste Kerchoffs sepsal podmínky pro vytváření kryptosystémů, kde jedna z~podmínek se rozšířila a~stala se uznávanou konvencí známou jako Kerchoffsův princip. Který říká: \newline\begin{quote}
     \textit{\uv{Znalost algoritmu a~velikosti klíče stejně jako dostupnost známého prostého textu jsou standardní předpoklad v~moderní kryptoanalýze. Protože útočník může tyto informace případně získat, není proto dobré se spoléhat na jeho utajení při posuzovaní jeho kryptografické síly.\footnote{Přeloženo z anglického jazyka, originální znění~v \citace{Modern Cryptography na straně 208}{\cite{Mao0130669431ISBN}}}}}
 \end{quote}
 \newpage
@@ -88,14 +88,14 @@ Jednosměrnost neboli odolnost vůči získaní vzoru by měla splňovat, že z~
 Odolností vůči modifikaci vzoru se požaduje, aby prakticky bylo téměř nemožné po %TODO kontrola
 vypočtení haše z prvního vzoru nalézt druhý vzor, který by měl stejný haš.
 
-Při odolnosti vůči kolizím by mělo být téměř nemožné najít dva rozdílné vzory pro které by vycházel stejný hash.\cite{Burda9788021446120ISBN} %burda
+Při odolnosti vůči kolizím by mělo být téměř nemožné najít dva rozdílné vzory pro které by vycházel stejný haš.\cite{Burda9788021446120ISBN} %burda
 
 Pro splnění efektivnosti by daná hašovací funkce měla být realizovatelná v polynomiálním čase, nejlépe však v lineárním.\cite{Mao0130669431ISBN} %mao
 
-Nejčastější využití hašovacích funkcí nalezneme v~digitálních podpisech, v~kryptografických aplikacích generujících pseudonáhodné data a~asymetrických kryptosystémech. V digitálních podpisech je hašovací funkce použita k~vytvoření otisku zprávy, který slouží k~ověření autentičnosti a~integritě. Generace pseudonáhodných dat se využívá ve spoustě případů od autentifikačních protokolů po protokoly elektronické komerce. V asymetrických kryptosystémech se používá k~ověření správnosti šifrovaného textu. Tento mechanizmus je nezbytný k~zabezpečení ochrany proti útokům.\cite{Mao0130669431ISBN}%mao
+Nejčastější využití hašovacích funkcí nalezneme v~digitálních podpisech, kryptografických aplikacích generujících pseudonáhodné data a~asymetrických kryptosystémech. V digitálních podpisech je hašovací funkce použita k~vytvoření otisku zprávy, který slouží k~ověření autentičnosti a~integritě. Generace pseudonáhodných dat se využívá ve spoustě případů od autentifikačních protokolů po protokoly elektronické komerce. V asymetrických kryptosystémech se používá k~ověření správnosti šifrovaného textu. Tento mechanizmus je nezbytný k~zabezpečení ochrany proti útokům.\cite{Mao0130669431ISBN}%mao
 %done 20.10.2020
 \section{Asymetrická kryptografie}
-Asymetrická kryptografie někdy nazývaná kryptografie s~veřejným klíčem, používá dva rozdílné klíče. Tyto klíče se nazývají veřejný klíč označovaný jako \uv{public key} a~soukromý klíč označovaný jako \uv{private key}. Veřejný klíč se v~používá k~šifrovaní zprávy a~soukromý klíč k dešifrovaní zašifrované zprávy pomocí veřejného klíče. Hlavní silou této metody je, že příjemce vypočítá veřejný a~soukromý klíč, ale sdílí pouze veřejný. Odesílatel pomocí asymetrické šifry a~veřejného klíče šifruje zprávu, kterou následně pošle příjemci, který vydal veřejný klíč. Příjemce pomocí soukromého klíče dešifruje přijatou zprávu. Výhoda této metody spočívá v~tom, že při odeslání špatnému příjemci nebo odcizení zprávy by neměl nesprávný příjemce dešifroval zprávu bez znalosti soukromého klíče. Tyto dva klíče jsou propojené složitými matematickými výpočty, kdy veřejný klíč nenese informace o~soukromém klíči. Z tohoto důvodu při požadavcích kladených na bezpečnost v~dnešní době v~reálném čase není možné vypočítat z~veřejného klíče soukromý klíč. Nejznámější a~nejpoužívanější šifrou je RSA
+Asymetrická kryptografie někdy nazývaná kryptografie s~veřejným klíčem používá dva rozdílné klíče. Tyto klíče se nazývají veřejný klíč označovaný jako \uv{public key} a~soukromý klíč označovaný jako \uv{private key}. Veřejný klíč se používá k~šifrovaní zprávy a~soukromý klíč k dešifrovaní zašifrované zprávy pomocí veřejného klíče. Hlavní silou této metody je, že příjemce vypočítá veřejný a~soukromý klíč, ale sdílí pouze veřejný. Odesílatel pomocí asymetrické šifry a~veřejného klíče šifruje zprávu, kterou následně pošle příjemci, který vydal veřejný klíč. Příjemce pomocí soukromého klíče dešifruje přijatou zprávu. Výhoda této metody spočívá v~tom, že při odeslání špatnému příjemci nebo odcizení zprávy by neměl nesprávný příjemce dešifrovat zprávu bez znalosti soukromého klíče. Tyto dva klíče jsou propojené složitými matematickými výpočty, kdy veřejný klíč nenese informace o~soukromém klíči. Z tohoto důvodu při požadavcích kladených na bezpečnost v~dnešní době v~reálném čase není možné vypočítat z~veřejného klíče soukromý klíč. Nejznámější a~nejpoužívanější šifrou je RSA
 (Rivest–Shamir–Adleman).\cite{Nigel9780077099879ISBN}
 \newpage
 % todo obrázek od mao page cca 209
@@ -109,11 +109,12 @@ Asymetrická kryptografie někdy nazývaná kryptografie s~veřejným klíčem, 
 \footnotetext{Obrázek lze nalézt v \citace{Modern Cryptography na straně 208}{\cite{Mao0130669431ISBN}}}
 % todo bakalářka doplnit teorii
 \section{Symetrická kryptografie}
-Symetrická kryptografie se odlišuje od asymetrické kryptografie počtem klíčů, kdy symetrická kryptografie využívá pouze jednoho soukromého klíče, který slouží pro šifrovaní a~dešifrovaní. Tento klíč si obě dvě strany, které chtějí komunikovat, musejí vyměnit. Problém může nastat při ustanovení a~výměně klíče, kde lze klíč jednoduše odchytit pokud spojení není zabezpečené. Bezpečná výměna a~ustanovení klíče může proběhnout fyzickou výměnou, která v~moderní době není možná v~globálním měřítku. Při ustanovení a~výměně klíče se přes nezabezpečenou síť využívá asymetrické kryptografie. V~některých případech symetrické algoritmy využívají dva klíče jeden k~šifrovaní a~druhý k~dešifrovaní. Při odcizení šifrovacího klíče lze jednoduše vypočítat dešifrovací klíč a naopak. Jelikož se při vytváření šifry počítá, že algoritmus na ustanovení klíčů je veřejně známý, mel by být rozsah klíčů velmi velký. Pokud je rozsah klíčů malý lze jej prolomit hrubou silou. Symetrické šifry dělíme na proudové a~blokové.\cite{Nigel9780077099879ISBN}
-\subsection{Proudové šifry\label{subsec:streamFunction}}% možná podsekce symetrických
-Mezi hlavní výhody proudových šifer patří bezchybovost nebo velice malá chybovost. Tyto šifry musí zpracovávat proud bitů takovým způsobem se šifruje každý bit samostatně. Oproti blokovým šifrám jsou rychlejší a~méně hardwarově náročné. Lze je rozdělit na dva typy. Prvním typem jsou synchronní a~druhým jsou asynchronní. Rozlišujeme je podle generace takzvaného keystreamu, což je generující klíčový proud znaků.\cite{HavlicekBakalarka}
+Symetrická kryptografie se odlišuje od asymetrické kryptografie počtem klíčů, kdy symetrická kryptografie využívá pouze jednoho soukromého klíče, který slouží pro šifrovaní a~dešifrovaní. Tento klíč si obě dvě strany, které chtějí komunikovat, musejí vyměnit. Problém může nastat při ustanovení a~výměně klíče, kde lze klíč jednoduše odchytit pokud spojení není zabezpečené. Bezpečná výměna a~ustanovení klíče může proběhnout fyzickou výměnou, která v~moderní době není možná v~globálním měřítku. Při ustanovení a~výměně klíče se přes nezabezpečenou síť využívá asymetrické kryptografie. V~některých případech symetrické algoritmy využívají dva klíče -  jeden k~šifrovaní a~druhý k~dešifrovaní. Při odcizení šifrovacího klíče lze jednoduše vypočítat dešifrovací klíč a naopak. Jelikož se při vytváření šifry počítá, že algoritmus na ustanovení klíčů je veřejně známý, měl by být rozsah klíčů velmi velký. Pokud je rozsah klíčů malý, lze jej prolomit hrubou silou. Symetrické šifry dělíme na proudové a~blokové.\cite{Nigel9780077099879ISBN}
 
-U~synchronních proudových šifer nezáleží na šifrovaném a~nešifrovaném textu při generaci keystreamu. Generace keystreamu je pouze závislá na klíči a~šifrovacím algoritmu, ke kterým se u~moderních šifer přidává ještě inicializační vektor (IV).\cite{EncyclopediaSynchronous} Jedním z~požadavků na takovou šifru je synchronizace odesílatele a~příjemce, to znamená že každá strana musí mít stejný stav algoritmu a~sdílený klíč. Výhodou je, že při záměně znaku při přenosu šifrované zprávy dojde k~záměně a zbytek zprávy tak nebude ovlivněn. Z~čehož plyne, že synchronní proudové šifry jsou vhodné pro použití, kdy na přenosové lince dochází k~velké chybovosti. Nevýhoda těchto šifer je, že nelze zprávu dešifrovat při ztrátě synchronizace odesílatele a~příjemce. Při ztrátě synchronizace se pro dešifrovaní musí použít speciální metody. \cite{HavlicekBakalarka}
+\subsection{Proudové šifry\label{subsec:streamFunction}}% možná podsekce symetrických
+Mezi hlavní výhody proudových šifer patří bezchybovost nebo velice malá chybovost. Tyto šifry musí zpracovávat proud bitů a každý bit se šifruje samostatně. Oproti blokovým šifrám jsou rychlejší a~méně hardwarově náročné. Lze je rozdělit na dva typy. Prvním typem jsou synchronní a~druhým jsou asynchronní. Rozlišujeme je podle generace takzvaného keystreamu, což je generující klíčový proud znaků.\cite{HavlicekBakalarka}
+
+U~synchronních proudových šifer nezáleží na šifrovaném a~nešifrovaném textu při generaci keystreamu. Generace keystreamu je pouze závislá na klíči a~šifrovacím algoritmu, ke kterému se u~moderních šifer přidává ještě inicializační vektor (IV).\cite{EncyclopediaSynchronous} Jedním z~požadavků na takovou šifru je synchronizace odesílatele a~příjemce, to znamená, že každá strana musí mít stejný stav algoritmu a~sdílený klíč. Výhodou je, že dojde-li při přenosu šifrované zprávy k záměně znaku, zbytek zprávy nebude ovlivněn. Z~čehož plyne, že synchronní proudové šifry jsou vhodné pro použití, když na přenosové lince dochází k~velké chybovosti. Nevýhodou těchto šifer je, že nelze zprávu dešifrovat při ztrátě synchronizace odesílatele a~příjemce. Při ztrátě synchronizace se pro dešifrovaní musí použít speciální metody. \cite{HavlicekBakalarka}
 % footnote keystream
 %obrazek https://doi.org/10.1007/978-1-4419-5906-5_376
 \begin{figure}[!h]
@@ -135,7 +136,7 @@ U~asynchronních proudových šifer oproti synchronním šifrám je keystream ge
 % https://doi.org/10.1007/0-387-23483-7_382
 
 \subsection{Blokové šifry \label{subsec:blockFunction}}% možná podsekce symetrických
-Blokové šifry na rozdíl od proudových provádí šifrovaní po blocích, kde každý blok je stejně dlouhá n-tice bitů. Moderní blokové šifry jsou založeny na principu kaskádových šifer. Kaskádové šifry fungují na principu řetězení několika šifer. Do následující šifry je vstupním blokem výstupní blok z~předcházející šifry. Poslední výstupní blok je výsledný šifrovaný blok zprávy. V~blokových šifrách se používá princip iterované šifry, která se dělí na Fiestelovu šifru a~substitučně permutační.\cite{Burda9788021446120ISBN}
+Blokové šifry na rozdíl od proudových provádí šifrovaní po blocích, kde každý blok je stejně dlouhá n-tice bitů. Moderní blokové šifry jsou založeny na principu kaskádových šifer. Kaskádové šifry fungují na základě řetězení několika šifer. Do následující šifry je vstupním blokem výstupní blok z~předcházející šifry. Poslední výstupní blok je výsledný šifrovaný blok zprávy. V~blokových šifrách se používá princip iterované šifry, která se dělí na Fiestelovu šifru a~substitučně permutační.\cite{Burda9788021446120ISBN}
 \begin{figure}[!h]
   \begin{center}
     \includegraphics[scale=0.3]{obrazky/cascadeCipher.png}
@@ -144,7 +145,7 @@ Blokové šifry na rozdíl od proudových provádí šifrovaní po blocích, kde
   \label{img:CascadeCipher}
 \end{figure}
 
-Iterované šifry jsou šifry, které využívají princip kaskádových šifer, kdy se využívá zřetězení stejné šifry po několik iterací. Jako šifra pro iteraci se nejčastěji využívá jednoduchá šifra. Z~klíče se odvodí několik iteračních klíčů v~expanzním bloku. Tyto klíče jsou následně použity postupně pro každou iteraci. Jednoduchá šifra s~společně s~klíčem pomocí vhodných blokových operací, jako jsou permutace, substituce a aritmetické operace, šifrují do výstupního bloku, který je následně použit jako vstup do další iterace.\cite{Burda9788021446120ISBN}
+Iterované šifry jsou šifry, které využívají princip kaskádových šifer, kdy se využívá zřetězení stejné šifry po několik iterací. Jako šifra pro iteraci se nejčastěji využívá některá z jednoduchých šifer. Z~klíče se odvodí několik iteračních klíčů v~expanzním bloku. Tyto klíče jsou následně použity postupně pro každou iteraci. Jednoduchá šifra společně s~klíčem pomocí vhodných blokových operací jako jsou permutace, substituce a~aritmetické operace, šifrují data do výstupního bloku, který je následně použit jako vstup do další iterace.\cite{Burda9788021446120ISBN}
 \begin{figure}[!h]
   \begin{center}
     \includegraphics[scale=0.3]{obrazky/IterateCipher.png}
@@ -153,7 +154,7 @@ Iterované šifry jsou šifry, které využívají princip kaskádových šifer,
   \label{img:iterateCipher}
 \end{figure}
 
-Prvním typem iterované šifry je takzvaná Fiestelova šifra. Tento typ šifry funguje na principu rozdělení vstupního bloku na levou a~pravou polovinu. Pravá polovina a~iterační klíč vstupují do konverzní funkce, která má výstup o~délce poloviny vstupního bloku. Výsledkem iterace je blok o~velikosti vstupního bloku, kde novou levou stranou je předcházející pravá strana a~pravou stranou předcházející levá strana. Jak je patrné, tak šifrována byla pouze levá strana z~čehož vyplývá, že k~zašifrovaní vstupního bloku jsou potřeba nejméně dvě iterace. Z~tohoto důvodu bývá počet iterací sudý a~dostatečně velký, aby se zabezpečila difúze šifry.\cite{Burda9788021446120ISBN}
+Prvním typem iterované šifry je Fiestelova šifra. Tento typ šifry funguje na principu rozdělení vstupního bloku na levou a~pravou polovinu. Pravá polovina a~iterační klíč vstupují do konverzní funkce, která má výstup o~délce poloviny vstupního bloku. Výsledkem iterace je blok o~velikosti vstupního bloku, kde novou levou stranou je předcházející pravá strana a~pravou stranou je předcházející levá strana. Jak je patrné, tak šifrována byla pouze levá strana, z~čehož vyplývá, že k~zašifrovaní vstupního bloku jsou potřeba nejméně dvě iterace. Z~tohoto důvodu bývá počet iterací sudý a~dostatečně velký do té míry, aby se zabezpečila difúze šifry.\cite{Burda9788021446120ISBN}
 \newpage
 \begin{figure}[!h]
   \begin{center}
@@ -166,9 +167,9 @@ Druhým typem jsou substitučně-permutační síťě zkráceně SPN. Tento typ 
 
 Nejčastějšími operacemi používané v substitučně-permutačních síťích jsou:
 \begin{itemize}
-    \item SubBytes -- je nelineární substituce bitů, které operují nezávisle na sobě a~jsou prohazovány dle předem dané tabulky substituce, která je zároveň klíčem. 
+    \item SubBytes -- nelineární substituce bitů, které operují nezávisle na sobě a~jsou zaměňovány dle předem dané tabulky substituce, která je zároveň klíčem. 
     \item ShiftRow -- v~této operaci se bity posouvají v~řádku matice do stran a~každý řádek se posouvá o~jiný počet míst.
-    \item MixColumns -- v~této operaci se zamění sloupce a~následně je každý sloupec vynásoben polynomem o~stejné hodnotě.
+    \item MixColumns -- spočívá v~záměně sloupců, následně je každý sloupec vynásoben polynomem o~stejné hodnotě.
     \item AddRoundKey -- každý byte je zkombinován s~iteračním klíčem, kdy po kombinaci bytů zprávy a~iteračního klíče dostaneme výsledný šifrovaný text. 
 \end{itemize}%TODO
 %file:///C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zdroje/final-thesis.pdf
@@ -177,7 +178,7 @@ Nejčastějšími operacemi používané v substitučně-permutačních síťíc
 
 \chapter{Lehká kryptografie}
 \section{Úvod}
-Lehká kryptografie je relativně mladé odvětví, které se prolíná kryptografií, informatikou  a~elektroinženýrstvím. Zaměřuje se vytváření, adaptaci nebo efektivní implementaci kryptografických primitiv a~protokolů pro zařízení s~omezeným výpočetním výkonem, kterým jsou například mikrokontroléry nebo RFID\footnote{Identifikace na rádiové frekvenci z anglického Radio Frequency Identification} čipy. Z~důvodu omezeného výkonu nelze na tyto zařízení implementovat standartní kryptografické algoritmy.\cite{PoschmannCrypto}
+Lehká kryptografie je relativně mladé odvětví, ve kterém se prolíná kryptografie, informatika  a~elektroinženýrství. Zaměřuje se vytváření, adaptaci nebo efektivní implementaci kryptografických primitiv a~protokolů pro zařízení s~omezeným výpočetním výkonem, kterým jsou například mikrokontroléry nebo RFID\footnote{Identifikace na rádiové frekvenci z anglického Radio Frequency Identification} čipy. Z~důvodu omezeného výkonu nelze na tyto zařízení implementovat standartní kryptografické algoritmy.\cite{PoschmannCrypto}
 
 Při návrhu algoritmů lehké kryptografie je nutno udělat kompromis mezi bezpečností, náklady a~výkonem. Tento kompromis lze vidět na \obrazek{img:Compromis}. 
 \begin{figure}[!h]
@@ -188,7 +189,7 @@ Při návrhu algoritmů lehké kryptografie je nutno udělat kompromis mezi bezp
   \label{img:Compromis}
 \end{figure}
 
-Nejčastěji bývají splněny pouze dva ze tří požadavků na návrh a to buď bezpečnost a~nízkonákladovost, bezpečnost a~výkon nebo výkon a~nízkonákladovost. Docílení všech tří požadavků, tak aby byli správně optimalizované, bývá velmi náročné. Například vysokého výkonu na hardwaru a~bezpečnosti lze dosáhnout zřetězením architektur, které zakomponovávají několik protiopatření proti útokům postranními kanály. Výsledný návrh bude mít vysoké plošné požadavky, což koreluje s vysokými náklady. Naopak lze navrhnout algoritmus, který je bezpečný a~má malé náklady. Tento algoritmus bude omezen výkonem.\cite{PoschmannCrypto}
+Nejčastěji bývají splněny pouze dva ze tří požadavků na návrh algoritmu a to buď bezpečnost a~nízkonákladovost, bezpečnost a~výkon nebo výkon a~nízkonákladovost. Docílení všech tří požadavků tak, aby byli správně optimalizované, bývá velmi náročné. Například vysokého výkonu na hardwaru a~bezpečnosti lze dosáhnout zřetězením architektur, které zakomponovávají několik protiopatření proti útokům postranními kanály. Výsledný návrh bude mít vysoké plošné požadavky, což koreluje s vysokými náklady. Naopak lze navrhnout algoritmus, který je bezpečný a~má malé náklady. Tento algoritmus bude omezen výkonem.\cite{PoschmannCrypto}
 
 Pro zařízení, které využívají lehké kryptografie, byl stanoven požadavek na minimální bezpečnost o~velikosti 80 bitů. Tato délka se zdá být nedostatečná, ale vzhledem k~informaci, která je chráněna, je dostatečná. Při pokusu o~prolomení takového zabezpečení, by útočník musel vynaložit velké úsilí nebo finanční obnos k~prolomení. Zisk z~tohoto pokusu by byl ve většině případů zcela adekvátní.\cite{Klima}
 
@@ -198,12 +199,12 @@ Lehká kryptografie využívá hašovací funkce, proudové a~blokové šifry, k
 \section{Hašovací funkce lehké kryptografie}
 V lehké kryptografii hašovací funkce fungují na stejném principu jak je uvedeno v~kapitole \fullref{sec:hashFunction}. Jediný rozdíl je v~bitové délce výstupu. V~případě hašovacích funkcí, které se používají na zařízeních u~kterých není omezený výkon, se využívá výstup hašovací funkce o~velikosti 128 bitů a~více. Ve většině případů se přešlo na hašovací funkce typu SHA-256 a SHA-512, které mají délku 256 bitů respektive 512 bitů. Hašovací funkce z~rodiny SHA jsou nejpoužívanější hašovací funkce v kryptografii. 
 
-Lehká kryptografie používá hašovací funkce o~velikosti výstupu 80 bitů a~více. Nejznámějšími hašovacími funkcemi jsou PHOTON, má více variant délky výstupu, které jsou v rozsahu od 80 bitů do 256 bitů. Druhou známou hašovací funkcí je SPONGENT, který nabízí varianty výstupu od 88 bitů do 256 bitů.\cite{LightHash}
+Lehká kryptografie používá hašovací funkce o~velikosti výstupu 80 bitů a~více. Nejznámějšími hašovacími funkcí je PHOTON, který má více variant délky výstupu.Tyto délky výstupu jsou v rozsahu od 80 bitů do 256 bitů. Další známou hašovací funkcí je SPONGENT, který nabízí varianty výstupu od 88 bitů do 256 bitů.\cite{LightHash}
 
 \section{Proudové šifry lehké kryptografie}
-Proudové šifry pro lehkou kryptografii fungují na stejném principu, který je popsán v~kapitole \fullref{subsec:streamFunction}. Proudových šifer pro lehkou kryptografii není navrženo mnoho. Nejpoužívanější šifrou je šifra A5/1, její využití se vyčísluje v~miliardách. Jedním z~důvodů proč jich není vytvořeno mnoho může být, že stávající proudové šifry jsou několika násobně méně náročné na implementaci. Z~tohoto důvodu lze stávající šifry uzpůsobit její implementaci nebo šifru samotnou, tak aby šifry bylo možné použít na výpočetně omezených zařízeních.\cite{SaldaBP}
+Proudové šifry pro lehkou kryptografii fungují na stejném principu, který je popsán v~kapitole \fullref{subsec:streamFunction}. Proudových šifer pro lehkou kryptografii není navrženo mnoho. Nejpoužívanější šifrou je šifra A5/1, jejíž využití se vyčísluje v~miliardách. Jedním z~důvodů proč jich není vytvořeno mnoho, může být, že stávající proudové šifry jsou několika násobně méně náročné na implementaci. Z~tohoto důvodu lze stávající šifry uzpůsobit její implementaci nebo šifru samotnou tak, aby šifry bylo možné použít na výpočetně omezených zařízeních.\cite{SaldaBP}
 
-Mezi zástupce proudových šifer patří $\mathrm{E_0}$. Tato šifra se často vyskytuje ve sféře mobilních telefonů. Využívá algoritmus s~klíčem, který má délku 128 bitů a využívá se pro přenos paketů které udělují důvěrnost při přenosu protokolem Bluetooth. Dalším zástupcem je šifra A5/1. Tato šifra se využívá s~sítích GSM a je i~součástí jeho standardu. Využívá 64 bitový klíč a~22 bitový inicializační vektor. Dále byla v~roce 2007 představena šifra Grain, která se využívá hlavně u~zařízení, které mají omezenou spotřebu energie a~paměťi. Funguje na principu dvou posuvných registrů a~nelineární funkci, kdy její klíč má délku 80 bitů. Existuje i~verze, která využívá klíč o délce 128 bitů.\cite{SaldaBP} % file:///C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zdroje/zaverecna_prace.pdf
+Mezi zástupce proudových šifer patří $\mathrm{E_0}$. Tato šifra se často vyskytuje ve sféře mobilních telefonů. Využívá se pro přenos paketů, které udělují důvěrnost při přenosu protokolem Bluetooth. Algoritmus používá klíč, který má délku 128 bitů. Dalším zástupcem je šifra A5/1. Tato šifra se využívá s~sítích GSM a je i~součástí jeho standardu. Využívá 64 bitový klíč a~22 bitový inicializační vektor. Dále byla v~roce 2007 představena šifra Grain, která se využívá hlavně u~zařízení, které mají omezenou paměť a~spotřebu energie. Funguje na principu dvou posuvných registrů a~nelineární funkci, kdy její klíč má délku 80 bitů. Existuje i~verze, která využívá klíč o délce 128 bitů.\cite{SaldaBP} % file:///C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zdroje/zaverecna_prace.pdf
 
 \section{Blokové šifry lehké kryptografie}
 Princip blokových šifer byl detailně probrán v~kapitole \fullref{subsec:blockFunction}. Nejznámější blokovou šifrou, která je založena na principu Fiestelovy šifry, je šifra DES. Z~šifry DES vychází vychází čínská šifra LBlock, která je jednou z~hlavních šifer používaných v~lehké kryptografii a byla navržena pro zařízení s~nedostatkem výpočetního výkonu. Nejznámější blokovou šifrou, která je založena na principu subtitučně-permutační sítě, je šifra AES. Z~této šifry vznikla jedna z~nejznámějších lehkých šifer -- evropská šifra PRESENT. Šifra PRESENT je podobně jako LBlock navržena z~ohledem na zařízení, která mají omezené prostředky výpočetního výkonu.\cite{NekuzaBP}
@@ -248,7 +249,7 @@ Princip blokových šifer byl detailně probrán v~kapitole \fullref{subsec:bloc
 \caption[Permutační tabulka šifry PRESENT]{\label{tab:PermutationTab}Permutační tabulka.\cite{PRESENT}}
 \end{table}
 
-\noindent \textbf{Key schedule} -- podporuje 80 nebo 128 bitový klíč, v následujícím postupu se zaměříme na 80 bitový. Klíč dodaný uživatelem je uložen v registru klíče \textit{K}, je reprezentován jako posloupnost bitů $k_{79}\,k_{78}\dots k_{0}$. V~kole \textit{i}~se používá klíč, ve kterém je použito prvních 64 bitů z~levé strany uložených v~registru \textit{K}. V~kole \textit{i}~se tedy použije klíč:
+\noindent \textbf{Key schedule} -- podporuje 80 nebo 128 bitový klíč, v následujícím postupu se zaměříme na 80 bitový klíč. Klíč dodaný uživatelem je uložen v registru klíče \textit{K}, je reprezentován jako posloupnost bitů $k_{79}\,k_{78}\dots k_{0}$. V~kole \textit{i}~se používá klíč, ve kterém je použito prvních 64 bitů z~levé strany uložených v~registru \textit{K}. V~kole \textit{i}~se tedy použije klíč:
 \[K_i = k_{63}\,k_{62}\dots k_{0} = k_{79}\,k_{78}\dots k_{16}\]
 Po extrakci klíče se registr \textit{K}~upraví:
 \begin{align*}
@@ -260,7 +261,7 @@ Registr klíče \textit{K}~je posunut o~61 bitů doleva, první čtyři bity z~l
 
 \newpage
 \subsection{LBlock}
-Šifra LBlock využívá bloky o~velikosti 64 bitů z~klíčem o~délce 80 bitů. Počet kol opakovaní je 32 kol. V~další části textu budou použity tyto notace\cite{LBlock}:
+Šifra LBlock využívá bloky o~velikosti 64 bitů s~klíčem o~délce 80 bitů. Počet kol opakovaní je 32 kol. V~další části textu budou použity tyto notace\cite{LBlock}:
 \begin{table}[!h]
 \begin{tabular}{p{15mm} p{8cm}}
 \textit{M} & 64 bitová zpráva\\
@@ -292,8 +293,7 @@ Algoritmus šifrovaní je znázorněn na \obrazek{img:Lblock}. Na začátku šif
     (X, K_i) & \longrightarrow U = P(S(X \oplus K_i))
 \end{align*}
 
-\noindent \textbf{Funkce konfúze} \textit{S} -- obsahuje 8~paralelně poskládaných $4 \times 4$ S-boxů, jejichž obsah je zobrazen v~\tabulka{tab:tableLblock}, kde jsou označeny $s_0\dots s_7$. Každý blok se rozdělí na části o~velikosti 4 bitů. N
-a každou část je použit S-box. Tímto lze zaručit, že každý bit z~32 bitového bloku bude ovlivněn.\cite{LBlock}
+\noindent \textbf{Funkce konfúze} \textit{S} -- obsahuje 8~paralelně poskládaných $4 \times 4$ S-boxů, jejichž obsah je zobrazen v~\tabulka{tab:tableLblock}, kde jsou označeny $s_0\dots s_7$. Každý blok se rozdělí na části o~velikosti 4 bitů. Na každou část je použit S-box. Tímto lze zaručit, že každý bit z~32 bitového bloku bude ovlivněn.\cite{LBlock}
 %TODO obrazek roundfucntion
 \begin{figure}[!h]
   \begin{center}
@@ -305,7 +305,7 @@ a každou část je použit S-box. Tímto lze zaručit, že každý bit z~32 bit
 
 \noindent \textbf{Funkce difuze} \textit{P} -- je permutace osmi 4~bitových slov, které jsou výstupem funkce~\textit{S}.
 
-\noindent \textbf{Key schedule} -- 80 bitový klíč \textit{K}~je uložen v~registru klíče $K_r$ jako posloupnost bitů $K = k_{79}\,k_{78}\dots k_{0}$. Klíč pro kolo $K_i$ je vytvořen z~prvních 32 bitů z~levé strany, kde se následovně $K_r$ posune o~29 bitů vlevo. V~další části na prvních 8 bitů z~levé strany jsou použity dva S-boxy $s_8$ a~$s_9$, které lze dohledat v~\tabulka{tab:tableLblock}. V~poslední částí se využije operace XOR mezi bity $k_{50}\,k_{49}\,k_{48}\,k_{47}\,k_{46}$ a~hodnotou \textit{i}, která udává hodnotu aktuálního kola. Výstupem je prvních 32 bitů z~levé strany registru \textit{K}~jako klíč $K_{i+1}$. Postup transformace klíče pro kolo \textit{i}~je zobrazen níže, kde \textit{i}~je pro kola 1 až 31.\cite{LBlock}
+\noindent \textbf{Key schedule} -- 80 bitový klíč \textit{K}~je uložen v~registru klíče $K_r$ jako posloupnost bitů $K = k_{79}\,k_{78}\dots k_{0}$. Klíč pro kolo $K_i$ je vytvořen z~prvních 32 bitů z~levé strany, kde se následovně $K_r$ posune o~29 bitů vlevo. V~další části na prvních 8 bitů z~levé strany jsou použity dva S-boxy $s_8$ a~$s_9$, které lze dohledat v~\tabulka{tab:tableLblock}. V~poslední částí se využije operace XOR mezi bity $k_{50}\,k_{49}\,k_{48}\,k_{47}\,k_{46}$ a~hodnotou \textit{i}, která udává hodnotu aktuálního kola. Výstupem je prvních 32 bitů z~levé strany registru \textit{K}~jako klíč $K_{i+1}$. Postup transformace klíče pro kolo \textit{i}~je zobrazen níže, kde \textit{i}~je pro kola 1~až 31.\cite{LBlock}
 \begin{enumerate}[label=(\Alph*)]
     \item $K = k_{79}\,k_{78}\dots k_{49}\,k_{48}$
     \item \textit{K} \shiftleft{29}
