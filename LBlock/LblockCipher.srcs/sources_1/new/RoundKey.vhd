@@ -31,20 +31,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity SplitInputBlock is
+entity RoundKey is
 Port ( 
-        data_in: in std_logic_vector(31 downto 0);
-        xL_out: out std_logic_vector(15 downto 0);
-        xR_out: out std_logic_vector(15 downto 0)
+        key_in: in std_logic_vector(79 downto 0);
+        key_out: out std_logic_vector(31 downto 0)
         
     );
-end SplitInputBlock;
+end RoundKey;
 
-architecture Behavioral of SplitInputBlock is
-    -- 0-3, 4-7, 8-11, 12-15, 16-19, 20-23, 24-27 28-31
+architecture Behavioral of RoundKey is
 begin
-
-    xL_out <= data_in(31 downto 16);
-    xR_out <= data_in(15 downto 0);
+	key_out <= key_in(79 downto 48);
 
 end Behavioral;

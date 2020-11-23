@@ -34,7 +34,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity KeySchedule is
 Port ( 
         key_in: in std_logic_vector(79 downto 0);
-        round_value: in std_logic_vector(4 downto 0);
+        round_value: in std_logic_vector(5 downto 0);
         key_out: out std_logic_vector(79 downto 0)
 
     );
@@ -42,7 +42,7 @@ end KeySchedule;
 
 architecture Behavioral of KeySchedule is
 
-signal shifted: std_logic_vector(79 downto 0);
+signal switched: std_logic_vector(79 downto 0);
 
 component Sbox8
     port(
@@ -73,11 +73,12 @@ begin
             data_in => switched(75 downto 72),
             data_out => key_out(75 downto 72)   
     );
+    -- write new 80bit key to output
     key_out(71 downto 51) <= switched(71 downto 51);
-    key_out(50 downto 46) <= switched(50 downto 46) XOR round_value;
+    key_out(50 downto 46) <= switched(50 downto 46) XOR round_value(4 downto 0);
     key_out(45 downto 0) <= switched(45 downto 0);
 
 
     
 end Behavioral;
-0000 1101 0000 1000 1111 0110 1110 0   10111    11 1001 0101010111110000001010110010111011011000
+--0000 1101 0000 1000 1111 0110 1110 0   10111    11 1001 0101010111110000001010110010111011011000
