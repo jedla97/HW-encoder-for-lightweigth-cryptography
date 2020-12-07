@@ -1,6 +1,8 @@
 % Soubory musí být v kódování, které je nastaveno v příkazu \usepackage[...]{inputenc}
 \newcommand{\obrazek}[1]{\hyperref[#1]{obrázku} \ref{#1}}
 \newcommand{\tabulka}[1]{\hyperref[#1]{tabulce} \ref{#1}}
+\newcommand{\tabulky}[1]{\hyperref[#1]{tabulky} \ref{#1}}
+\newcommand{\vypis}[1]{\hyperref[#1]{výpisu kódu} \ref{#1}}
 \newcommand{\citace}[2]{#1 #2}
 \newcommand{\fullref}[1]{\hyperref[#1]{\ref*{#1}\ \nameref*{#1}}}
 \newcommand{\shiftleft}[1]{$<<<$~#1}
@@ -236,7 +238,7 @@
 
 %%% Vysázení seznamu příloh
 % (vynechejte, pokud máte dvě nebo méně příloh)
-\listofappendices
+%\listofappendices
 
 %%% Vložení souboru 'text/prilohy' s přílohami
 % Obvykle je přítomen alespoň popis co najdeme na přiloženém médiu
