@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Jedlička Jakub
 -- 
 -- Create Date: 10.11.2020 15:18:34
 -- Design Name: 
--- Module Name: Sbox1 - Behavioral
+-- Module Name: LBlockLoop - Behavioral
 -- Project Name: 
--- Target Devices: 
+-- Target Devices: Zybo Z7
 -- Tool Versions: 
--- Description: conecting all Sboxes
+-- Description: doing all round operation input is 80 bit key and left and right
+--              side of fiestel network output is left side changed modified 
+--              right side
 -- 
 -- Dependencies: 
 -- 
@@ -17,7 +19,6 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
----- switch vectors to variables := https://stackoverflow.com/questions/11927144/what-s-the-difference-between-and-in-vhdl
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -35,7 +36,7 @@ entity LBlockLoop is
 Port ( 
     xLdata_in: in std_logic_vector(31 downto 0);
     xRdata_in: in std_logic_vector(31 downto 0);
-    fullKey_in: in std_logic_vector(79 downto 0);
+    full_key_in: in std_logic_vector(79 downto 0);
     xLdata_out: out std_logic_vector(31 downto 0);
     xRdata_out: out std_logic_vector(31 downto 0)
 
@@ -44,11 +45,12 @@ end LBlockLoop;
 
 architecture Behavioral of LBlockLoop is
 
+-- used as output of round function
 signal xLhelp: std_logic_vector(31 downto 0);
-signal xLhelpForSwitch: std_logic_vector(31 downto 0);
-signal xRhelp: std_logic_vector(31 downto 0);
+-- used for shifing bits
 signal shifted: std_logic_vector(31 downto 0);
-signal dataHelp: std_logic_vector(31 downto 0);
+-- result of xor between shifted right side and modified left side
+signal data_help: std_logic_vector(31 downto 0);
 
 component RoundFunction is
     port( 
@@ -60,23 +62,24 @@ component RoundFunction is
 end component;
 
 begin
-    
-    xLhelpForSwitch <= xLdata_in;
-    xRhelp <= xRdata_in;
-
-        RF : RoundFunction 
+    -- round function of LBlock
+    RF : RoundFunction 
         port map (
-            key_in => fullKey_in,
+            key_in => full_key_in,
             xL_in => xLdata_in,
             xL_out => xLhelp
         );
 
-        shifted <= xRhelp(23 downto 0) & xRhelp(31 downto 24);
+        -- shifting right side of 8 bits
+        shifted <= xRdata_in(23 downto 0) & xRdata_in(31 downto 24);
 
-        dataHelp <= shifted XOR xLhelp;
+        --- xor of both side
+        data_help <= shifted XOR xLhelp;
 
-        xLdata_out <= dataHelp;
-        xRdata_out <= xLhelpForSwitch;
+        -- output when modified rigth is new left and new right is 
+        -- unmodified left side
+        xLdata_out <= data_help;
+        xRdata_out <= xLdata_in;
 
 
 end Behavioral;

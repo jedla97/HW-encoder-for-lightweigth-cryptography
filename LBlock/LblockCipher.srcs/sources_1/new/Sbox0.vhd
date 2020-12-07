@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Jedlička Jakub
 -- 
 -- Create Date: 9.11.2020 20:36:57
 -- Design Name: 
--- Module Name: Sbox1 - Behavioral
+-- Module Name: Sbox0 - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
--- Description: 
+-- Description: implementig sbox0 logic in confusion function
+--              basically input is 4 bit number that transform to different 4 bit
+--              number defined by table of sboxes 
 -- 
 -- Dependencies: 
 -- 

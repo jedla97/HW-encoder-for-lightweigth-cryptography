@@ -2,4 +2,12 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{Závěr}
 
-Shrnutí studentské práce.
+Cílem této semestrální práce bylo seznámení se~šiframi lehké kryptografie a~implementace vybrané šifry do jazyka VHDL. Šifry byli nejprve voleny tak, aby splňovali požadavek na šifrovaní souborů šifrou lehké kryptografie. Z~důvodu tohoto požadavku jsem zvolil blokové šifry, které jsou nejlepší proto, že je lze na rozdíl od hašovacích funkcí dešifrovat. Vybíral jsem mezi šiframi LBlock, LED, mCRYPTON, PRESENT a~SIMON. Dospěl jsem k~závěru, že nejvhodnější šifrou pro implementaci je šifra LBlock, kterou následuje šifra PRESENT. Uvedené šifry tvoří nejoptimálnější dvojici co se týká poměru náklady, výkon a~bezpečnost. Postup šifrovaní těchto dvou šifer byl detailněji rozebrán z~důvodu, že každá z~šifer využívá jinou metodu šifrovaní.
+
+Zvolená šifra LBlock založená na Feistelově síti byla implementována ve vývojovém prostředí Vivado Design Suite. Celá šifra byla rozdělena na několik modulů starajících se o logiku transformací vstupních dat. Výstupem hlavního modulu, který je založen na sekvenčním postupném šifrovaní, jsou šifrovaná data. Ke každému modulu byli implementovány simulační testy, kdy výstupní hodnoty z~hlavního modulu odpovídaly hodnotám v dokumentaci šifry LBlock.
+
+Semestrální práce bude v~navazující bakalářské práci rozšířena o~implementaci na vývojovou desku ZYBO\,Z7. Ze vstupů desky, jako jsou např.\,rozhraní USB 2.0, Micro SD a~jiné, budou následně načítána data. Vstupní data budou šifrovány a~uloženy zpět na tyto vstupy. 
+
+Pokračovaní mé práce je také možné rozšířit o přidaní šifry PRESENT a jejím porovnaní se šifrou LBlock. U~tohoto rozšíření lze měřit rychlost provedení šifry na stejných vstupních datech. Dále lze provádět měření využití šifer pomocí hodnoty LUT (LookUp Table).
+
+Závěrem bych chtěl poděkovat Ing.\,Davidu Smékalovi za cenné rady a připomínky i odbornou a metodickou pomoc, kterou mně poskytl.

@@ -1,14 +1,14 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Jedlička Jakub
 -- 
 -- Create Date: 10.11.2020 15:18:34
 -- Design Name: 
--- Module Name: Sbox1 - Behavioral
+-- Module Name: RoundKey - Behavioral
 -- Project Name: 
--- Target Devices: 
+-- Target Devices: Zybo Z7
 -- Tool Versions: 
--- Description: merge block of 32 bits to 8 block of 4 bits
+-- Description: from 80 bit key do 32 bit key used in round for encryption
 -- 
 -- Dependencies: 
 -- 
@@ -41,6 +41,7 @@ end RoundKey;
 
 architecture Behavioral of RoundKey is
 begin
+
 	key_out <= key_in(79 downto 48);
 
 end Behavioral;
