@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Jedlička Jakub
 -- 
 -- Create Date: 10.11.2020 15:18:34
 -- Design Name: 
--- Module Name: Sbox1 - Behavioral
+-- Module Name: Sbox9 - Behavioral
 -- Project Name: 
--- Target Devices: 
+-- Target Devices: Zybo Z7
 -- Tool Versions: 
--- Description: this sbox is used for key schedule
+-- Description: implementig sbox9 logic in key schedule
+--              basically input is 4 bit number that transform to different 4 bit
+--              number defined by table of sboxes 
 -- 
 -- Dependencies: 
 -- 

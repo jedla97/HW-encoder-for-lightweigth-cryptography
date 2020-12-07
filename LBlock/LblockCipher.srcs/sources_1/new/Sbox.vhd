@@ -1,14 +1,14 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Jedlička Jakub
 -- 
 -- Create Date: 10.11.2020 15:18:34
 -- Design Name: 
--- Module Name: Sbox1 - Behavioral
+-- Module Name: Sbox - Behavioral
 -- Project Name: 
--- Target Devices: 
+-- Target Devices: Zybo Z7
 -- Tool Versions: 
--- Description: conecting all Sboxes
+-- Description: conecting all Sboxes for confusion function
 -- 
 -- Dependencies: 
 -- 
@@ -33,22 +33,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Sbox is
 Port ( 
-    S7_in: in std_logic_vector(3 downto 0);
-    S6_in: in std_logic_vector(3 downto 0);
-    S5_in: in std_logic_vector(3 downto 0);
-    S4_in: in std_logic_vector(3 downto 0);
-    S3_in: in std_logic_vector(3 downto 0);
-    S2_in: in std_logic_vector(3 downto 0);
-    S1_in: in std_logic_vector(3 downto 0);
-    S0_in: in std_logic_vector(3 downto 0);
-    s7_out: out std_logic_vector(3 downto 0);
-    s6_out: out std_logic_vector(3 downto 0);
-    s5_out: out std_logic_vector(3 downto 0);
-    s4_out: out std_logic_vector(3 downto 0);
-    s3_out: out std_logic_vector(3 downto 0);
-    s2_out: out std_logic_vector(3 downto 0);
-    s1_out: out std_logic_vector(3 downto 0);
-    s0_out: out std_logic_vector(3 downto 0)
+    S_in: in std_logic_vector(31 downto 0);
+    s_out: out std_logic_vector(31 downto 0)
     );
 end Sbox;
 
@@ -114,49 +100,49 @@ begin
 
 S0 : Sbox0 
     port map (
-        data_in => S0_in,
-        data_out => s0_out   
+        data_in => S_in(3 downto 0),
+        data_out => s_out(3 downto 0)
 );
 
 S1 : Sbox1 
     port map (
-        data_in => S1_in,
-        data_out => s1_out   
+        data_in => S_in(7 downto 4),
+        data_out => s_out(7 downto 4)
 );
 
 S2 : Sbox2 
     port map (
-        data_in => S2_in,
-        data_out => s2_out   
+        data_in => S_in(11 downto 8),
+        data_out => s_out(11 downto 8)
 );
 
 S3 : Sbox3 
     port map (
-        data_in => S3_in,
-        data_out => s3_out   
+        data_in => S_in(15 downto 12),
+        data_out => s_out(15 downto 12)
 );
 
 S4 : Sbox4 
     port map (
-        data_in => S4_in,
-        data_out => s4_out   
+        data_in => S_in(19 downto 16),
+        data_out => s_out(19 downto 16)
 );
 
 S5 : Sbox5
     port map (
-        data_in => S5_in,
-        data_out => s5_out   
+        data_in => S_in(23 downto 20),
+        data_out => s_out(23 downto 20)
 );
 
 S6 : Sbox6 
     port map (
-        data_in => S6_in,
-        data_out => s6_out   
+        data_in => S_in(27 downto 24),
+        data_out => s_out(27 downto 24)
 );
 
 S7 : Sbox7
     port map (
-        data_in => S7_in,
-        data_out => s7_out   
+        data_in => S_in(31 downto 28),
+        data_out => s_out(31 downto 28)
 );
 end Behavioral;

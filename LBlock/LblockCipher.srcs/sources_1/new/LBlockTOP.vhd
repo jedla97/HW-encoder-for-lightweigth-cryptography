@@ -1,14 +1,15 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Jedlička Jakub
 -- 
 -- Create Date: 10.11.2020 15:18:34
 -- Design Name: 
--- Module Name: Sbox1 - Behavioral
+-- Module Name: LBlockTOP - Behavioral
 -- Project Name: 
--- Target Devices: 
+-- Target Devices: Zybo Z7
 -- Tool Versions: 
--- Description: conecting all Sboxes
+-- Description: control function for each round where input is key and 64 bit 
+--              block of data
 -- 
 -- Dependencies: 
 -- 
@@ -17,7 +18,6 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
----- switch vectors to variables := https://stackoverflow.com/questions/11927144/what-s-the-difference-between-and-in-vhdl
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -32,7 +32,7 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity LBlock is
+entity LBlockTOP is
 Port ( 
     data_in: in std_logic_vector(63 downto 0);
     key_in: in std_logic_vector(79 downto 0);
@@ -40,20 +40,18 @@ Port (
     reset: in std_logic;
     data_out: out std_logic_vector(63 downto 0);
     busy : out STD_LOGIC;
-    dataReady : out STD_LOGIC;
-    keyTest_out: out std_logic_vector(79 downto 0);
-    keyTest_out2: out std_logic_vector(79 downto 0)
+    data_ready : out STD_LOGIC
 
     );
-end LBlock;
+end LBlockTOP;
 
-architecture Behavioral of LBlock is
+architecture Behavioral of LBlockTOP is
 
 component LBlockLoop is
     port( 
         xLdata_in: in std_logic_vector(31 downto 0); 
         xRdata_in: in std_logic_vector(31 downto 0);
-        fullKey_in: in std_logic_vector(79 downto 0);
+        full_key_in: in std_logic_vector(79 downto 0);
         xLdata_out: out std_logic_vector(31 downto 0);
         xRdata_out: out std_logic_vector(31 downto 0)
         
@@ -67,78 +65,85 @@ component KeySchedule is
     key_out: out std_logic_vector(79 downto 0)
     );
 end component;
-
-type state is (WAITDATA, ROUND, FINAL);
-signal nxState : state;
-
-signal roundCounter : STD_LOGIC_VECTOR(5 downto 0);
-
+-- type for each state in "cicle" 
+-- WAITDATA - waiting for data input
+-- ROUND - for every round except last
+-- DATAREADY - after last roud encrypted text is ready a ouputed 
+type state_type is (WAITDATA, ROUND, DATAREADY);
+signal state : state_type;
+-- counter of rounds
+signal round_counter : STD_LOGIC_VECTOR(5 downto 0);
+-- input of left side of fiestel network
 signal xLdata_in_intern: std_logic_vector(31 downto 0);
+-- input of right side of fiestel network
 signal xRdata_in_intern: std_logic_vector(31 downto 0);
+-- output of left side of fiestel network
 signal xLdata_out_intern: std_logic_vector(31 downto 0);
+-- output of right side of fiestel network
 signal xRdata_out_intern: std_logic_vector(31 downto 0);
-signal roundFullKey: std_logic_vector(79 downto 0);
-signal roundKeyHelp: std_logic_vector(79 downto 0);
-signal shifted: std_logic_vector(31 downto 0);
+-- key used for actual round
+signal round_full_key: std_logic_vector(79 downto 0);
+-- generated key for next round
+signal round_key_help: std_logic_vector(79 downto 0);
+-- bit shifting operation
+--signal shifted: std_logic_vector(31 downto 0);
 
 begin
     
     LBL : LBlockLoop port map(
         xLdata_in => xLdata_in_intern,
         xRdata_in => xRdata_in_intern,
-        fullKey_in => roundFullKey,
+        full_key_in => round_full_key,
         xLdata_out =>  xLdata_out_intern,
         xRdata_out =>  xRdata_out_intern
     );
 
     KS : KeySchedule port map (
-        key_in => RoundFullKey,
-        round_value => roundCounter,
-        key_out => roundKeyHelp
+        key_in => round_full_key,
+        round_value => round_counter,
+        key_out => round_key_help
     );
 
     process(clk, reset)
     begin
         if reset = '1' then
-                nxState <= WAITDATA;
-                roundCounter <= "000000";
+                state <= WAITDATA;
+                round_counter <= "000000";
 
                 busy <= '0';
-                dataReady <= '0';
+                data_ready <= '0';
                 
         elsif CLK'EVENT and clk = '1' then
-            case nxState is
+            case state is
                 when WAITDATA =>
                     
-                    RoundFullKey <= Key_in;
+                    round_full_key <= key_in;
 
                     xLdata_in_intern <= data_in(63 downto 32);
                     xRdata_in_intern <= data_in(31 downto 0);
 
                     busy <= '1';
-                    nxState <= ROUND;
-                    roundCounter <= "000001";
+                    state <= ROUND;
+                    round_counter <= "000001";
                     
                 when ROUND =>
                     xLdata_in_intern <= xLdata_out_intern;
                     xRdata_in_intern <= xRdata_out_intern;
                     
-                    roundCounter <= roundCounter + '1';
+                    round_counter <= round_counter + '1';
                     
-                   if roundCounter = "100000" then
+                   if round_counter = "100000" then
                         data_out <= xRdata_out_intern & xLdata_out_intern;
-                        keyTest_out <= roundFullKey;
-                        keyTest_out2 <= roundKeyHelp;
-                        nxState <= FINAL;
+                        state <= DATAREADY;
                     else
-                        nxState <= ROUND;
-                        roundFullKey <= roundKeyHelp;
+                        state <= ROUND;
+                        round_full_key <= round_key_help;
                     end if;
                         
-                when FINAL =>
+                when DATAREADY =>
                     busy <= '0';
-                    dataReady <= '1';
-                    nxState <= WAITDATA;
+                    data_ready <= '1';
+                    state <= WAITDATA;
             end case;
 
         end if;
@@ -146,8 +151,14 @@ begin
     end process;
 
 end Behavioral;
+
+--test results
 --data_in <= "0000000000000000000000000000000000000000000000000000000000000000";
 --key_in <= "00000000000000000000000000000000000000000000000000000000000000000000000000000000";
--- c0 fb 26 f3 93 7c 06 b0
---92e2fdf4208d377f296a
---4f11a6efe52d525c5fbe
+-- c2 18 18 53 08 e7 5b cd -original
+-- c2 18 18 53 08 e7 5b cd -vivado
+
+--data_in <="0000000100100011010001010110011110001001101010111100110111101111";
+--key_in <= "00000001001000110100010101100111100010011010101111001101111011111111111011011100";
+-- 4b 71 79 d8 eb ee 0c 26 -original
+-- 4b 71 79 d8 eb ee 0c 26 -vivado

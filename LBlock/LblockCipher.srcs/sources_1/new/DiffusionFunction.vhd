@@ -1,14 +1,15 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Jedlička Jakub
 -- 
 -- Create Date: 10.11.2020 15:18:34
 -- Design Name: 
--- Module Name: Sbox1 - Behavioral
+-- Module Name: DiffusionFunction - Behavioral
 -- Project Name: 
--- Target Devices: 
+-- Target Devices: Zybo Z7
 -- Tool Versions: 
--- Description: conecting all Sboxes
+-- Description: implementing diffusion function input is 32 bit block and output 
+--              is modified 32 bit block
 -- 
 -- Dependencies: 
 -- 
@@ -33,22 +34,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity DiffusionFunction is
 Port ( 
-    P7_in: in std_logic_vector(3 downto 0);
-    P6_in: in std_logic_vector(3 downto 0);
-    P5_in: in std_logic_vector(3 downto 0);
-    P4_in: in std_logic_vector(3 downto 0);
-    P3_in: in std_logic_vector(3 downto 0);
-    P2_in: in std_logic_vector(3 downto 0);
-    P1_in: in std_logic_vector(3 downto 0);
-    P0_in: in std_logic_vector(3 downto 0);
-    P7_out: out std_logic_vector(3 downto 0);
-    P6_out: out std_logic_vector(3 downto 0);
-    P5_out: out std_logic_vector(3 downto 0);
-    P4_out: out std_logic_vector(3 downto 0);
-    P3_out: out std_logic_vector(3 downto 0);
-    P2_out: out std_logic_vector(3 downto 0);
-    P1_out: out std_logic_vector(3 downto 0);
-    P0_out: out std_logic_vector(3 downto 0)
+    P_in: in std_logic_vector(31 downto 0);
+    P_out: out std_logic_vector(31 downto 0)
     );
 end DiffusionFunction;
 
@@ -56,14 +43,14 @@ architecture Behavioral of DiffusionFunction is
 
 begin
 
-    P7_out <= P6_in;
-    P6_out <= P4_in;
-    P5_out <= P7_in;
-    P4_out <= P5_in;
-    P3_out <= P2_in;
-    P2_out <= P0_in;
-    P1_out <= P3_in;
-    P0_out <= P1_in;
+    P_out(31 downto 28) <= P_in(27 downto 24);
+    P_out(27 downto 24) <= P_in(19 downto 16);
+    P_out(23 downto 20) <= P_in(31 downto 28);
+    P_out(19 downto 16) <= P_in(23 downto 20);
+    P_out(15 downto 12) <= P_in(11 downto 8);
+    P_out(11 downto 8) <= P_in(3 downto 0);
+    P_out(7 downto 4) <= P_in(15 downto 12);
+    P_out(3 downto 0) <= P_in(7 downto 4);
 
 
 end Behavioral;
