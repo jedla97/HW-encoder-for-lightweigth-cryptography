@@ -1,3 +1,4 @@
+--LBlock_design
 ----------------------------------------------------------------------------------
 -- Company: 
 -- Engineer: Jedlička Jakub
@@ -38,10 +39,7 @@ Port (
     key_in: in std_logic_vector(79 downto 0);
     clk: in std_logic;
     reset: in std_logic;
-    data_out: out std_logic_vector(63 downto 0);
-    busy : out STD_LOGIC;
-    data_ready : out STD_LOGIC
-
+    data_out: out std_logic_vector(63 downto 0)
     );
 end LBlockTOP;
 
@@ -109,10 +107,7 @@ begin
         if reset = '1' then
                 state <= WAITDATA;
                 round_counter <= "000000";
-
-                busy <= '0';
-                data_ready <= '0';
-                
+                                
         elsif CLK'EVENT and clk = '1' then
             case state is
                 when WAITDATA =>
@@ -122,7 +117,6 @@ begin
                     xLdata_in_intern <= data_in(63 downto 32);
                     xRdata_in_intern <= data_in(31 downto 0);
 
-                    busy <= '1';
                     state <= ROUND;
                     round_counter <= "000001";
                     
@@ -141,8 +135,6 @@ begin
                     end if;
                         
                 when DATAREADY =>
-                    busy <= '0';
-                    data_ready <= '1';
                     state <= WAITDATA;
             end case;
 

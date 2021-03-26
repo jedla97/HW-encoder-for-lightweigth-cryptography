@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="651" key="DIALOG_X_ORIGIN"/>
+		<item value="235" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="1230" key="dialogHeight"/>
+		<item value="1404" key="dialogWidth"/>
+		<list key="textEntries">
+			<item value="1"/>
+			<item value="2"/>
+		</list>
+		<list key="orderedElements">
+			<item value="com.xilinx.sdx.scw.ui.actions.ScwSyncHwSpecCommand"/>
+			<item value="com.xilinx.sdk.terminal.sdkterminal"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.ui.commands"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+		</list>
+		<list key="textArray">
+			<item value="upda"/>
+			<item value="vitis "/>
+			<item value="vitis"/>
+		</list>
+	</section>
+</section>

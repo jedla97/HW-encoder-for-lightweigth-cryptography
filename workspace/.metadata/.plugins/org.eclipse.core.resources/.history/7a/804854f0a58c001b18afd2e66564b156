@@ -1,0 +1,8 @@
+#include "xparameters.h"
+#include "xil_io.h"
+#include "xbasic_types.h"
+# define LENGHT_OF_KEY 4
+const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXUZ[\]^_`{|}~0123456789!@#$%&*()+/-?:<>,.;' ";
+const char* generate_key();
+int key_to_integer();
+

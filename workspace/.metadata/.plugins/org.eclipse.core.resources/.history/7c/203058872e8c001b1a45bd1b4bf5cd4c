@@ -1,0 +1,2 @@
+# define LENGHT_OF_KEY 10
+char[] generate_key();

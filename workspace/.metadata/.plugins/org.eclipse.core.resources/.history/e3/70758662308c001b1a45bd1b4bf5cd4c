@@ -1,0 +1,7 @@
+#include "key_generation.h"
+
+const char* generate_key(){
+	char * ret;
+	return ret;
+
+}

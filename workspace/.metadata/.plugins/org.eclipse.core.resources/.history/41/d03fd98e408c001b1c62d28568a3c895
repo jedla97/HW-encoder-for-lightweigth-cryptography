@@ -1,0 +1,15 @@
+#include "key_generation.h"
+
+const char* generate_key() {
+	char * ret;
+	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJK...";
+	if (LENGHT_OF_KEY) {
+		for (int n = 0; n < LENGHT_OF_KEY; n++) {
+			int key = rand() % (int) (sizeof charset - 1);
+			ret[n] = charset[key];
+		}
+		ret[LENGHT_OF_KEY+1] = '\0';
+	}
+	return ret;
+
+}

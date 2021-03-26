@@ -1,11 +1,2 @@
 
-*.zip
-/LBlock/**/*.txt
-/LBlock/LblockCipher.cache/
-/LBlock/LblockCipher.hbs/
-/LBlock/LblockCipher.hw/
-/LBlock/LblockCipher.ip_user_files/
-/LBlock/LblockCipher.runs/
-/LBlock/LblockCipher.sim/
-LblockCipher.xpr
 

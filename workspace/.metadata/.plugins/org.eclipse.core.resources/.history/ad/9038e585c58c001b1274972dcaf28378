@@ -1,0 +1,10 @@
+#include "xparameters.h"
+#include "xsdps.h"		/* SD device driver */
+#include "xil_printf.h"
+#include "ff.h"
+#include "xil_cache.h"
+#include "xplatform_info.h"
+
+#define SIZE_OF_READ 4
+int FfsSdPolledExample();
+

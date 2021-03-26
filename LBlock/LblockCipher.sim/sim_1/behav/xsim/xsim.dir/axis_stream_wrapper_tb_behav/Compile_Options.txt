@@ -1,0 +1,1 @@
+-wto "6b2188d231b04e558bf36da4d25c7e75" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "axis_stream_wrapper_tb_behav" "xil_defaultlib.axis_stream_wrapper_tb" -log "elaborate.log" 
