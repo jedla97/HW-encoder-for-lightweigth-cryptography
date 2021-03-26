@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="false" key="BUILD_ALL"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
+		<item value="false" key="BUILD_NOW"/>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

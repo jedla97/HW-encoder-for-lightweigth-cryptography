@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="LBlock_cipher" location="C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher" platform="C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/LBlock.xpfm" platformUID="xilinx:zybo-z7-20:name:0.0(custom)" systemProject="LBlock_cipher_system" sysConfig="LBlock" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="5b015cf9c54be199c1bb76c7ecf0e9cd">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1153310617">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.2059098451" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

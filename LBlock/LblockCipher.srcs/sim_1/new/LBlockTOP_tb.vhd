@@ -12,9 +12,7 @@ architecture bench of LBlockTOP_tb is
       key_in: in std_logic_vector(79 downto 0);
       clk: in std_logic;
       reset: in std_logic;
-      data_out: out std_logic_vector(63 downto 0);
-      busy : out STD_LOGIC;
-      dataReady : out STD_LOGIC
+      data_out: out std_logic_vector(63 downto 0)
       );
   end component;
 
@@ -23,8 +21,6 @@ architecture bench of LBlockTOP_tb is
   signal clk: std_logic := '0';
   signal reset: std_logic := '0';
   signal data_out: std_logic_vector(63 downto 0);
-  signal busy: STD_LOGIC;
-  signal dataReady: STD_LOGIC;
 
   constant clk_period: time := 2 ns;
 
@@ -34,9 +30,7 @@ begin
                          key_in      => key_in,
                          clk         => clk,
                          reset       => reset,
-                         data_out    => data_out,
-                         busy        => busy,
-                         dataReady   => dataReady );
+                         data_out    => data_out);
 
 clk_process :process
    begin
@@ -53,8 +47,8 @@ clk_process :process
     --wait for clk_period*7;
     
     
-    --data_in <= "0000000000000000000000000000000000000000000000000000000000000000";
-    --key_in <= "00000000000000000000000000000000000000000000000000000000000000000000000000000000";
+    data_in <= "0000000000000000000000000000000000000000000000000000000000000000";
+    key_in <= "00000000000000000000000000000000000000000000000000000000000000000000000000000000";
     
    --reset <= '0';
    --wait for clk_period*7;
@@ -64,8 +58,8 @@ clk_process :process
     
     --wait for clk_period*7;
     
-    data_in <="0000000100100011010001010110011110001001101010111100110111101111";
-    key_in <= "00000001001000110100010101100111100010011010101111001101111011111111111011011100";
+    --data_in <="0000000100100011010001010110011110001001101010111100110111101111";
+    --key_in <= "00000001001000110100010101100111100010011010101111001101111011111111111011011100";
     
     --reset <= '0';
     --wait for clk_period*7;

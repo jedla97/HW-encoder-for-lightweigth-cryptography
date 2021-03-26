@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../LblockCipher.srcs/sources_1/bd/design_1/ipshared/6b56/hdl" --include "../../../../LblockCipher.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/ec67/hdl" --include "../../../../LblockCipher.srcs/sim_1/imports/myip_v1_0_bfm_1" --include "C:/Xilinx/Vivado/2020.1/data/xilinx_vip/include" \
+"../../../../LblockCipher.ip_user_files/bd/myip_v1_0_bfm_1/ip/myip_v1_0_bfm_1_master_0_0/sim/myip_v1_0_bfm_1_master_0_0_pkg.sv" \
+"../../../../LblockCipher.ip_user_files/bd/myip_v1_0_bfm_1/ip/myip_v1_0_bfm_1_master_0_0/sim/myip_v1_0_bfm_1_master_0_0.sv" \
+"../../../../LblockCipher.srcs/sim_1/imports/bfm_design/myip_v1_0_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

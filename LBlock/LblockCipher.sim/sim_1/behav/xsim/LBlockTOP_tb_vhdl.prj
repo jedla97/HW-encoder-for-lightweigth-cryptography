@@ -1,0 +1,23 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../LblockCipher.srcs/sources_1/new/DiffusionFunction.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/KeySchedule.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/LBlockLoop.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/LBlockTOP.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/RoundFunction.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/RoundKey.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox0.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox1.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox2.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox3.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox4.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox5.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox6.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox7.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox8.vhd" \
+"../../../../LblockCipher.srcs/sources_1/new/Sbox9.vhd" \
+"../../../../LblockCipher.srcs/sim_1/new/LBlockTOP_tb.vhd" \
+
+# Do not sort compile order
+nosort
