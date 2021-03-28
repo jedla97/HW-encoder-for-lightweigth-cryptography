@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="_FS_READONLY " key="selection"/>
+		<item value="arr" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="ret"/>
+			<item value="data_encrypted"/>
 			<item value="_FS_READONLY "/>
 			<item value="USE_STRFUNC "/>
 			<item value="}**/"/>
@@ -21,10 +23,10 @@
 			<item value="path"/>
 			<item value="umBytesRead"/>
 			<item value="gpio"/>
-			<item value="axi_gpio"/>
-			<item value="xpar"/>
 		</list>
 		<list key="replacehistory">
+			<item value="arr"/>
+			<item value="ret"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
