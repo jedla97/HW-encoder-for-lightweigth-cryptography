@@ -1,4 +1,0 @@
-#pragma once
-#define SIZE_OF_READ = 8;
-int FfsSdPolledExample(void);
-

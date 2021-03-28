@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>67efb0e1</spirit:value>
+            <spirit:value>2759faa1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>67efb0e1</spirit:value>
+            <spirit:value>2759faa1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -676,6 +676,10 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>src/LFSR32bit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>src/RoundFunction.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
@@ -753,6 +757,10 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/LBlock_wrapper_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/LFSR32bit.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -895,13 +903,13 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>LBlock_wrapper_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:user:LBlock_wrapper:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:LBlock_wrapper:2.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:LBlock_wrapper:3.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2021-03-21T20:28:49Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2021-03-28T19:18:08Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@4fea8b84_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3d17a909_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
@@ -1401,13 +1409,41 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5a387140_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3da2f23_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1e802321_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dccafa0_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2de8a3da_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ae30111_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a2854be_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@317de69_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c31f9e4_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d7ce1ab_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8fc8ef3_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fa7eed_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5819f609_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5954d2c8_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66c09b75_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cd5dbfb_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dcb52db_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e849baa_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@827b9a2_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70b8d3ca_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a4cd384_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28a0b412_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24d0e189_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@126221d2_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cb320d7_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e5701db_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5baa64c0_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d7fe7a4_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cfe1f05_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a72cdf2_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17b56269_ARCHIVE_LOCATION">c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="96abe746"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d16f605e"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ff1b30ee"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="bf4e3689"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="2e811c89"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="7ec6a089"/>

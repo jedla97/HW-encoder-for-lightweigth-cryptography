@@ -1,10 +1,64 @@
-20:07:36 **** Incremental Build of configuration Debug for project LBlock_cipher ****
+00:03:02 **** Incremental Build of configuration Debug for project LBlock_cipher ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
+'Building file: ../src/sdcard_operations.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard_operations.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bspinclude/include -MMD -MP -MF"src/sdcard_operations.d" -MT"src/sdcard_operations.o" -o "src/sdcard_operations.o" "../src/sdcard_operations.c"
+../src/sdcard_operations.c: In function 'cipher_text':
+../src/sdcard_operations.c:205:9: warning: unused variable 'data_writer2' [-Wunused-variable]
+  205 |  char * data_writer2;
+      |         ^~~~~~~~~~~~
+../src/sdcard_operations.c:204:9: warning: unused variable 'data_writer1' [-Wunused-variable]
+  204 |  char * data_writer1;
+      |         ^~~~~~~~~~~~
+../src/sdcard_operations.c:203:6: warning: unused variable 'data_key3' [-Wunused-variable]
+  203 |  u32 data_key3;
+      |      ^~~~~~~~~
+../src/sdcard_operations.c:202:6: warning: unused variable 'data_key2' [-Wunused-variable]
+  202 |  u32 data_key2;
+      |      ^~~~~~~~~
+../src/sdcard_operations.c:201:6: warning: unused variable 'data_key1' [-Wunused-variable]
+  201 |  u32 data_key1;
+      |      ^~~~~~~~~
+../src/sdcard_operations.c:198:6: warning: unused variable 'data_in_read2' [-Wunused-variable]
+  198 |  u32 data_in_read2;
+      |      ^~~~~~~~~~~~~
+../src/sdcard_operations.c:197:6: warning: unused variable 'data_in_read1' [-Wunused-variable]
+  197 |  u32 data_in_read1;
+      |      ^~~~~~~~~~~~~
+At top level:
+../src/sdcard_operations.c:14:14: warning: 'SD_Text_File' defined but not used [-Wunused-variable]
+   14 | static char *SD_Text_File;
+      |              ^~~~~~~~~~~~
+../src/sdcard_operations.c:13:13: warning: 'TextName' defined but not used [-Wunused-variable]
+   13 | static char TextName[32] = "FileName.txt";
+      |             ^~~~~~~~
+../src/sdcard_operations.c:12:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+   12 | static char *SD_File;
+      |              ^~~~~~~
+../src/sdcard_operations.c:11:13: warning: 'FileName' defined but not used [-Wunused-variable]
+   11 | static char FileName[32] = "Testing.bin";
+      |             ^~~~~~~~
+../src/sdcard_operations.c: In function 'cipher_text_init':
+../src/sdcard_operations.c:48:5: warning: 'Status' is used uninitialized in this function [-Wuninitialized]
+   48 |  if (Status != XST_SUCCESS) {
+      |     ^
+'Finished building: ../src/sdcard_operations.c'
+' '
+'Building target: LBlock_cipher.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bsplib/lib -o "LBlock_cipher.elf"  ./src/data_operation.o ./src/generation.o ./src/main.o ./src/sdcard_operations.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: LBlock_cipher.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size LBlock_cipher.elf  |tee "LBlock_cipher.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56256	   1264	  47904	 105424	  19bd0	LBlock_cipher.elf
+'Finished building: LBlock_cipher.elf.size'
+' '
 
-20:07:38 Build Finished (took 1s.255ms)
+00:03:11 Build Finished (took 9s.319ms)
 

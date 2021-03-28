@@ -70,7 +70,7 @@ end component;
 type state_type is (WAITDATA, ROUND, DATAREADY);
 signal state : state_type;
 -- counter of rounds
-signal round_counter : STD_LOGIC_VECTOR(5 downto 0);
+signal round_counter : std_logic_vector(5 downto 0);
 -- input of left side of fiestel network
 signal xLdata_in_intern: std_logic_vector(31 downto 0);
 -- input of right side of fiestel network

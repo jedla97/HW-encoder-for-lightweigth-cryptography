@@ -1,3 +1,4 @@
+#include "generation.h"
 #include "xparameters.h"
 #include "xil_io.h"
 #include "xil_types.h"
@@ -5,7 +6,6 @@
 #include "xgpiops_hw.h"
 #include "xgpio.h"
 #include "sdcard_operations.h"
-#include "key_generation.h"
 //#include "xbasic_types.h"
 int main() {
 
@@ -43,7 +43,7 @@ int main() {
 			xil_printf("		%llu		%s\n", test, key);
 
 		} else if (button_data == 0b0100) {
-			xil_printf("button 0\n");
+			xil_printf("button 2\n");
 			mount_drive();
 			xil_printf(cipher_text());
 			unmount_drive();

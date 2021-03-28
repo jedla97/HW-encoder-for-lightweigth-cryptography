@@ -68,25 +68,26 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../LblockCipher.srcs/sources_
 "../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
 
 vcom -work xil_defaultlib -93 \
-"../../../bd/design_1/ipshared/4e67/src/DiffusionFunction.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/KeySchedule.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/LBlockLoop.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/LBlockTOP.vhd" \
-"../../../bd/design_1/ipshared/4e67/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/RoundFunction.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/RoundKey.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox0.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox1.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox2.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox3.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox4.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox5.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox6.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox7.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox8.vhd" \
-"../../../bd/design_1/ipshared/4e67/src/Sbox9.vhd" \
-"../../../bd/design_1/ipshared/4e67/hdl/LBlock_wrapper_v1_0.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/DiffusionFunction.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/KeySchedule.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/LBlockLoop.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/LBlockTOP.vhd" \
+"../../../bd/design_1/ipshared/f6ec/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/LFSR32bit.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/RoundFunction.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/RoundKey.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox0.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox1.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox2.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox3.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox4.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox5.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox6.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox7.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox8.vhd" \
+"../../../bd/design_1/ipshared/f6ec/src/Sbox9.vhd" \
+"../../../bd/design_1/ipshared/f6ec/hdl/LBlock_wrapper_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_LBlock_wrapper_0_0/sim/design_1_LBlock_wrapper_0_0.vhd" \
 
 vcom -work lib_cdc_v1_0_2 -93 \

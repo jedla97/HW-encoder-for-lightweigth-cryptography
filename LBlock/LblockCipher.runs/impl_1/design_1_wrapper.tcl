@@ -115,8 +115,6 @@ proc step_failed { step } {
 }
 
 set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "Implementation" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -135,8 +133,8 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.cache/wt [current_project]
   set_property parent.project_path C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0
-  c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs
+  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0
+  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.cache/ip [current_project]

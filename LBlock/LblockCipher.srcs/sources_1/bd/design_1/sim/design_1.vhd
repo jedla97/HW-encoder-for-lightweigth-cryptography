@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Sun Mar 21 21:29:20 2021
+--Date        : Sun Mar 28 21:18:38 2021
 --Host        : jedla running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1392,7 +1392,7 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
-  attribute X_INTERFACE_INFO of btn0_tri_i : signal is "xilinx.com:interface:gpio:1.0 btn0 ";
+  attribute X_INTERFACE_INFO of btn0_tri_i : signal is "xilinx.com:interface:gpio:1.0 btn0 TRI_I";
 begin
   axi_gpio_0_GPIO_TRI_I(3 downto 0) <= btn0_tri_i(3 downto 0);
 LBlock_wrapper_0: component design_1_LBlock_wrapper_0_0

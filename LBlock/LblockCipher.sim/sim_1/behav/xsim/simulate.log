@@ -1,18 +1,2 @@
 Vivado Simulator 2020.1
 Time resolution is 1 ps
-XilinxAXIVIP: Found at Path: myip_v1_0_tb.DUT.myip_v1_0_bfm_1_i.master_0.inst
-Sequential write transfers example similar to  AXI BFM WRITE_BURST method starts
-Sequential write transfers example similar to  AXI BFM WRITE_BURST method completes
-Sequential read transfers example similar to  AXI BFM READ_BURST method starts
-TESTBENCH Passed! Data expected is equal to actual. expected = 0x0000000000000000000000000000000000000000000000000000000000000001 actual   = 0x0000000000000000000000000000000000000000000000000000000000000001
-TESTBENCH Passed! Data expected is equal to actual. expected = 0x0000000000000000000000000000000000000000000000000000000000000002 actual   = 0x0000000000000000000000000000000000000000000000000000000000000002
-TESTBENCH Passed! Data expected is equal to actual. expected = 0x0000000000000000000000000000000000000000000000000000000000000003 actual   = 0x0000000000000000000000000000000000000000000000000000000000000003
-TESTBENCH Passed! Data expected is equal to actual. expected = 0x0000000000000000000000000000000000000000000000000000000000000004 actual   = 0x0000000000000000000000000000000000000000000000000000000000000004
-Sequential read transfers example similar to  AXI BFM READ_BURST method completes
-Sequential read transfers example similar to  AXI VIP READ_BURST method completes
----------------------------------------------------------
-EXAMPLE TEST S00_AXI: PTGEN_TEST_FINISHED!
-PTGEN_TEST: PASSED!
----------------------------------------------------------
-Executing Axi4 End Of Simulation checks
-$finish called at time : 716 ns : File "C:/Xilinx/Vivado/2020.1/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" Line 3126
