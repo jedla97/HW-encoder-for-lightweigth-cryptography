@@ -8,6 +8,7 @@
 #include "strings.h"
 #include "stdlib.h"
 #include "stdio.h"
+#include "data_operation.h"
 
 #define f_unmount(path) f_mount(0, path, 0)
 #define SIZE_OF_READ 4
@@ -18,7 +19,6 @@
 
 FRESULT Res;
 
-int FfsSdPolledExample();
 char * scan_files (char* path); // return name of file to cipher
 int cipher_text();
 unsigned int ascii_to_integer(u8 * ascii);

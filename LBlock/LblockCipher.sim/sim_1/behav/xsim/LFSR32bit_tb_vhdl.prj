@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../LblockCipher.srcs/sources_1/new/LFSR32bit.vhd" \
+"../../../../LblockCipher.srcs/sim_1/new/LFSR32bit_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -44,7 +44,7 @@ int cipher_text_init(void) {
 	int Status;
 	xil_printf("SD Polled File System Example Test \r\n");
 
-	Status = FfsSdPolledExample();
+	//Status = FfsSdPolledExample();
 	if (Status != XST_SUCCESS) {
 		xil_printf("SD Polled File System Example Test failed \r\n");
 		return XST_FAILURE;
@@ -98,41 +98,21 @@ int unmount_drive() {
 	return XST_SUCCESS;
 }
 
-unsigned int ascii_to_integer(u8 * ascii) {
-	int i = 0;
-	unsigned int string_to_integer = 0;
-	for (i = 0; i < SIZE_OF_READ; i++) {
-		string_to_integer = (string_to_integer << 8) | ascii[i];
-	}
-	return string_to_integer;
-}
 //, u32 second_four_bytes
 void unsigned_integer_to_array(u32 first_four_bytes,
 		u32 second_four_bytes) {
-	//unsigned char first_string[5];
-	//char * second_string = malloc(5 * sizeof(short int*));
-	//sprintf(first_string, "%lu", first_four_bytes);
-	//second_string = (char *) second_four_bytes;
-	//sprintf(first_string, "%lX", first_four_bytes);
-	//sprintf(second_string, "%s", second_four_bites);
-	/**
-	 for (int i = 0; i < SIZE_OF_READ; ++i) {
-	 data_encrypted1[i] = first_string[i];
-	 data_encrypted2[i] = second_string[i];
-	 }
-	 **/
-
-	data_encrypted[0] = (first_four_bytes >> 24) & 0xff;
-	data_encrypted[1] = (first_four_bytes >> 16) & 0xff;
-	data_encrypted[2] = (first_four_bytes >> 8) & 0xff;
-	data_encrypted[3] = (first_four_bytes) & 0xff;
-	data_encrypted[4] = (second_four_bytes >> 24) & 0xff;
-	data_encrypted[5] = (second_four_bytes >> 16) & 0xff;
-	data_encrypted[6] = (second_four_bytes >> 8) & 0xff;
-	data_encrypted[7] = (second_four_bytes) & 0xff;
-	//xil_printf("\n%s\n", first_string);
-	//return first_string;
-	//free(second_string);
+	unsigned char first[5];
+	unsigned_integer_to_char_array(first_four_bytes, first);
+	unsigned char second[5];
+	unsigned_integer_to_char_array(second_four_bytes, second);
+	data_encrypted[0] = first[0];
+	data_encrypted[1] = first[1];
+	data_encrypted[2] = first[2];
+	data_encrypted[3] = first[3];
+	data_encrypted[4] = second[0];
+	data_encrypted[5] = second[1];
+	data_encrypted[6] = second[2];
+	data_encrypted[7] = second[3];
 }
 
 int write_key() {
@@ -250,11 +230,10 @@ int cipher_text() {
 		return XST_FAILURE;
 	}
 
-	for (i = 0; i <= f_size(&fil); i = i + (SIZE_OF_READ * 2)) {
+	for (i = 0; i < f_size(&fil); i = i + (SIZE_OF_READ * 2)) {
 		// look up for pointer on input file
 		Res = f_lseek(&fil, i);
 		if (Res) {
-			print("seek");
 			return XST_FAILURE;
 		}
 
@@ -267,7 +246,6 @@ int cipher_text() {
 		// look up for pointer on input file
 		Res = f_lseek(&fil, i + 4);
 		if (Res) {
-			print("seek");
 			return XST_FAILURE;
 		}
 		Res = f_read(&fil, (void*) data_read2, SIZE_OF_READ, &NumBytesRead);
@@ -281,39 +259,22 @@ int cipher_text() {
 
 		data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
 		data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
-
-		xil_printf("%08X", data_out1);
-		xil_printf("%08X data out\n", data_out2);
-		xil_printf("%u\n", data_out1);
+		data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
+		data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
 
 		unsigned_integer_to_array(data_out1, data_out2);
 
 		Res = f_lseek(&fil2, i);
 		if (Res) {
-			print("seek");
 			return XST_FAILURE;
 		}
 
 		Res = f_write(&fil2, (void*) data_encrypted, SIZE_OF_READ + SIZE_OF_READ, &NumBytesWritten);
 		if (Res) {
-			print("write");
-			return XST_FAILURE;
-		}
-		/**
-		Res = f_lseek(&fil2, i + 4);
-		if (Res) {
-			print("seek");
 			return XST_FAILURE;
 		}
 
-		Res = f_write(&fil2, (void*) data_out2, SIZE_OF_READ, &NumBytesWritten);
-		if (Res) {
-			print("write");
-			return XST_FAILURE;
-		}
-**/
 	}
-
 //------ end of encryption --------
 	Res = f_close(&fil);
 	if (Res) {
@@ -330,114 +291,3 @@ int cipher_text() {
 	return XST_SUCCESS;
 }
 
-int FfsSdPolledExample(void) {
-	FRESULT Res;
-	UINT NumBytesRead;
-	UINT NumBytesWritten;
-	u32 BuffCnt;
-	u32 FileSize = (1 * 1024);
-
-	/*
-	 * To test logical drive 0, Path should be "0:/"
-	 * For logical drive 1, Path should be "1:/"
-	 */
-
-	for (BuffCnt = 0; BuffCnt < FileSize; BuffCnt++) {
-		SourceAddress[BuffCnt] = TEST + BuffCnt;
-	}
-
-	/*
-	 * Register volume work area, initialize device
-	 */
-	Res = f_mount(&fatfs, PATH, 0);
-	if (Res != FR_OK) {
-		print("mount");
-		return XST_FAILURE;
-	}
-
-	/*
-	 * Open file with required permissions.
-	 * Here - Creating new file with read/write permissions. .
-	 * To open file with write permissions, file system should not
-	 * be in Read Only mode.
-	 */
-	SD_File = (char *) FileName;
-	SD_Text_File = (char *) TextName;
-
-// f_open(pointer to object(FIL), pointer to file name, open type)
-	Res = f_open(&fil, SD_File, FA_OPEN_APPEND | FA_WRITE | FA_READ);
-	if (Res) {
-		print("open");
-		return XST_FAILURE;
-	}
-
-	Res = f_open(&fil2, SD_Text_File, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
-	if (Res) {
-		print("open");
-		return XST_FAILURE;
-	}
-
-	/*
-	 * Pointer to beginning of file .
-	 */
-	Res = f_lseek(&fil, 0);
-	if (Res) {
-		print("seek");
-		return XST_FAILURE;
-	}
-
-	Res = f_lseek(&fil2, 0);
-	if (Res) {
-		print("seek");
-		return XST_FAILURE;
-	}
-
-	for (int i = 0; i < f_size(&fil); i = i + SIZE_OF_READ) {
-		Res = f_lseek(&fil, i);
-		if (Res) {
-			print("seek");
-			return XST_FAILURE;
-		}
-
-		Res = f_lseek(&fil2, i);
-		if (Res) {
-			print("seek");
-			return XST_FAILURE;
-		}
-
-		Res = f_read(&fil, (void*) DestAddr, SIZE_OF_READ, &NumBytesRead);
-
-		if (Res) {
-			print("read");
-			return XST_FAILURE;
-		}
-
-		print(DestAddr);
-		print("\n");
-
-		Res = f_write(&fil2, DestAddr, SIZE_OF_READ, &NumBytesWritten);
-		if (Res) {
-			print("write");
-			return XST_FAILURE;
-		}
-	}
-
-	/*
-	 * Close file.
-	 */
-	Res = f_close(&fil);
-	if (Res) {
-		print("close");
-		return XST_FAILURE;
-	}
-
-	Res = f_close(&fil2);
-	if (Res) {
-		print("close");
-		return XST_FAILURE;
-	}
-
-//Res = scan_files(Path);
-
-	return XST_SUCCESS;
-}
