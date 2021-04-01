@@ -33,7 +33,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity LFSR32bit is
     port(clk: in std_logic; 
-         reset: in std_logic;
          random_data_out: out std_logic_vector(31 downto 0)
     );
 end LFSR32bit;
@@ -44,17 +43,15 @@ architecture Behavioral of LFSR32bit is
     signal xnor_tap : std_logic;
     
     begin
-         process(clk, reset)
+         process(clk)
          begin
-            if reset = '1' then
-                current_state <= "11001101010101001111100111011011";
-            elsif CLK'EVENT and clk = '1' then
+            if rising_edge(clk) then
                 current_state <= next_state;
-                     --32,22,2,1
-            end if;
-         
+                                    --32,22,2,1
+            end if;    
+            xnor_tap <= current_state(31) xnor current_state(21) xnor current_state(1) xnor current_state(0);
+            next_state <= current_state(30 downto 0) & xnor_tap;
+            random_data_out <= current_state;     
          end process;
-    xnor_tap <= current_state(31) xnor current_state(21) xnor current_state(1) xnor current_state(0);
-    next_state <= current_state(30 downto 0) & xnor_tap;
-    random_data_out <= current_state;
+         
 end Behavioral;

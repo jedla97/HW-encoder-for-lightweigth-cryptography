@@ -1,2 +1,0 @@
-# define LENGHT_OF_KEY 10
-int generate_key();

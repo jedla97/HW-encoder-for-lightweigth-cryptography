@@ -38,13 +38,11 @@ architecture bench of LFSR32bit_tb is
 
   component LFSR32bit
       port(clk: in std_logic; 
-           reset: in std_logic;
            random_data_out: out std_logic_vector(31 downto 0)
       );
   end component;
 
   signal clk: std_logic;
-  signal reset: std_logic;
   signal random_data_out: std_logic_vector(31 downto 0);
 
   constant clk_period: time := 2 ns;
@@ -52,7 +50,6 @@ architecture bench of LFSR32bit_tb is
 begin
 
   uut: LFSR32bit port map ( clk             => clk,
-                            reset           => reset,
                             random_data_out => random_data_out );
 
  clk_process :process
@@ -65,6 +62,7 @@ begin
 
   stimulus: process
   begin
+  
   
     -- Put initialisation code here
     

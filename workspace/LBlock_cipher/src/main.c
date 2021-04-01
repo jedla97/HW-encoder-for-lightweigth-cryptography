@@ -31,7 +31,7 @@ int main() {
 
 		} else if (button_data == 0b0001) {
 			xil_printf("button 0\n");
-			scan_files("0:/");
+			generate_inicialization_vector(1);
 		} else if (button_data == 0b0010) {
 			//xil_printf("\nbutton 1\n");
 			const char * key = generate_key();
@@ -48,8 +48,7 @@ int main() {
 			xil_printf(cipher_text());
 			unmount_drive();
 		} else if(button_data == 0b1000){
-			//unsigned_integer_to_array(3256358995);
-			//3256358995
+			generate_inicialization_vector(1);
 		}
 
 		else {
