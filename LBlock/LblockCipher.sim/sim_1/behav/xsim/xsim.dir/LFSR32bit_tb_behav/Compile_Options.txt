@@ -1,1 +1,1 @@
--wto "6b2188d231b04e558bf36da4d25c7e75" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xilinx_vip" -L "secureip" -L "xpm" --snapshot "LFSR32bit_tb_behav" "xil_defaultlib.LFSR32bit_tb" -log "elaborate.log" 
+-wto "6b2188d231b04e558bf36da4d25c7e75" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xilinx_vip" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "LFSR32bit_tb_behav" "xil_defaultlib.LFSR32bit_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

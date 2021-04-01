@@ -1,3 +1,0 @@
-# define LENGHT_OF_KEY 10
-const char* generate_key();
-

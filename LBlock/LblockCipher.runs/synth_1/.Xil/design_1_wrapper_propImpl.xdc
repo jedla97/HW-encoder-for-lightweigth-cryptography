@@ -2,7 +2,7 @@ set_property SRC_FILE_INFO {cfile:c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zal
 set_property SRC_FILE_INFO {cfile:C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc rfile:../../../LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc id:2} [current_design]
 current_instance design_1_i/processing_system7_0/inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter clk_fpga_0 0.15
+set_input_jitter clk_fpga_0 0.24
 set_property src_info {type:SCOPED_XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "C11" [get_ports "MIO[53]"]
 set_property src_info {type:SCOPED_XDC file:1 line:38 export:INPUT save:INPUT read:READ} [current_design]

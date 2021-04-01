@@ -1,5 +1,0 @@
-#include "key_generation.h"
-
-char[] generate_key(){
-	return null;
-}

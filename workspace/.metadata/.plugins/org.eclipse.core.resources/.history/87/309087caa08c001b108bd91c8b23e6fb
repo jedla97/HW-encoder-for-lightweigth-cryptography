@@ -1,6 +1,0 @@
-#include "xparameters.h"
-#include "xil_io.h"
-#include "xbasic_types.h"
-# define LENGHT_OF_KEY 4
-const char* generate_key();
-
