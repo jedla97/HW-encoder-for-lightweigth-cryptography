@@ -45,10 +45,13 @@ int main() {
 		} else if (button_data == 0b0100) {
 			xil_printf("button 2\n");
 			mount_drive();
-			xil_printf(cipher_text());
+			cipher_text_OFB();
 			unmount_drive();
-		} else if(button_data == 0b1000){
-			generate_inicialization_vector(1);
+			xil_printf("end\n");
+		} else if (button_data == 0b1000) {
+			xil_printf("button 3\n");
+			xor_data_with_init_vector(361856794, 145656920, 856978156,
+					86182952);
 		}
 
 		else {

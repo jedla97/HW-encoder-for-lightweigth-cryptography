@@ -18343,3 +18343,740 @@ con
 
 23:17:31 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
 23:17:46 INFO  : Disconnected from the channel tcfchan#6.
+18:19:07 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\temp_xsdb_launch_script.tcl
+18:19:17 INFO  : XSCT server has started successfully.
+18:19:17 INFO  : plnx-install-location is set to ''
+18:19:17 INFO  : Successfully done setting XSCT server connection channel  
+18:19:17 INFO  : Successfully done setting workspace for the tool. 
+18:19:53 INFO  : Platform repository initialization has completed.
+18:20:01 INFO  : Registering command handlers for Vitis TCF services
+18:20:52 INFO  : Successfully done query RDI_DATADIR 
+21:39:26 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+21:39:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa is already opened
+
+21:42:14 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+21:42:26 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa is already opened
+
+21:43:08 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+21:43:17 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa is already opened
+
+21:48:08 INFO  : Result from executing command 'getProjects': LBlock
+21:48:08 INFO  : Result from executing command 'getPlatforms': LBlock|C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/LBlock.xpfm
+21:48:09 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+21:49:35 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+21:49:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:49:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+21:49:48 INFO  : 'jtag frequency' command is executed.
+21:49:48 INFO  : Context for 'APU' is selected.
+21:49:48 INFO  : System reset is completed.
+21:49:51 INFO  : 'after 3000' command is executed.
+21:49:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+21:49:55 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+21:49:56 INFO  : Context for 'APU' is selected.
+21:49:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+21:49:56 INFO  : 'configparams force-mem-access 1' command is executed.
+21:49:56 INFO  : Context for 'APU' is selected.
+21:49:56 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+21:49:57 INFO  : 'ps7_init' command is executed.
+21:49:57 INFO  : 'ps7_post_config' command is executed.
+21:49:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:49:58 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:49:58 INFO  : 'configparams force-mem-access 0' command is executed.
+21:49:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:49:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:49:58 INFO  : 'con' command is executed.
+21:49:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:49:59 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+21:50:19 INFO  : Disconnected from the channel tcfchan#7.
+21:50:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:50:43 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+21:50:43 INFO  : 'jtag frequency' command is executed.
+21:50:43 INFO  : Context for 'APU' is selected.
+21:50:43 INFO  : System reset is completed.
+21:50:46 INFO  : 'after 3000' command is executed.
+21:50:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+21:50:50 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+21:50:51 INFO  : Context for 'APU' is selected.
+21:50:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+21:50:57 INFO  : 'configparams force-mem-access 1' command is executed.
+21:50:57 INFO  : Context for 'APU' is selected.
+21:50:57 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+21:50:58 INFO  : 'ps7_init' command is executed.
+21:50:58 INFO  : 'ps7_post_config' command is executed.
+21:50:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:50:59 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:50:59 INFO  : 'configparams force-mem-access 0' command is executed.
+21:50:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:51:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:51:00 INFO  : 'con' command is executed.
+21:51:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:51:00 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+21:53:53 INFO  : Disconnected from the channel tcfchan#8.
+21:53:56 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+21:54:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:54:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+21:54:08 INFO  : 'jtag frequency' command is executed.
+21:54:08 INFO  : Context for 'APU' is selected.
+21:54:08 INFO  : System reset is completed.
+21:54:11 INFO  : 'after 3000' command is executed.
+21:54:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+21:54:15 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+21:54:15 INFO  : Context for 'APU' is selected.
+21:54:15 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+21:54:15 INFO  : 'configparams force-mem-access 1' command is executed.
+21:54:15 INFO  : Context for 'APU' is selected.
+21:54:15 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+21:54:16 INFO  : 'ps7_init' command is executed.
+21:54:16 INFO  : 'ps7_post_config' command is executed.
+21:54:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:54:17 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:54:17 INFO  : 'configparams force-mem-access 0' command is executed.
+21:54:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:54:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:54:18 INFO  : 'con' command is executed.
+21:54:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:54:18 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+21:54:56 INFO  : Disconnected from the channel tcfchan#9.
+21:55:55 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+21:56:23 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+22:17:00 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+17:35:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\temp_xsdb_launch_script.tcl
+17:35:34 INFO  : XSCT server has started successfully.
+17:35:35 INFO  : plnx-install-location is set to ''
+17:35:35 INFO  : Successfully done setting XSCT server connection channel  
+17:35:36 INFO  : Successfully done setting workspace for the tool. 
+17:40:00 INFO  : Platform repository initialization has completed.
+17:40:30 INFO  : Registering command handlers for Vitis TCF services
+17:42:08 INFO  : Successfully done query RDI_DATADIR 
+19:18:30 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+19:18:59 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa is already opened
+
+19:19:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:19:35 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+19:19:35 INFO  : 'jtag frequency' command is executed.
+19:19:35 INFO  : Context for 'APU' is selected.
+19:19:35 INFO  : System reset is completed.
+19:19:38 INFO  : 'after 3000' command is executed.
+19:19:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+19:19:43 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+19:19:43 INFO  : Context for 'APU' is selected.
+19:19:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+19:19:43 INFO  : 'configparams force-mem-access 1' command is executed.
+19:19:43 INFO  : Context for 'APU' is selected.
+19:19:43 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+19:19:44 INFO  : 'ps7_init' command is executed.
+19:19:44 INFO  : 'ps7_post_config' command is executed.
+19:19:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:19:45 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:19:45 INFO  : 'configparams force-mem-access 0' command is executed.
+19:19:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:19:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:19:46 INFO  : 'con' command is executed.
+19:19:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:19:46 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+19:20:12 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+19:20:29 INFO  : Disconnected from the channel tcfchan#2.
+19:20:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:20:31 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+19:20:31 INFO  : 'jtag frequency' command is executed.
+19:20:31 INFO  : Context for 'APU' is selected.
+19:20:31 INFO  : System reset is completed.
+19:20:34 INFO  : 'after 3000' command is executed.
+19:20:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+19:20:38 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+19:20:38 INFO  : Context for 'APU' is selected.
+19:20:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+19:20:44 INFO  : 'configparams force-mem-access 1' command is executed.
+19:20:44 INFO  : Context for 'APU' is selected.
+19:20:44 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+19:20:45 INFO  : 'ps7_init' command is executed.
+19:20:45 INFO  : 'ps7_post_config' command is executed.
+19:20:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:20:46 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:20:46 INFO  : 'configparams force-mem-access 0' command is executed.
+19:20:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:20:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:20:46 INFO  : 'con' command is executed.
+19:20:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:20:46 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+19:21:36 INFO  : Disconnected from the channel tcfchan#3.
+21:58:33 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+21:58:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa is already opened
+
+22:02:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:02:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:02:04 INFO  : 'jtag frequency' command is executed.
+22:02:04 INFO  : Context for 'APU' is selected.
+22:02:05 INFO  : System reset is completed.
+22:02:08 INFO  : 'after 3000' command is executed.
+22:02:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:02:12 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+22:02:12 INFO  : Context for 'APU' is selected.
+22:02:12 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+22:02:12 INFO  : 'configparams force-mem-access 1' command is executed.
+22:02:12 INFO  : Context for 'APU' is selected.
+22:02:12 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+22:02:13 INFO  : 'ps7_init' command is executed.
+22:02:13 INFO  : 'ps7_post_config' command is executed.
+22:02:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:14 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:02:14 INFO  : 'configparams force-mem-access 0' command is executed.
+22:02:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:02:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:14 INFO  : 'con' command is executed.
+22:02:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:02:14 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+22:06:23 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+22:06:28 INFO  : Disconnected from the channel tcfchan#5.
+22:06:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:06:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:06:52 INFO  : 'jtag frequency' command is executed.
+22:06:52 INFO  : Context for 'APU' is selected.
+22:06:52 INFO  : System reset is completed.
+22:06:55 INFO  : 'after 3000' command is executed.
+22:06:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:06:59 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+22:06:59 INFO  : Context for 'APU' is selected.
+22:07:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+22:07:05 INFO  : 'configparams force-mem-access 1' command is executed.
+22:07:05 INFO  : Context for 'APU' is selected.
+22:07:05 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+22:07:06 INFO  : 'ps7_init' command is executed.
+22:07:06 INFO  : 'ps7_post_config' command is executed.
+22:07:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:07:07 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:07:07 INFO  : 'configparams force-mem-access 0' command is executed.
+22:07:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:07:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:07:07 INFO  : 'con' command is executed.
+22:07:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:07:07 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+22:09:03 INFO  : Disconnected from the channel tcfchan#6.
+22:10:50 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+22:11:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa is already opened
+
+22:11:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:11:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:11:50 INFO  : 'jtag frequency' command is executed.
+22:11:50 INFO  : Context for 'APU' is selected.
+22:11:50 INFO  : System reset is completed.
+22:11:53 INFO  : 'after 3000' command is executed.
+22:11:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:11:58 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+22:11:58 INFO  : Context for 'APU' is selected.
+22:11:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+22:11:58 INFO  : 'configparams force-mem-access 1' command is executed.
+22:11:58 INFO  : Context for 'APU' is selected.
+22:11:58 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+22:11:59 INFO  : 'ps7_init' command is executed.
+22:11:59 INFO  : 'ps7_post_config' command is executed.
+22:12:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:12:01 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:12:01 INFO  : 'configparams force-mem-access 0' command is executed.
+22:12:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:12:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:12:01 INFO  : 'con' command is executed.
+22:12:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:12:01 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+22:13:21 INFO  : Disconnected from the channel tcfchan#8.
+22:13:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:13:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:13:53 INFO  : 'jtag frequency' command is executed.
+22:13:53 INFO  : Context for 'APU' is selected.
+22:13:53 INFO  : System reset is completed.
+22:13:56 INFO  : 'after 3000' command is executed.
+22:13:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:14:00 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+22:14:00 INFO  : Context for 'APU' is selected.
+22:14:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+22:14:09 INFO  : 'configparams force-mem-access 1' command is executed.
+22:14:09 INFO  : Context for 'APU' is selected.
+22:14:09 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+22:14:10 INFO  : 'ps7_init' command is executed.
+22:14:10 INFO  : 'ps7_post_config' command is executed.
+22:14:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:14:11 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:14:11 INFO  : 'configparams force-mem-access 0' command is executed.
+22:14:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:14:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:14:12 INFO  : 'con' command is executed.
+22:14:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:14:12 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+22:16:07 INFO  : Disconnected from the channel tcfchan#9.
+22:16:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:16:56 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:16:56 INFO  : 'jtag frequency' command is executed.
+22:16:56 INFO  : Context for 'APU' is selected.
+22:16:56 INFO  : System reset is completed.
+22:16:59 INFO  : 'after 3000' command is executed.
+22:17:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:17:02 ERROR : 'fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit' is cancelled.
+22:17:02 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: 'fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit' is cancelled.
+22:17:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+22:17:02 ERROR : 'fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit' is cancelled.
+22:17:05 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+22:17:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa is already opened
+
+22:18:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:18:03 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:18:03 INFO  : 'jtag frequency' command is executed.
+22:18:03 INFO  : Context for 'APU' is selected.
+22:18:03 INFO  : System reset is completed.
+22:18:06 INFO  : 'after 3000' command is executed.
+22:18:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:18:10 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+22:18:10 INFO  : Context for 'APU' is selected.
+22:18:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+22:18:11 INFO  : 'configparams force-mem-access 1' command is executed.
+22:18:11 INFO  : Context for 'APU' is selected.
+22:18:11 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+22:18:12 INFO  : 'ps7_init' command is executed.
+22:18:12 INFO  : 'ps7_post_config' command is executed.
+22:18:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:18:13 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:18:13 INFO  : 'configparams force-mem-access 0' command is executed.
+22:18:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:18:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:18:13 INFO  : 'con' command is executed.
+22:18:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:18:13 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+22:22:17 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+22:22:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa is already opened
+
+22:23:44 INFO  : Disconnected from the channel tcfchan#10.
+22:23:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:23:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:23:48 INFO  : 'jtag frequency' command is executed.
+22:23:48 INFO  : Context for 'APU' is selected.
+22:23:48 INFO  : System reset is completed.
+22:23:51 INFO  : 'after 3000' command is executed.
+22:23:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:23:56 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+22:23:56 INFO  : Context for 'APU' is selected.
+22:24:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+22:24:07 INFO  : 'configparams force-mem-access 1' command is executed.
+22:24:07 INFO  : Context for 'APU' is selected.
+22:24:07 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+22:24:08 INFO  : 'ps7_init' command is executed.
+22:24:08 INFO  : 'ps7_post_config' command is executed.
+22:24:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:24:09 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:24:09 INFO  : 'configparams force-mem-access 0' command is executed.
+22:24:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:24:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:24:10 INFO  : 'con' command is executed.
+22:24:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:24:10 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+22:25:37 INFO  : Disconnected from the channel tcfchan#13.
+22:25:40 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+22:26:02 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa is already opened
+
+22:26:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:26:35 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:26:35 INFO  : 'jtag frequency' command is executed.
+22:26:35 INFO  : Context for 'APU' is selected.
+22:26:35 INFO  : System reset is completed.
+22:26:38 INFO  : 'after 3000' command is executed.
+22:26:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:26:44 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+22:26:44 INFO  : Context for 'APU' is selected.
+22:26:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+22:26:44 INFO  : 'configparams force-mem-access 1' command is executed.
+22:26:44 INFO  : Context for 'APU' is selected.
+22:26:44 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+22:26:45 INFO  : 'ps7_init' command is executed.
+22:26:45 INFO  : 'ps7_post_config' command is executed.
+22:26:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:26:46 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:26:46 INFO  : 'configparams force-mem-access 0' command is executed.
+22:26:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:26:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:26:47 INFO  : 'con' command is executed.
+22:26:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:26:47 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+22:28:57 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+22:29:01 INFO  : Disconnected from the channel tcfchan#15.
+22:29:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:29:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:29:27 INFO  : 'jtag frequency' command is executed.
+22:29:28 INFO  : Context for 'APU' is selected.
+22:29:28 INFO  : System reset is completed.
+22:29:31 INFO  : 'after 3000' command is executed.
+22:29:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:29:35 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+22:29:35 INFO  : Context for 'APU' is selected.
+22:29:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+22:29:43 INFO  : 'configparams force-mem-access 1' command is executed.
+22:29:43 INFO  : Context for 'APU' is selected.
+22:29:43 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+22:29:45 INFO  : 'ps7_init' command is executed.
+22:29:45 INFO  : 'ps7_post_config' command is executed.
+22:29:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:29:46 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:29:46 INFO  : 'configparams force-mem-access 0' command is executed.
+22:29:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:29:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:29:46 INFO  : 'con' command is executed.
+22:29:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:29:46 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+22:32:17 INFO  : Disconnected from the channel tcfchan#16.
+22:32:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:32:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:32:18 INFO  : 'jtag frequency' command is executed.
+22:32:18 INFO  : Context for 'APU' is selected.
+22:32:18 INFO  : System reset is completed.
+22:32:21 INFO  : 'after 3000' command is executed.
+22:32:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:32:23 ERROR : 'fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit' is cancelled.
+22:32:23 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: 'fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit' is cancelled.
+22:32:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+22:32:23 ERROR : 'fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit' is cancelled.
+22:32:27 INFO  : Checking for BSP changes to sync application flags for project 'LBlock_cipher'...
+22:32:46 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa is already opened
+
+22:33:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:33:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351AD68CEA' is selected.
+22:33:10 INFO  : 'jtag frequency' command is executed.
+22:33:10 INFO  : Context for 'APU' is selected.
+22:33:10 INFO  : System reset is completed.
+22:33:13 INFO  : 'after 3000' command is executed.
+22:33:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}' command is executed.
+22:33:17 INFO  : FPGA configured successfully with bitstream "C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit"
+22:33:18 INFO  : Context for 'APU' is selected.
+22:33:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa'.
+22:33:18 INFO  : 'configparams force-mem-access 1' command is executed.
+22:33:18 INFO  : Context for 'APU' is selected.
+22:33:18 INFO  : Sourcing of 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl' is done.
+22:33:19 INFO  : 'ps7_init' command is executed.
+22:33:19 INFO  : 'ps7_post_config' command is executed.
+22:33:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:33:20 INFO  : The application 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:33:20 INFO  : 'configparams force-mem-access 0' command is executed.
+22:33:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}
+fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:33:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:33:20 INFO  : 'con' command is executed.
+22:33:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:33:20 INFO  : Launch script is exported to file 'C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\.sdk\launch_scripts\single_application_debug\systemdebugger_lblock_cipher_system_standalone.tcl'
+22:33:46 INFO  : Disconnected from the channel tcfchan#17.

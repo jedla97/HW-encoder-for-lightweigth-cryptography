@@ -22,14 +22,12 @@ unsigned int key_to_integer(int lenght) {
 	return string_to_integer;
 }
 
-unsigned int generate_inicialization_vector(int lenght) {
+unsigned int generate_inicialization_vector() {
 	XGpio input;
-	u32 data_out;
+	unsigned int data_out;
 	XGpio_Initialize(&input, XPAR_AXI_GPIO_1_DEVICE_ID);
 	XGpio_SetDataDirection(&input, 1, 0xffffffff);
 	data_out = XGpio_DiscreteRead(&input, 1);
-	//data_out = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 28);
-	xil_printf("%08X\n", data_out);
 	return data_out;
 }
 
