@@ -1,27 +1,54 @@
 Nothing to build in platform 'LBlock'
 
-23:16:43 **** Incremental Build of configuration Debug for project LBlock_cipher ****
+22:32:34 **** Incremental Build of configuration Debug for project LBlock_cipher ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/main.c'
+'Building file: ../src/sdcard_operations.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:48:15: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
-   48 |    xil_printf(cipher_text());
-      |               ^~~~~~~~~~~~~
-      |               |
-      |               int
-In file included from C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bspinclude/include/xil_io.h:41,
-                 from ../src/generation.h:3,
-                 from ../src/main.c:1:
-C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bspinclude/include/xil_printf.h:39:31: note: expected 'const char8 *' {aka 'const char *'} but argument is of type 'int'
-   39 | void xil_printf( const char8 *ctrl1, ...);
-      |                  ~~~~~~~~~~~~~^~~~~
-'Finished building: ../src/main.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard_operations.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bspinclude/include -MMD -MP -MF"src/sdcard_operations.d" -MT"src/sdcard_operations.o" -o "src/sdcard_operations.o" "../src/sdcard_operations.c"
+../src/sdcard_operations.c: In function 'cipher_text':
+../src/sdcard_operations.c:249:9: warning: unused variable 'data_writer2' [-Wunused-variable]
+  249 |  char * data_writer2;
+      |         ^~~~~~~~~~~~
+../src/sdcard_operations.c:248:9: warning: unused variable 'data_writer1' [-Wunused-variable]
+  248 |  char * data_writer1;
+      |         ^~~~~~~~~~~~
+../src/sdcard_operations.c:247:6: warning: unused variable 'data_key3' [-Wunused-variable]
+  247 |  u32 data_key3;
+      |      ^~~~~~~~~
+../src/sdcard_operations.c:246:6: warning: unused variable 'data_key2' [-Wunused-variable]
+  246 |  u32 data_key2;
+      |      ^~~~~~~~~
+../src/sdcard_operations.c:245:6: warning: unused variable 'data_key1' [-Wunused-variable]
+  245 |  u32 data_key1;
+      |      ^~~~~~~~~
+../src/sdcard_operations.c:242:6: warning: unused variable 'data_in_read2' [-Wunused-variable]
+  242 |  u32 data_in_read2;
+      |      ^~~~~~~~~~~~~
+../src/sdcard_operations.c:241:6: warning: unused variable 'data_in_read1' [-Wunused-variable]
+  241 |  u32 data_in_read1;
+      |      ^~~~~~~~~~~~~
+At top level:
+../src/sdcard_operations.c:14:14: warning: 'SD_Text_File' defined but not used [-Wunused-variable]
+   14 | static char *SD_Text_File;
+      |              ^~~~~~~~~~~~
+../src/sdcard_operations.c:13:13: warning: 'TextName' defined but not used [-Wunused-variable]
+   13 | static char TextName[32] = "FileName.txt";
+      |             ^~~~~~~~
+../src/sdcard_operations.c:12:14: warning: 'SD_File' defined but not used [-Wunused-variable]
+   12 | static char *SD_File;
+      |              ^~~~~~~
+../src/sdcard_operations.c:11:13: warning: 'FileName' defined but not used [-Wunused-variable]
+   11 | static char FileName[32] = "Testing.bin";
+      |             ^~~~~~~~
+../src/sdcard_operations.c: In function 'cipher_text_init':
+../src/sdcard_operations.c:50:5: warning: 'Status' is used uninitialized in this function [-Wuninitialized]
+   50 |  if (Status != XST_SUCCESS) {
+      |     ^
+'Finished building: ../src/sdcard_operations.c'
 ' '
 'Building target: LBlock_cipher.elf'
 'Invoking: ARM v7 gcc linker'
@@ -31,13 +58,13 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size LBlock_cipher.elf  |tee "LBlock_cipher.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  56388	   1280	  47904	 105572	  19c64	LBlock_cipher.elf
+  57796	   1280	  48512	 107588	  1a444	LBlock_cipher.elf
 'Finished building: LBlock_cipher.elf.size'
 ' '
-23:16:48 **** Incremental Build of configuration Debug for project LBlock_cipher_system ****
+22:32:39 **** Incremental Build of configuration Debug for project LBlock_cipher_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 61397 C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/LBlock.xpfm standalone_domain C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher_system/Debug/system.bif
+generate_system_bif.bat 55897 C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/LBlock.xpfm standalone_domain C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher_system/Debug/system.bif
 sdcard_gen --xpfm C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/LBlock.xpfm --sys_config LBlock --bif C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher_system/Debug/system.bif --bitstream C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit --elf C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf,ps7_cortexa9_0
 creating BOOT.BIN using C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
 Running C:/Xilinx/Vitis/2020.1/bin/bootgen  -image C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
