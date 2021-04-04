@@ -417,7 +417,7 @@ int cipher_text_OFB() {
 		init_vector1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
 		init_vector2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
 
-		xil_printf("%ul	%ul\n", init_vector1, init_vector2);
+		xil_printf("%u	%u\n", init_vector1, init_vector2);
 
 		xor_data_with_init_vector(init_vector1, init_vector2, plaintext1,
 				plaintext2);

@@ -9277,3 +9277,3475 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-35: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2021-04-04 22:33:46.371
 !MESSAGE XSCT command with result: [disconnect tcfchan#17], Result: [null, ]. Thread: Thread-1118
+!SESSION 2021-04-05 00:15:27.078 -----------------------------------------------
+eclipse.buildId=2020.1
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=cs_CZ
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2021-04-05 00:15:42.081
+!MESSAGE Invalid preference category path: com.xilinx.sdk.ui.preferences.page (bundle: com.xilinx.sdk.ui.customize, page: com.xilinx.sdk.ui.customize.sdkCustomizationPreferences)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-04-05 00:15:43.958
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-04-05 00:15:43.967
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-04-05 00:15:43.968
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.ui 4 4 2021-04-05 00:15:44.361
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:15:53.412
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:15:53.427
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:15:53.435
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:15:53.630
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:15:53.634
+!MESSAGE XSCT Command: [setws C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:15:53.663
+!MESSAGE XSCT command with result: [setws C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace], Result: [null, ]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:16:12.621
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:16:15.236
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:16:15.238
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:16:15.240
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2020.1/data]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:27:50.137
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa], Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:27:55.387
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa], Result: [null, ]. Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:27:55.395
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss ], Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:27:55.407
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:27:55.409
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:27:55.418
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-04-05 00:27:55.440
+!MESSAGE Generating MD5 hash for file: C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\LBlock\export\LBlock\sw\LBlock\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:27:55.448
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:27:55.454
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:27:57.436
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa], Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:27:57.479
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa], Result: [null, {"LBlock_wrapper_0": {"hier_name": "LBlock_wrapper_0",
+"type": "LBlock_wrapper",
+"version": "4.0",
+"ip_type": "PERIPHERAL",
+},
+"LFSR32bit_0": {"hier_name": "LFSR32bit_0",
+"type": "LFSR32bit",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_1": {"hier_name": "axi_gpio_1",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_125M": {"hier_name": "rst_ps7_0_125M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-8: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:53.874
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:53.936
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Thu Apr  1 22:51:44 2021",
+"vivado_version": "2020.1",
+"part": "xc7z020clg400-1",
+}]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.161
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.279
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "667",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "125",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.295
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.351
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0], Result: [null, {"LBlock_wrapper_0": {},
+"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616476,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616488,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616480,
+},
+},
+"axi_gpio_1": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681728,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681732,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681736,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681740,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682012,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682024,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682016,
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.356
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.436
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_1_S_AXI": {"name": "axi_gpio_1",
+"base": "0x41210000",
+"high": "0x4121FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"LBlock_wrapper_0_S00_AXI": {"name": "LBlock_wrapper_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.440
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.539
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.541
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.701
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.703
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.739
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.802
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.842
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.844
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.852
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.855
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.865
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.867
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.885
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.911
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.952
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1], Result: [null, {"LBlock_wrapper_0": {},
+"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616476,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616488,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616480,
+},
+},
+"axi_gpio_1": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681728,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681732,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681736,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092681740,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682012,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682024,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092682016,
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:54.967
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.038
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_1_S_AXI": {"name": "axi_gpio_1",
+"base": "0x41210000",
+"high": "0x4121FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"LBlock_wrapper_0_S00_AXI": {"name": "LBlock_wrapper_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.040
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.052
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.054
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.118
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.120
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.129
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.131
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.138
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.139
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.144
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.146
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.151
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.154
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.159
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa ps7_cortexa9_0], Result: [null, LBlock_wrapper_0 axi_gpio_0 axi_gpio_1 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.170
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa bit], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.303
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa bit], Result: [null, LBlock_design.bit]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:55.310
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:28:57.770
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:28:58.099
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.154
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.158
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.877
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.882
+!MESSAGE XSCT Command: [version -server], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.926
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.927
+!MESSAGE XSCT Command: [version], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.931
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.937
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.947
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.949
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:58.979
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.115
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.125
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.130
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.173
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.177
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.192
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.196
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.269
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.274
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.287
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.295
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.429
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.431
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.444
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.521
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.555
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.557
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.568
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.570
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.595
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.596
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AD68CEA" && level == 0}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.619
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AD68CEA" && level == 0}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.628
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.631
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.636
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.694
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.763
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.880
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:28:59.980
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:02.994
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:04.289
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:04.332
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:04.344
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:04.462
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:04.473
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:04.703
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:04.739
+!MESSAGE XSCT Command: [fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:08.727
+!MESSAGE XSCT command with result: [fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:08.918
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:09.050
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:09.134
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:09.382
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_0]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:09.427
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:09.460
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:09.484
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:09.506
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:09.508
+!MESSAGE XSCT Command: [source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:09.515
+!MESSAGE XSCT command with result: [source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:09.518
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:10.769
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:10.771
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:10.787
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:10.801
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:10.903
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:10.909
+!MESSAGE XSCT Command: [dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:11.713
+!MESSAGE XSCT command with result: [dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:11.716
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:11.924
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:12.069
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:12.135
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:12.144
+!MESSAGE XSCT Command: [con], Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:12.282
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:45.842
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-167
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:45.848
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-167
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.169
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.179
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.181
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.534
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.536
+!MESSAGE XSCT Command: [version -server], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.542
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.559
+!MESSAGE XSCT Command: [version], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.586
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.593
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.643
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.645
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.675
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.681
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.691
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.761
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.787
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.803
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.817
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.819
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.853
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.855
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.870
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.872
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.910
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.911
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.949
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.951
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.997
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:50.998
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.008
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.013
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.040
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.042
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AD68CEA" && level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.081
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AD68CEA" && level == 0}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.083
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.087
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.194
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.225
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.236
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.327
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:51.329
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:54.342
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:54.405
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:54.467
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:54.469
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:54.505
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:54.507
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:54.566
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:54.568
+!MESSAGE XSCT Command: [fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.616
+!MESSAGE XSCT command with result: [fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.633
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.647
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.656
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.679
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_0]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.700
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.721
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.723
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.739
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.767
+!MESSAGE XSCT Command: [source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.775
+!MESSAGE XSCT command with result: [source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:58.777
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:59.791
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:59.831
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:59.873
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:59.875
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:59.890
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:29:59.895
+!MESSAGE XSCT Command: [dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:30:00.664
+!MESSAGE XSCT command with result: [dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:30:00.878
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:30:01.191
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:30:02.639
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:30:02.996
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:30:02.998
+!MESSAGE XSCT Command: [con], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:30:03.245
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:31:17.971
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-241
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:31:17.978
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-241
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:31:20.158
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss ], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:31:20.287
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:31:20.289
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:31:20.347
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-04-05 00:31:20.417
+!MESSAGE Generating MD5 hash for file: C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\LBlock\export\LBlock\sw\LBlock\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:31:20.424
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:31:20.450
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:47.788
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:33:49.991
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:33:50.139
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:33:50.140
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.186
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.195
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.626
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.628
+!MESSAGE XSCT Command: [version -server], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.631
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.632
+!MESSAGE XSCT Command: [version], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.634
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.636
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.647
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.733
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.757
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.759
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.772
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.844
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.867
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.922
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.932
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.938
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.971
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.973
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.982
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:50.984
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.021
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.032
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.046
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.058
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.097
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.099
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.108
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.124
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.148
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.165
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AD68CEA" && level == 0}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.188
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AD68CEA" && level == 0}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.276
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.278
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.285
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.341
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.343
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.452
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:51.476
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:54.487
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:54.533
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:54.541
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:54.543
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:54.569
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:54.571
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:54.649
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:54.651
+!MESSAGE XSCT Command: [fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.566
+!MESSAGE XSCT command with result: [fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.729
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.778
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.790
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.829
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_0]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.832
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.842
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.846
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.863
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.878
+!MESSAGE XSCT Command: [source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.885
+!MESSAGE XSCT command with result: [source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:58.889
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:59.925
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:59.927
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:59.966
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:59.968
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:59.980
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:33:59.986
+!MESSAGE XSCT Command: [dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:34:00.733
+!MESSAGE XSCT command with result: [dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:34:00.735
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:34:00.820
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:34:00.896
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:34:00.980
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:34:00.982
+!MESSAGE XSCT Command: [con], Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:34:01.018
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-8: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:36:38.987
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-321
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:36:38.994
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [null, ]. Thread: Thread-321
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:45:19.137
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:45:19.169
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:45:19.225
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:45:19.239
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-04-05 00:45:19.240
+!MESSAGE Generating MD5 hash for file: C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\LBlock\export\LBlock\sw\LBlock\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:45:19.243
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:45:19.369
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:45.550
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:49:48.136
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:49:48.166
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:49:48.184
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:49:48.185
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:49:48.187
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:49:48.189
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:49:48.191
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-04-05 00:49:48.193
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:48.324
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#12]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:48.390
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.138
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.174
+!MESSAGE XSCT Command: [version -server], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.176
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.178
+!MESSAGE XSCT Command: [version], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.180
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.181
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.195
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.198
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.242
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.251
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.263
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.264
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.303
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.305
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.320
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.337
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.379
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.381
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.398
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.400
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.445
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.446
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.459
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.470
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.519
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.521
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.535
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.536
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.600
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.602
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AD68CEA" && level == 0}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.686
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AD68CEA" && level == 0}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.702
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.722
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:52.739
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:53.595
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:53.619
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:53.757
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:53.776
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:56.791
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:56.835
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:56.846
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:56.847
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:56.895
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:57.027
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:57.102
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:49:57.105
+!MESSAGE XSCT Command: [fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.090
+!MESSAGE XSCT command with result: [fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.143
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.206
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.208
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.237
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_0]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.262
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.267
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.273
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.294
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.303
+!MESSAGE XSCT Command: [source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.310
+!MESSAGE XSCT command with result: [source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:01.314
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:02.272
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:02.515
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:02.582
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:02.592
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:02.607
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:02.609
+!MESSAGE XSCT Command: [dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:03.419
+!MESSAGE XSCT command with result: [dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:03.422
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:03.518
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:03.600
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:03.641
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:03.643
+!MESSAGE XSCT Command: [con], Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:03.707
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-9: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:37.658
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss ], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:37.698
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:37.700
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:37.785
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-04-05 00:50:37.787
+!MESSAGE Generating MD5 hash for file: C:\Users\Jakub\Desktop\vut_fekt\bajkalarka\zaloha\GitHub\HW-encoder-for-lightweigth-cryptography\workspace\LBlock\export\LBlock\sw\LBlock\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:37.789
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:37.809
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-11: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:48.547
+!MESSAGE XSCT Command: [disconnect tcfchan#12], Thread: Thread-404
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:48.569
+!MESSAGE XSCT command with result: [disconnect tcfchan#12], Result: [null, ]. Thread: Thread-404
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:48.612
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:48.727
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#13]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:48.850
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:48.952
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:48.954
+!MESSAGE XSCT Command: [version -server], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.189
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.191
+!MESSAGE XSCT Command: [version], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.197
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.199
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.257
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.258
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.317
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.319
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.340
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.342
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.410
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.412
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.448
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.449
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.510
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.512
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.568
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.570
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.623
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.629
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.643
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.644
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.687
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.689
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.698
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.700
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.761
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.763
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AD68CEA" && level == 0}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.830
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AD68CEA" && level == 0}], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.837
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.840
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.857
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.898
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:49.906
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:50.015
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:50.017
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:53.024
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:53.064
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:53.079
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AD68CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:53.088
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:53.123
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:53.132
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:53.204
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AD68CEA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AD68CEA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:53.206
+!MESSAGE XSCT Command: [fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:57.151
+!MESSAGE XSCT command with result: [fpga -file C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:57.231
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:57.413
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:57.427
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:57.545
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/hw/LBlock_design.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_0]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:57.546
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:57.551
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:57.558
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:57.596
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:57.608
+!MESSAGE XSCT Command: [source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:58.598
+!MESSAGE XSCT command with result: [source C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:50:58.602
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:00.689
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:00.834
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:00.939
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:00.941
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:01.024
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:01.027
+!MESSAGE XSCT Command: [dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:02.166
+!MESSAGE XSCT command with result: [dow C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:02.168
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:02.261
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:02.322
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:02.594
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:02.596
+!MESSAGE XSCT Command: [con], Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:02.741
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_LBlock_cipher_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:30.138
+!MESSAGE XSCT Command: [disconnect tcfchan#13], Thread: Thread-454
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-04-05 00:51:30.148
+!MESSAGE XSCT command with result: [disconnect tcfchan#13], Result: [null, ]. Thread: Thread-454
