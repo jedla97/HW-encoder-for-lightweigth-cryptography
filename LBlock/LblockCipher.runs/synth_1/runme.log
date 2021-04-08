@@ -10,14 +10,13 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1060.816 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/ip_repo/LBlock_wrapper_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.cache/ip 
-add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1060.816 ; gain = 0.000
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1061.004 ; gain = 0.000
 Command: synth_design -top design_1_wrapper -part xc7z020clg400-1 -gated_clock_conversion auto
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
@@ -25,112 +24,111 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1196
+INFO: [Synth 8-7075] Helper process launched with PID 45756
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1083.363 ; gain = 22.547
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1083.477 ; gain = 22.473
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-2488] overwriting existing primary unit lfsr32bit [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LFSR32bit.vhd:34]
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:41]
-INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1330' bound to instance 'design_1_i' of component 'design_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:69]
-INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1361]
-INFO: [Synth 8-3491] module 'design_1_LBlock_wrapper_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:56' bound to instance 'LBlock_wrapper_0' of component 'design_1_LBlock_wrapper_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1679]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:42]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1937' bound to instance 'design_1_i' of component 'design_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1969]
+INFO: [Synth 8-3491] module 'design_1_LBlock_wrapper_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:56' bound to instance 'LBlock_wrapper' of component 'design_1_LBlock_wrapper_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2340]
 INFO: [Synth 8-638] synthesizing module 'design_1_LBlock_wrapper_0_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:82]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'LBlock_wrapper_v1_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0.vhd:5' bound to instance 'U0' of component 'LBlock_wrapper_v1_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:148]
-INFO: [Synth 8-638] synthesizing module 'LBlock_wrapper_v1_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0.vhd:49]
+INFO: [Synth 8-3491] module 'LBlock_wrapper_v1_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0.vhd:5' bound to instance 'U0' of component 'LBlock_wrapper_v1_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'LBlock_wrapper_v1_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0.vhd:49]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'LBlock_wrapper_v1_0_S00_AXI' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:6' bound to instance 'LBlock_wrapper_v1_0_S00_AXI_inst' of component 'LBlock_wrapper_v1_0_S00_AXI' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'LBlock_wrapper_v1_0_S00_AXI' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-3491] module 'LBlock_wrapper_v1_0_S00_AXI' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:6' bound to instance 'LBlock_wrapper_v1_0_S00_AXI_inst' of component 'LBlock_wrapper_v1_0_S00_AXI' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'LBlock_wrapper_v1_0_S00_AXI' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:87]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:393]
-INFO: [Synth 8-3491] module 'LBlockTOP' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LBlockTOP.vhd:35' bound to instance 'IP' of component 'LBlockTOP' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:435]
-INFO: [Synth 8-638] synthesizing module 'LBlockTOP' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LBlockTOP.vhd:45]
-INFO: [Synth 8-3491] module 'LBlockLoop' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LBlockLoop.vhd:35' bound to instance 'LBL' of component 'LBlockLoop' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LBlockTOP.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'LBlockLoop' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LBlockLoop.vhd:46]
-INFO: [Synth 8-3491] module 'RoundFunction' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/RoundFunction.vhd:36' bound to instance 'RF' of component 'RoundFunction' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LBlockLoop.vhd:66]
-INFO: [Synth 8-638] synthesizing module 'RoundFunction' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/RoundFunction.vhd:45]
-INFO: [Synth 8-3491] module 'RoundKey' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/RoundKey.vhd:34' bound to instance 'RK' of component 'RoundKey' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/RoundFunction.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'RoundKey' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/RoundKey.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'RoundKey' (1#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/RoundKey.vhd:42]
-INFO: [Synth 8-3491] module 'Sbox' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:34' bound to instance 'Sb' of component 'Sbox' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/RoundFunction.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'Sbox' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:41]
-INFO: [Synth 8-3491] module 'Sbox0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox0.vhd:36' bound to instance 'S0' of component 'Sbox0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'Sbox0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox0.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox0.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Sbox0' (2#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox0.vhd:43]
-INFO: [Synth 8-3491] module 'Sbox1' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox1.vhd:36' bound to instance 'S1' of component 'Sbox1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'Sbox1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox1.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox1.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Sbox1' (3#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox1.vhd:43]
-INFO: [Synth 8-3491] module 'Sbox2' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox2.vhd:36' bound to instance 'S2' of component 'Sbox2' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:113]
-INFO: [Synth 8-638] synthesizing module 'Sbox2' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox2.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox2.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Sbox2' (4#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox2.vhd:43]
-INFO: [Synth 8-3491] module 'Sbox3' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox3.vhd:36' bound to instance 'S3' of component 'Sbox3' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:119]
-INFO: [Synth 8-638] synthesizing module 'Sbox3' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox3.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox3.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Sbox3' (5#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox3.vhd:43]
-INFO: [Synth 8-3491] module 'Sbox4' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox4.vhd:36' bound to instance 'S4' of component 'Sbox4' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:125]
-INFO: [Synth 8-638] synthesizing module 'Sbox4' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox4.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox4.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'Sbox4' (6#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox4.vhd:43]
-INFO: [Synth 8-3491] module 'Sbox5' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox5.vhd:36' bound to instance 'S5' of component 'Sbox5' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:131]
-INFO: [Synth 8-638] synthesizing module 'Sbox5' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox5.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox5.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Sbox5' (7#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox5.vhd:43]
-INFO: [Synth 8-3491] module 'Sbox6' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox6.vhd:36' bound to instance 'S6' of component 'Sbox6' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:137]
-INFO: [Synth 8-638] synthesizing module 'Sbox6' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox6.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox6.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Sbox6' (8#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox6.vhd:43]
-INFO: [Synth 8-3491] module 'Sbox7' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox7.vhd:36' bound to instance 'S7' of component 'Sbox7' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'Sbox7' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox7.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox7.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Sbox7' (9#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox7.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'Sbox' (10#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox.vhd:41]
-INFO: [Synth 8-3491] module 'DiffusionFunction' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/DiffusionFunction.vhd:35' bound to instance 'DF' of component 'DiffusionFunction' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/RoundFunction.vhd:92]
-INFO: [Synth 8-638] synthesizing module 'DiffusionFunction' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/DiffusionFunction.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'DiffusionFunction' (11#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/DiffusionFunction.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'RoundFunction' (12#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/RoundFunction.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'LBlockLoop' (13#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LBlockLoop.vhd:46]
-INFO: [Synth 8-3491] module 'KeySchedule' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/KeySchedule.vhd:34' bound to instance 'KS' of component 'KeySchedule' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LBlockTOP.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'KeySchedule' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/KeySchedule.vhd:43]
-INFO: [Synth 8-3491] module 'Sbox9' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox9.vhd:36' bound to instance 'S9' of component 'Sbox9' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/KeySchedule.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'Sbox9' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox9.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox9.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Sbox9' (14#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox9.vhd:43]
-INFO: [Synth 8-3491] module 'Sbox8' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox8.vhd:36' bound to instance 'S8' of component 'Sbox8' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/KeySchedule.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'Sbox8' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox8.vhd:43]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox8.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'Sbox8' (15#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/Sbox8.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'KeySchedule' (16#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/KeySchedule.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'LBlockTOP' (17#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LBlockTOP.vhd:45]
-INFO: [Synth 8-3491] module 'LFSR32bit' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LFSR32bit.vhd:34' bound to instance 'VECTOR' of component 'LFSR32bit' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:442]
-INFO: [Synth 8-638] synthesizing module 'LFSR32bit' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LFSR32bit.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'LFSR32bit' (18#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LFSR32bit.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'LBlock_wrapper_v1_0_S00_AXI' (19#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:87]
-INFO: [Synth 8-256] done synthesizing module 'LBlock_wrapper_v1_0' (20#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'design_1_LBlock_wrapper_0_0' (21#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:82]
-INFO: [Synth 8-3491] module 'design_1_LFSR32bit_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:56' bound to instance 'LFSR32bit_0' of component 'design_1_LFSR32bit_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1703]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:383]
+INFO: [Synth 8-3491] module 'LBlockTOP' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/LBlockTOP.vhd:35' bound to instance 'IP' of component 'LBlockTOP' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:425]
+INFO: [Synth 8-638] synthesizing module 'LBlockTOP' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/LBlockTOP.vhd:45]
+INFO: [Synth 8-3491] module 'LBlockLoop' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/LBlockLoop.vhd:35' bound to instance 'LBL' of component 'LBlockLoop' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/LBlockTOP.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'LBlockLoop' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/LBlockLoop.vhd:46]
+INFO: [Synth 8-3491] module 'RoundFunction' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/RoundFunction.vhd:36' bound to instance 'RF' of component 'RoundFunction' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/LBlockLoop.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'RoundFunction' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/RoundFunction.vhd:45]
+INFO: [Synth 8-3491] module 'RoundKey' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/RoundKey.vhd:34' bound to instance 'RK' of component 'RoundKey' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/RoundFunction.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'RoundKey' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/RoundKey.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'RoundKey' (1#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/RoundKey.vhd:42]
+INFO: [Synth 8-3491] module 'Sbox' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:34' bound to instance 'Sb' of component 'Sbox' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/RoundFunction.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Sbox' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:41]
+INFO: [Synth 8-3491] module 'Sbox0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox0.vhd:36' bound to instance 'S0' of component 'Sbox0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'Sbox0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox0.vhd:43]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox0.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Sbox0' (2#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox0.vhd:43]
+INFO: [Synth 8-3491] module 'Sbox1' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox1.vhd:36' bound to instance 'S1' of component 'Sbox1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'Sbox1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox1.vhd:43]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox1.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Sbox1' (3#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox1.vhd:43]
+INFO: [Synth 8-3491] module 'Sbox2' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox2.vhd:36' bound to instance 'S2' of component 'Sbox2' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'Sbox2' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox2.vhd:43]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox2.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Sbox2' (4#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox2.vhd:43]
+INFO: [Synth 8-3491] module 'Sbox3' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox3.vhd:36' bound to instance 'S3' of component 'Sbox3' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'Sbox3' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox3.vhd:43]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox3.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Sbox3' (5#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox3.vhd:43]
+INFO: [Synth 8-3491] module 'Sbox4' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox4.vhd:36' bound to instance 'S4' of component 'Sbox4' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'Sbox4' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox4.vhd:43]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox4.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Sbox4' (6#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox4.vhd:43]
+INFO: [Synth 8-3491] module 'Sbox5' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox5.vhd:36' bound to instance 'S5' of component 'Sbox5' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'Sbox5' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox5.vhd:43]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox5.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Sbox5' (7#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox5.vhd:43]
+INFO: [Synth 8-3491] module 'Sbox6' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox6.vhd:36' bound to instance 'S6' of component 'Sbox6' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'Sbox6' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox6.vhd:43]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox6.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Sbox6' (8#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox6.vhd:43]
+INFO: [Synth 8-3491] module 'Sbox7' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox7.vhd:36' bound to instance 'S7' of component 'Sbox7' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'Sbox7' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox7.vhd:43]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox7.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Sbox7' (9#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox7.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Sbox' (10#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox.vhd:41]
+INFO: [Synth 8-3491] module 'DiffusionFunction' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/DiffusionFunction.vhd:35' bound to instance 'DF' of component 'DiffusionFunction' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/RoundFunction.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'DiffusionFunction' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/DiffusionFunction.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DiffusionFunction' (11#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/DiffusionFunction.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'RoundFunction' (12#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/RoundFunction.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'LBlockLoop' (13#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/LBlockLoop.vhd:46]
+INFO: [Synth 8-3491] module 'KeySchedule' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/KeySchedule.vhd:34' bound to instance 'KS' of component 'KeySchedule' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/LBlockTOP.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'KeySchedule' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/KeySchedule.vhd:43]
+INFO: [Synth 8-3491] module 'Sbox9' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox9.vhd:36' bound to instance 'S9' of component 'Sbox9' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/KeySchedule.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'Sbox9' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox9.vhd:43]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox9.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Sbox9' (14#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox9.vhd:43]
+INFO: [Synth 8-3491] module 'Sbox8' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox8.vhd:36' bound to instance 'S8' of component 'Sbox8' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/KeySchedule.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'Sbox8' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox8.vhd:43]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox8.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Sbox8' (15#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/Sbox8.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'KeySchedule' (16#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/KeySchedule.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'LBlockTOP' (17#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/src/LBlockTOP.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'LBlock_wrapper_v1_0_S00_AXI' (18#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'LBlock_wrapper_v1_0' (19#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_LBlock_wrapper_0_0' (20#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:82]
+INFO: [Synth 8-3491] module 'design_1_LFSR32bit_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:56' bound to instance 'LFSR32bit' of component 'design_1_LFSR32bit_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2364]
 INFO: [Synth 8-638] synthesizing module 'design_1_LFSR32bit_0_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:63]
-WARNING: [Synth 8-5640] Port 'reset' is missing in component declaration [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:66]
-INFO: [Synth 8-3491] module 'LFSR32bit' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8297/src/LFSR32bit.vhd:34' bound to instance 'U0' of component 'LFSR32bit' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:85]
+INFO: [Synth 8-3491] module 'LFSR32bit' declared at 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/new/LFSR32bit.vhd:34' bound to instance 'U0' of component 'LFSR32bit' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'LFSR32bit' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/new/LFSR32bit.vhd:40]
+WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/new/LFSR32bit.vhd:46]
+WARNING: [Synth 8-614] signal 'xnor_tap' is read in the process but is not in the sensitivity list [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/new/LFSR32bit.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'LFSR32bit' (21#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/new/LFSR32bit.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'design_1_LFSR32bit_0_0' (22#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:63]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:59' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1708]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:59' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2369]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
-	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 6 - type: integer 
 	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
 	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
 	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
-	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
 	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
 	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
@@ -143,11 +141,11 @@ INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/Jakub/Desktop/vut_f
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
-	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 6 - type: integer 
 	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
 	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
 	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
-	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
 	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
 	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
@@ -210,14 +208,14 @@ INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/Jakub/Desktop/vut_
 	Parameter C_DW bound to: 32 - type: integer 
 	Parameter C_AW bound to: 9 - type: integer 
 	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
-	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 6 - type: integer 
 	Parameter C_MAX_GPIO_WIDTH bound to: 4 - type: integer 
 	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
 	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
 	Parameter C_IS_DUAL bound to: 0 - type: integer 
 	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
-	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
 	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
 	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
@@ -283,7 +281,7 @@ INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (27#1) [c:/Users/Jakub/D
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (28#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (29#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (30#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:84]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:59' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1731]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:59' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2392]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:86]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -615,7 +613,106 @@ INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (30#1) [
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized0' (30#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized1' (30#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_1_0' (31#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:86]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1756]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_2_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:59' bound to instance 'axi_gpio_2' of component 'design_1_axi_gpio_2_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2417]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_2_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:84]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 6 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio__parameterized3' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 6 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core__parameterized1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+	Parameter C_DW bound to: 32 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 6 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_GPIO_WIDTH bound to: 6 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 0 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 6 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (31#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized1' (31#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized3' (31#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_2_0' (32#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:84]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2440]
 INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
@@ -675,12 +772,12 @@ INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_sys
 	Parameter C_GP0_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
 	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (32#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (33#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:730]
-INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (33#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:730]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (34#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:730]
 INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:62027]
-INFO: [Synth 8-6155] done synthesizing module 'PS7' (34#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:62027]
-INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (35#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (35#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:62027]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (36#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
 WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
 WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
 WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
@@ -695,16 +792,20 @@ WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_proc
 WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
 WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
 WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (36#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
-INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:749]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (37#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:999]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (37#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (38#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:61]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:168]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (38#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (39#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:168]
 INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_14WQB4R' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:269]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_14WQB4R' (39#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:269]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:393]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:576]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_14WQB4R' (40#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:269]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_YFYJ3U' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:370]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_YFYJ3U' (41#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:370]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_17KQ732' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:475]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_17KQ732' (42#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:475]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:605]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:788]
 INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_axi_protocol_converter' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -750,20 +851,20 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_cmd
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_incr_cmd' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_incr_cmd' (40#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_incr_cmd' (43#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_wrap_cmd' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_wrap_cmd' (41#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_cmd_translator' (42#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_wrap_cmd' (44#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_cmd_translator' (45#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_wr_cmd_fsm' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
 	Parameter SM_IDLE bound to: 2'b00 
 	Parameter SM_CMD_EN bound to: 2'b01 
 	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
 	Parameter SM_DONE_WAIT bound to: 2'b11 
 INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_wr_cmd_fsm' (43#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_aw_channel' (44#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_wr_cmd_fsm' (46#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_aw_channel' (47#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_b_channel' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter LP_RESP_OKAY bound to: 2'b00 
@@ -784,7 +885,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_sim
 	Parameter C_EMPTY_PRE bound to: 2'b00 
 	Parameter C_FULL bound to: 2'b10 
 	Parameter C_FULL_PRE bound to: 2'b01 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_simple_fifo' (45#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_simple_fifo' (48#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_simple_fifo__parameterized0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 	Parameter C_WIDTH bound to: 2 - type: integer 
 	Parameter C_AWIDTH bound to: 2 - type: integer 
@@ -793,8 +894,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_sim
 	Parameter C_EMPTY_PRE bound to: 2'b00 
 	Parameter C_FULL bound to: 2'b10 
 	Parameter C_FULL_PRE bound to: 2'b01 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_simple_fifo__parameterized0' (45#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_b_channel' (46#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_simple_fifo__parameterized0' (48#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_b_channel' (49#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_ar_channel' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -804,8 +905,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_rd_
 	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
 	Parameter SM_DONE bound to: 2'b11 
 INFO: [Synth 8-226] default block is never used [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_rd_cmd_fsm' (47#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_ar_channel' (48#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_rd_cmd_fsm' (50#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_ar_channel' (51#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_r_channel' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
@@ -823,7 +924,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_sim
 	Parameter C_EMPTY_PRE bound to: 5'b00000 
 	Parameter C_FULL bound to: 5'b11110 
 	Parameter C_FULL_PRE bound to: 5'b11010 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_simple_fifo__parameterized1' (48#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_simple_fifo__parameterized1' (51#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_simple_fifo__parameterized2' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 	Parameter C_WIDTH bound to: 13 - type: integer 
 	Parameter C_AWIDTH bound to: 5 - type: integer 
@@ -832,8 +933,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_21_b2s_sim
 	Parameter C_EMPTY_PRE bound to: 5'b00000 
 	Parameter C_FULL bound to: 5'b11110 
 	Parameter C_FULL_PRE bound to: 5'b11010 
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_simple_fifo__parameterized2' (48#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_r_channel' (49#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_simple_fifo__parameterized2' (51#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s_r_channel' (52#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axi_register_slice' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
@@ -1038,7 +1139,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' 
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (50#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (53#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
 INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
@@ -1131,28 +1232,28 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' 
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (51#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (54#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 66 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice' (52#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice' (55#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 49 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized0' (52#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized0' (55#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 14 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized1' (52#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized1' (55#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized2' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 47 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized2' (52#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axi_register_slice' (53#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized2' (55#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axi_register_slice' (56#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
 WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_21_axi_register_slice' is unconnected for instance 'SI_REG' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
 WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_21_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axi_register_slice__parameterized0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
@@ -1359,7 +1460,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (53#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (56#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
 INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -1452,47 +1553,47 @@ INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (53#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (56#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized3' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 35 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized3' (53#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized3' (56#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized4' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized4' (53#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized4' (56#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized5' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized5' (53#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized5' (56#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized6' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 34 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized6' (53#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axi_register_slice__parameterized0' (53#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized6' (56#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axi_register_slice__parameterized0' (56#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
 WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_21_axi_register_slice' is unconnected for instance 'MI_REG' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
 WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_21_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s' (54#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_axi_protocol_converter' (55#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (56#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (57#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:393]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59' bound to instance 'xbar' of component 'design_1_xbar_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1246]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2s' (57#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_axi_protocol_converter' (58#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (59#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (60#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:605]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59' bound to instance 'xbar' of component 'design_1_xbar_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1784]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
-	Parameter C_NUM_MASTER_SLOTS bound to: 3 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 5 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100000100100001000000000000000000000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000011110000000000000000000000 
-	Parameter C_M_AXI_ADDR_WIDTH bound to: 96'b000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_M_AXI_BASE_ADDR bound to: 320'b11111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001000001001000100000000000000000000000000000000000000000000000000100000100100001000000000000000000000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000011110000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 160'b0000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
 	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
 	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -1501,16 +1602,16 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' [c:
 	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
-	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
-	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 160'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 160'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
 	Parameter C_R_REGISTER bound to: 1 - type: integer 
 	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
 	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
 	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
-	Parameter C_M_AXI_WRITE_ISSUING bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
-	Parameter C_M_AXI_READ_ISSUING bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 160'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 160'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
 	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
-	Parameter C_M_AXI_SECURE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_SECURE bound to: 160'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
 	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
 	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -1520,28 +1621,28 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' [c:
 	Parameter P_AXILITE bound to: 2 - type: integer 
 	Parameter P_AXILITE_SIZE bound to: 3'b010 
 	Parameter P_INCR bound to: 2'b01 
-	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 3'b111 
-	Parameter P_M_AXI_SUPPORTS_READ bound to: 3'b111 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 5'b11111 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 5'b11111 
 	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
 	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
 	Parameter C_DEBUG bound to: 1 - type: integer 
 	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
 	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
-	Parameter P_M_AXI_ERR_MODE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_M_AXI_ERR_MODE bound to: 160'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter P_LEN bound to: 8 - type: integer 
 	Parameter P_LOCK bound to: 1 - type: integer 
 	Parameter P_FAMILY bound to: zynq - type: string 
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
-	Parameter C_NUM_MASTER_SLOTS bound to: 3 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 5 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100000100100001000000000000000000000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000011110000000000000000000000 
-	Parameter C_M_AXI_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100000100100001111111111111111100000000000000000000000000000000010000010010000011111111111111110000000000000000000000000000000001000011110000001111111111111111 
+	Parameter C_M_AXI_BASE_ADDR bound to: 320'b11111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001000001001000100000000000000000000000000000000000000000000000000100000100100001000000000000000000000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000011110000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 320'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000001001000101111111111111111000000000000000000000000000000000100000100100001111111111111111100000000000000000000000000000000010000010010000011111111111111110000000000000000000000000000000001000011110000001111111111111111 
 	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -1552,11 +1653,11 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [c
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
 	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
-	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 3'b111 
-	Parameter C_M_AXI_SUPPORTS_READ bound to: 3'b111 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 5'b11111 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 5'b11111 
 	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
-	Parameter C_M_AXI_SECURE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_M_AXI_ERR_MODE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_SECURE bound to: 160'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 160'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_R_REGISTER bound to: 1 - type: integer 
 	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
 	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
@@ -1564,9 +1665,9 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [c
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-	Parameter P_NUM_MASTER_SLOTS_DE bound to: 4 - type: integer 
-	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 2 - type: integer 
-	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 2 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE bound to: 6 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 3 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 3 - type: integer 
 	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
 	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
 	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
@@ -1576,8 +1677,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [c
 	Parameter P_WMESG_WIDTH bound to: 39 - type: integer 
 	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
 	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
-	Parameter P_M_SECURE_MASK bound to: 3'b000 
-	Parameter P_M_AXILITE_MASK bound to: 3'b000 
+	Parameter P_M_SECURE_MASK bound to: 5'b00000 
+	Parameter P_M_AXILITE_MASK bound to: 5'b00000 
 	Parameter P_FIXED bound to: 2'b00 
 	Parameter P_BYPASS bound to: 0 - type: integer 
 	Parameter P_LIGHTWT bound to: 7 - type: integer 
@@ -1586,16 +1687,16 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [c
 	Parameter P_DECERR bound to: 2'b11 
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_addr_decoder' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_NUM_TARGETS bound to: 3 - type: integer 
-	Parameter C_NUM_TARGETS_LOG bound to: 2 - type: integer 
+	Parameter C_NUM_TARGETS bound to: 5 - type: integer 
+	Parameter C_NUM_TARGETS_LOG bound to: 3 - type: integer 
 	Parameter C_NUM_RANGES bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_TARGET_ENC bound to: 1 - type: integer 
 	Parameter C_TARGET_HOT bound to: 1 - type: integer 
 	Parameter C_REGION_ENC bound to: 1 - type: integer 
-	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000000100000100100001000000000000000000000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000011110000000000000000000000 
-	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100000100100001111111111111111100000000000000000000000000000000010000010010000011111111111111110000000000000000000000000000000001000011110000001111111111111111 
-	Parameter C_TARGET_QUAL bound to: 4'b0111 
+	Parameter C_BASE_ADDR bound to: 320'b11111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001000001001000100000000000000000000000000000000000000000000000000100000100100001000000000000000000000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000011110000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 320'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000001001000101111111111111111000000000000000000000000000000000100000100100001111111111111111100000000000000000000000000000000010000010010000011111111111111110000000000000000000000000000000001000011110000001111111111111111 
+	Parameter C_TARGET_QUAL bound to: 6'b011111 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
@@ -1607,8 +1708,8 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_s
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
 	Parameter C_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (58#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (59#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (61#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (62#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010000010010000000000000000000 
@@ -1616,7 +1717,7 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_s
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (59#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (62#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 30'b010000010010000100000000000000 
@@ -1624,8 +1725,16 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_s
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (59#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_addr_decoder' (60#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (62#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000010010001000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (62#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_addr_decoder' (63#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_decerr_slave' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -1641,7 +1750,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_decerr_slave' [c:
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_decerr_slave' (61#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_decerr_slave' (64#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_addr_arbiter_sasd' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_S bound to: 1 - type: integer 
@@ -1650,47 +1759,47 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_addr_arbiter_sasd
 	Parameter C_GRANT_ENC bound to: 1 - type: integer 
 	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
 	Parameter P_PRIO_MASK bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_addr_arbiter_sasd' (62#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_addr_arbiter_sasd' (65#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_splitter' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_splitter' (63#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_splitter' (66#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_splitter__parameterized0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_splitter__parameterized0' (63#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_splitter__parameterized0' (66#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 4 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_RATIO bound to: 6 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (64#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (67#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 1 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (64#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (67#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 4 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_RATIO bound to: 6 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (64#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (67#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized7' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized7' (64#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice__parameterized7' (67#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 4 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_RATIO bound to: 6 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (64#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' (65#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' (66#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (67#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_1' (68#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:749]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_125M_3' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_3/synth/design_1_rst_ps7_0_125M_3.vhd:59' bound to instance 'rst_ps7_0_125M' of component 'design_1_rst_ps7_0_125M_3' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1928]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (67#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' (68#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' (69#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (70#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_1' (71#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:999]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_125M_3' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_3/synth/design_1_rst_ps7_0_125M_3.vhd:59' bound to instance 'rst_ps7_0_125M' of component 'design_1_rst_ps7_0_125M_3' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2650]
 INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_125M_3' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_3/synth/design_1_rst_ps7_0_125M_3.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -1740,8 +1849,8 @@ INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/Jakub/Desktop/vut_fekt/b
 INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:78043' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:78043]
 	Parameter INIT bound to: 16'b0000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'SRL16' (69#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:78043]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (72#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:78043]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized2' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -1754,31 +1863,31 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [c:/Users/Jak
 	Parameter INIT bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (69#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (70#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized2' (72#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (73#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
 INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
 INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
 	Parameter C_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (71#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (72#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (73#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_125M_3' (74#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_3/synth/design_1_rst_ps7_0_125M_3.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (75#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1361]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (76#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (74#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (75#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (76#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_125M_3' (77#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_3/synth/design_1_rst_ps7_0_125M_3.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (78#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1969]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (79#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:42]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 1288.438 ; gain = 227.621
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1293.453 ; gain = 232.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 1288.438 ; gain = 227.621
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 1297.508 ; gain = 236.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 1288.438 ; gain = 227.621
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 1297.508 ; gain = 236.504
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.371 . Memory (MB): peak = 1288.438 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 229 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.295 . Memory (MB): peak = 1297.508 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 265 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -1800,6 +1909,10 @@ Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-en
 Finished Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'design_1_i/axi_gpio_1/U0'
 Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc] for cell 'design_1_i/axi_gpio_1/U0'
 Finished Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0_board.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Finished Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0_board.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Finished Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0.xdc] for cell 'design_1_i/axi_gpio_2/U0'
 Parsing XDC File [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc]
 Finished Parsing XDC File [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -1810,42 +1923,44 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1313.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1346.148 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 229 instances were transformed.
-  FDR => FDRE: 228 instances
+  A total of 265 instances were transformed.
+  FDR => FDRE: 264 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1313.406 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 1346.148 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:01:07 . Memory (MB): peak = 1313.406 ; gain = 252.590
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 1346.148 ; gain = 285.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:49 ; elapsed = 00:01:07 . Memory (MB): peak = 1313.406 ; gain = 252.590
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 1346.148 ; gain = 285.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0/inst. (constraint file  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/dont_touch.xdc, line 37).
-Applied set_property DONT_TOUCH = true for design_1_i/rst_ps7_0_125M/U0. (constraint file  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/dont_touch.xdc, line 40).
-Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0/U0. (constraint file  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/dont_touch.xdc, line 50).
-Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_1/U0. (constraint file  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/dont_touch.xdc, line 58).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0/inst. (constraint file  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/dont_touch.xdc, line 40).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_ps7_0_125M/U0. (constraint file  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/dont_touch.xdc, line 43).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0/U0. (constraint file  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/dont_touch.xdc, line 53).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_1/U0. (constraint file  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/dont_touch.xdc, line 61).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_2/U0. (constraint file  C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/dont_touch.xdc, line 69).
 Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/LBlock_wrapper_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/LBlock_wrapper. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/rst_ps7_0_125M. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/LFSR32bit_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/LFSR32bit. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 1313.406 ; gain = 252.590
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 1346.148 ; gain = 285.145
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'LBlockTOP'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
@@ -1887,15 +2002,17 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_21_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:55 ; elapsed = 00:01:16 . Memory (MB): peak = 1313.406 ; gain = 252.590
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 1346.148 ; gain = 285.145
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i' of module 'design_1'. So gated clock conversion will not be possible for this module.
-WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/LBlock_wrapper_0' of module 'design_1_LBlock_wrapper_0_0'. So gated clock conversion will not be possible for this module.
-WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/LFSR32bit_0' of module 'design_1_LFSR32bit_0_0'. So gated clock conversion will not be possible for this module.
+WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/LBlock_wrapper' of module 'design_1_LBlock_wrapper_0_0'. So gated clock conversion will not be possible for this module.
+WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/LFSR32bit' of module 'design_1_LFSR32bit_0_0'. So gated clock conversion will not be possible for this module.
 WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/axi_gpio_0' of module 'design_1_axi_gpio_0_0'. So gated clock conversion will not be possible for this module.
 WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/axi_gpio_0/U0' of module 'axi_gpio'. So gated clock conversion will not be possible for this module.
 WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/axi_gpio_1' of module 'design_1_axi_gpio_1_0'. So gated clock conversion will not be possible for this module.
 WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/axi_gpio_1/U0' of module 'axi_gpio__parameterized1'. So gated clock conversion will not be possible for this module.
+WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/axi_gpio_2' of module 'design_1_axi_gpio_2_0'. So gated clock conversion will not be possible for this module.
+WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/axi_gpio_2/U0' of module 'axi_gpio__parameterized3'. So gated clock conversion will not be possible for this module.
 WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/processing_system7_0' of module 'design_1_processing_system7_0_0'. So gated clock conversion will not be possible for this module.
 WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/processing_system7_0/inst' of module 'processing_system7_v5_5_processing_system7'. So gated clock conversion will not be possible for this module.
 WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/ps7_0_axi_periph' of module 'design_1_ps7_0_axi_periph_1'. So gated clock conversion will not be possible for this module.
@@ -1913,29 +2030,29 @@ Detailed RTL Component Info :
 	   2 Input    8 Bit       Adders := 1     
 	   2 Input    6 Bit       Adders := 2     
 	   2 Input    5 Bit       Adders := 4     
-	   2 Input    4 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 7     
 	   2 Input    2 Bit       Adders := 2     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 2     
 	   2 Input      5 Bit         XORs := 1     
-	   4 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               80 Bit    Registers := 1     
 	               66 Bit    Registers := 4     
 	               64 Bit    Registers := 2     
 	               47 Bit    Registers := 2     
 	               36 Bit    Registers := 2     
-	               32 Bit    Registers := 21    
+	               32 Bit    Registers := 18    
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 9     
-	                9 Bit    Registers := 4     
+	                9 Bit    Registers := 5     
 	                8 Bit    Registers := 2     
-	                6 Bit    Registers := 2     
+	                6 Bit    Registers := 5     
 	                5 Bit    Registers := 6     
 	                4 Bit    Registers := 12    
-	                3 Bit    Registers := 4     
-	                2 Bit    Registers := 18    
-	                1 Bit    Registers := 158   
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 20    
+	                1 Bit    Registers := 174   
 +---Muxes : 
 	   3 Input   80 Bit        Muxes := 1     
 	   2 Input   66 Bit        Muxes := 4     
@@ -1943,25 +2060,25 @@ Detailed RTL Component Info :
 	   2 Input   47 Bit        Muxes := 2     
 	   2 Input   36 Bit        Muxes := 2     
 	   3 Input   32 Bit        Muxes := 2     
-	   2 Input   32 Bit        Muxes := 16    
+	   2 Input   32 Bit        Muxes := 17    
 	   6 Input   32 Bit        Muxes := 5     
-	   5 Input   32 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 3     
 	   2 Input   14 Bit        Muxes := 2     
 	   2 Input   12 Bit        Muxes := 6     
-	   2 Input    9 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 7     
 	   3 Input    6 Bit        Muxes := 1     
-	   2 Input    6 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 4     
-	   4 Input    4 Bit        Muxes := 2     
-	   2 Input    4 Bit        Muxes := 31    
-	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 5     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 35    
+	   2 Input    3 Bit        Muxes := 2     
 	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 22    
-	   7 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 24    
+	   7 Input    2 Bit        Muxes := 3     
 	   4 Input    2 Bit        Muxes := 4     
 	   3 Input    1 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 125   
-	   4 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 150   
+	   4 Input    1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1978,25 +2095,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:33 . Memory (MB): peak = 1313.406 ; gain = 252.590
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:07 . Memory (MB): peak = 1346.148 ; gain = 285.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:01:48 . Memory (MB): peak = 1410.020 ; gain = 349.203
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:19 . Memory (MB): peak = 1416.027 ; gain = 355.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:52 . Memory (MB): peak = 1473.820 ; gain = 413.004
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:23 . Memory (MB): peak = 1490.027 ; gain = 429.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:57 . Memory (MB): peak = 1491.914 ; gain = 431.098
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:26 . Memory (MB): peak = 1499.055 ; gain = 438.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2037,6 +2154,14 @@ End Gated Clock analysis for module 'axi_gpio__parameterized1'
 Starting Gated Clock analysis for module 'design_1_axi_gpio_1_0'
 [INFO] Found 0 combinational gated clocks in this module ('design_1_axi_gpio_1_0')
 End Gated Clock analysis for module 'design_1_axi_gpio_1_0'
+-----------------------------------------------
+Starting Gated Clock analysis for module 'axi_gpio__parameterized3'
+[INFO] Found 0 combinational gated clocks in this module ('axi_gpio__parameterized3')
+End Gated Clock analysis for module 'axi_gpio__parameterized3'
+-----------------------------------------------
+Starting Gated Clock analysis for module 'design_1_axi_gpio_2_0'
+[INFO] Found 0 combinational gated clocks in this module ('design_1_axi_gpio_2_0')
+End Gated Clock analysis for module 'design_1_axi_gpio_2_0'
 -----------------------------------------------
 Starting Gated Clock analysis for module 'processing_system7_v5_5_processing_system7'
 [INFO] Found 0 combinational gated clocks in this module ('processing_system7_v5_5_processing_system7')
@@ -2087,49 +2212,41 @@ End Gated Clock Conversion
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:02:08 . Memory (MB): peak = 1491.914 ; gain = 431.098
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:02:08 . Memory (MB): peak = 1491.914 ; gain = 431.098
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:02:09 . Memory (MB): peak = 1491.914 ; gain = 431.098
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:02:09 . Memory (MB): peak = 1491.914 ; gain = 431.098
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:40 ; elapsed = 00:02:09 . Memory (MB): peak = 1491.914 ; gain = 431.098
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:40 ; elapsed = 00:02:09 . Memory (MB): peak = 1491.914 ; gain = 431.098
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-
-Static Shift Register Report:
-+-----------------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name            | RTL Name                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+-----------------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|design_1_LFSR32bit_0_0 | U0/current_state_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-+-----------------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-
 
 Dynamic Shift Register Report:
 +------------+----------------+--------+------------+--------+---------+--------+--------+--------+
@@ -2139,8 +2256,6 @@ Dynamic Shift Register Report:
 |dsrl__1     | memory_reg[3]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
 |dsrl__2     | memory_reg[31] | 34     | 34         | 0      | 34      | 0      | 0      | 0      | 
 |dsrl__3     | memory_reg[31] | 13     | 13         | 0      | 13      | 0      | 0      | 0      | 
-|dsrl__4     | memory_reg[3]  | 20     | 20         | 20     | 0       | 0      | 0      | 0      | 
-|dsrl__5     | memory_reg[3]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
 +------------+----------------+--------+------------+--------+---------+--------+--------+--------+
 
 ---------------------------------------------------------------------------------
@@ -2163,46 +2278,47 @@ Report Cell Usage:
 |1     |BIBUF   |   130|
 |2     |BUFG    |     1|
 |3     |CARRY4  |    18|
-|4     |LUT1    |   128|
-|5     |LUT2    |    96|
-|6     |LUT3    |   430|
-|7     |LUT4    |   141|
-|8     |LUT5    |   231|
-|9     |LUT6    |   283|
+|4     |LUT1    |   130|
+|5     |LUT2    |   108|
+|6     |LUT3    |   409|
+|7     |LUT4    |   155|
+|8     |LUT5    |   270|
+|9     |LUT6    |   354|
 |10    |MUXF7   |    32|
 |11    |PS7     |     1|
 |12    |SRL16   |     1|
-|13    |SRL16E  |    19|
+|13    |SRL16E  |    18|
 |14    |SRLC32E |    47|
-|15    |FDCE    |    19|
-|16    |FDPE    |    21|
+|15    |FDCE    |     7|
+|16    |FDPE    |     1|
 |17    |FDR     |   152|
-|18    |FDRE    |  1481|
-|19    |FDSE    |    62|
+|18    |FDRE    |  1472|
+|19    |FDSE    |    69|
 |20    |IBUF    |     4|
+|21    |OBUF    |     6|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:40 ; elapsed = 00:02:09 . Memory (MB): peak = 1491.914 ; gain = 431.098
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:59 . Memory (MB): peak = 1491.914 ; gain = 406.129
-Synthesis Optimization Complete : Time (s): cpu = 00:01:40 ; elapsed = 00:02:09 . Memory (MB): peak = 1491.914 ; gain = 431.098
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:27 . Memory (MB): peak = 1499.055 ; gain = 389.410
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:34 . Memory (MB): peak = 1499.055 ; gain = 438.051
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 1491.914 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.211 . Memory (MB): peak = 1499.055 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 203 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1493.758 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1502.938 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 153 instances were transformed.
   FDR => FDRE: 152 instances
   SRL16 => SRL16E: 1 instance 
 
 INFO: [Common 17-83] Releasing license: Synthesis
-388 Infos, 34 Warnings, 1 Critical Warnings and 0 Errors encountered.
+404 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:53 ; elapsed = 00:02:28 . Memory (MB): peak = 1493.758 ; gain = 432.941
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:47 . Memory (MB): peak = 1502.938 ; gain = 441.934
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  1 22:54:58 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  8 16:36:52 2021...

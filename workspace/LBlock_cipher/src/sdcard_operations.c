@@ -193,7 +193,7 @@ int write_key() {
 	DestAddr[2] = 0;
 	DestAddr[3] = 0;
 	// write to fpga on register address of key
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 8, key);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 8, key);
 
 	Res = f_lseek(&key_file, 4);
 	if (Res) {
@@ -208,7 +208,7 @@ int write_key() {
 	DestAddr[1] = 0;
 	DestAddr[2] = 0;
 	DestAddr[3] = 0;
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 12, key);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 12, key);
 
 	Res = f_lseek(&key_file, 8);
 	if (Res) {
@@ -223,7 +223,7 @@ int write_key() {
 	DestAddr[1] = 0;
 	DestAddr[2] = 0;
 	DestAddr[3] = 0;
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 16, key);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 16, key);
 
 	Res = f_close(&key_file);
 	if (Res) {
@@ -298,13 +298,13 @@ int cipher_text() {
 		}
 		data_in1 = ascii_to_integer(data_read1);
 		data_in2 = ascii_to_integer(data_read2);
-		Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR, data_in1);
-		Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 4, data_in2);
+		Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR, data_in1);
+		Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 4, data_in2);
 
-		data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-		data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
-		data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-		data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+		data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+		data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
+		data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+		data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 
 		unsigned_integer_to_array(data_out1, data_out2);
 
@@ -411,11 +411,11 @@ int cipher_text_OFB() {
 		plaintext1 = ascii_to_integer(data_read1);
 		plaintext2 = ascii_to_integer(data_read2);
 
-		Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR, init_vector1);
-		Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 4, init_vector2);
+		Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR, init_vector1);
+		Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 4, init_vector2);
 
-		init_vector1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-		init_vector2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+		init_vector1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+		init_vector2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 
 		xil_printf("%u	%u\n", init_vector1, init_vector2);
 

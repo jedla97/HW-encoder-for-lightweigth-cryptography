@@ -29,26 +29,25 @@
   "../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/8297/src/DiffusionFunction.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/KeySchedule.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/LBlockLoop.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/LBlockTOP.vhd" \
-  "../../../bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/LFSR32bit.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/RoundFunction.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/RoundKey.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox0.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox1.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox2.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox3.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox4.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox5.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox6.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox7.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox8.vhd" \
-  "../../../bd/design_1/ipshared/8297/src/Sbox9.vhd" \
-  "../../../bd/design_1/ipshared/8297/hdl/LBlock_wrapper_v1_0.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/DiffusionFunction.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/KeySchedule.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/LBlockLoop.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/LBlockTOP.vhd" \
+  "../../../bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/RoundFunction.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/RoundKey.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox0.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox1.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox2.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox3.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox4.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox5.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox6.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox7.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox8.vhd" \
+  "../../../bd/design_1/ipshared/48f3/src/Sbox9.vhd" \
+  "../../../bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0.vhd" \
   "../../../bd/design_1/ip/design_1_LBlock_wrapper_0_0/sim/design_1_LBlock_wrapper_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/lib_cdc_v1_0_2 \
@@ -97,15 +96,14 @@
   "../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
   "../../../bd/design_1/ip/design_1_LFSR32bit_0_0/sim/design_1_LFSR32bit_0_0.vhd" \
   "../../../bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
+  "../../../bd/design_1/sim/design_1.vhd" \
+  "../../../bd/design_1/ip/design_1_axi_gpio_2_0/sim/design_1_axi_gpio_2_0.vhd" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_21 \
   "../../../../LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/sim/design_1.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

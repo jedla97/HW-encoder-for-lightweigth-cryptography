@@ -17,10 +17,13 @@ int main() {
 	u32 data_key2;
 	u32 data_key3;
 
-	XGpio input;
+	XGpio input, output;
 	int button_data = 0;
+	u32 led = 16711680;
 	xil_printf("start\n");
 	XGpio_Initialize(&input, XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_Initialize(&output, XPAR_AXI_GPIO_2_DEVICE_ID);
+	XGpio_SetDataDirection(&output, 1, 0xffffffff);
 	XGpio_SetDataDirection(&input, 1, 0xffffffff);
 	unsigned int key = key_to_integer();
 
@@ -31,9 +34,15 @@ int main() {
 
 		} else if (button_data == 0b0001) {
 			xil_printf("button 0\n");
-			generate_inicialization_vector(1);
+			//generate_inicialization_vector(1);
+			//0xe0 red left
+
+			XGpio_DiscreteWrite(&output, 1, 0xff);
+
 		} else if (button_data == 0b0010) {
-			//xil_printf("\nbutton 1\n");
+			xil_printf("\nbutton 1\n");
+			XGpio_DiscreteWrite(&output, 1, 0x0a);
+			/**
 			const char * key = generate_key();
 			unsigned long int test = 1;
 			for (int i = 0; i < 4; ++i) {
@@ -41,17 +50,22 @@ int main() {
 				xil_printf("%02X", key[i]);
 			}
 			xil_printf("		%llu		%s\n", test, key);
-
+**/
 		} else if (button_data == 0b0100) {
 			xil_printf("button 2\n");
+			XGpio_DiscreteWrite(&output, 1, 0x0b);
+			/**
 			mount_drive();
 			cipher_text_OFB();
 			unmount_drive();
 			xil_printf("end\n");
+			**/
 		} else if (button_data == 0b1000) {
 			xil_printf("button 3\n");
-			xor_data_with_init_vector(361856794, 145656920, 856978156,
+			XGpio_DiscreteWrite(&output, 1, 0x0c);
+			/**xor_data_with_init_vector(361856794, 145656920, 856978156,
 					86182952);
+					**/
 		}
 
 		else {
@@ -71,100 +85,100 @@ int main() {
 	 xil_printf("%08X",data_key2);
 	 xil_printf("%08X key in\n",data_key3);
 	 **/
-	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 	xil_printf("%08X", data_out1);
 	xil_printf("%08X defualt text\n ", data_out2);
 
 	xil_printf("---- non zero blok -----\n");
 	xil_printf("%08X		%d\n", key, key);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR, key);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 4, 0x89ABCDEF);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 8, 0x01234567);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 12, 0x89ABCDEF);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 16, 0xFEDC0000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR, key);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 4, 0x89ABCDEF);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 8, 0x01234567);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 12, 0x89ABCDEF);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 16, 0xFEDC0000);
 
-	data_in1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR);
-	data_in2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 4);
-	data_key1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 8);
-	data_key2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 12);
-	data_key3 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 16);
+	data_in1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR);
+	data_in2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 4);
+	data_key1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 8);
+	data_key2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 12);
+	data_key3 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 16);
 	xil_printf("%08X", data_in1);
 	xil_printf("%08X data in\n", data_in2);
 	xil_printf("%08X", data_key1);
 	xil_printf("%08X", data_key2);
 	xil_printf("%08X key in\n", data_key3);
 
-	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 	xil_printf("%08X", data_out1);
 	xil_printf("%08X cipher text ", data_out2);
 	xil_printf("\n4B7179D8EBEE0C26\n");
 	//4b 71 79 d8 eb ee 0c 26
 
 	xil_printf("---- zero blok -----\n");
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR, 0x00000000);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 4, 0x00000000);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 8, 0x00000000);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 12, 0x00000000);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 16, 0x00000000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR, 0x00000000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 4, 0x00000000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 8, 0x00000000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 12, 0x00000000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 16, 0x00000000);
 
-	data_in1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR);
-	data_in2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 4);
-	data_key1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 8);
-	data_key2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 12);
-	data_key3 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 16);
+	data_in1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR);
+	data_in2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 4);
+	data_key1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 8);
+	data_key2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 12);
+	data_key3 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 16);
 	xil_printf("%08X", data_in1);
 	xil_printf("%08X data in\n", data_in2);
 	xil_printf("%08X", data_key1);
 	xil_printf("%08X", data_key2);
 	xil_printf("%08X key in\n", data_key3);
 
-	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 	xil_printf("%08X", data_out1);
 	xil_printf("%08X cipher text ", data_out2);
 	xil_printf("\nC218185308E75BCD\n");
 
 	xil_printf("---- non zero blok -----\n");
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR, 0x01234567);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 4, 0x89ABCDEF);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 8, 0x01234567);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 12, 0x89ABCDEF);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 16, 0xFEDC0000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR, 0x01234567);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 4, 0x89ABCDEF);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 8, 0x01234567);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 12, 0x89ABCDEF);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 16, 0xFEDC0000);
 
-	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 
-	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 	xil_printf("%08X", data_out1);
 	xil_printf("%08X cipher text ", data_out2);
 	xil_printf("\n4B7179D8EBEE0C26\n");
-	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 	xil_printf("%08X", data_out1);
 	xil_printf("%08X cipher text ", data_out2);
 	xil_printf("\n4B7179D8EBEE0C26\n");
 
 	xil_printf("---- zero blok -----\n");
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR, 0x00000000);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 4, 0x00000000);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 8, 0x00000000);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 12, 0x00000000);
-	Xil_Out32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 16, 0x00000000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR, 0x00000000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 4, 0x00000000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 8, 0x00000000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 12, 0x00000000);
+	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 16, 0x00000000);
 
-	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 
-	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 	xil_printf("%08X", data_out1);
 	xil_printf("%08X cipher text ", data_out2);
 	xil_printf("\nC218185308E75BCD\n");
 
-	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 20);
-	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_0_S00_AXI_BASEADDR + 24);
+	data_out1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+	data_out2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
 	xil_printf("%08X", data_out1);
 	xil_printf("%08X cipher text ", data_out2);
 	xil_printf("\nC218185308E75BCD\n");

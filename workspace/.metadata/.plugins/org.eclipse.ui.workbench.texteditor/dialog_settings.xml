@@ -2,13 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="_USE_LFN" key="selection"/>
+		<item value="XPAR_AXI_GPIO_2_BASEADDR" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="XPAR_AXI_GPIO_2_BASEADDR"/>
 			<item value="_USE_LFN"/>
+			<item value="gpio"/>
 			<item value="ff_convert "/>
 			<item value="FF_MAX_SS"/>
 			<item value="data_encrypted"/>
@@ -16,13 +18,11 @@
 			<item value="data_in"/>
 			<item value="toEncrypt"/>
 			<item value="fil"/>
-			<item value="gpio"/>
 			<item value="ret"/>
 			<item value="_FS_READONLY "/>
 			<item value="USE_STRFUNC "/>
 			<item value="}**/"/>
 			<item value="key_file"/>
-			<item value="TEST"/>
 		</list>
 		<list key="replacehistory">
 			<item value="arr"/>
