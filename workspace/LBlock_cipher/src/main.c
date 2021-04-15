@@ -53,13 +53,12 @@ int main() {
 **/
 		} else if (button_data == 0b0100) {
 			xil_printf("button 2\n");
-			XGpio_DiscreteWrite(&output, 1, 0x0b);
-			/**
+
 			mount_drive();
-			cipher_text_OFB();
+			cipher_text_CFB_32bit();
 			unmount_drive();
 			xil_printf("end\n");
-			**/
+
 		} else if (button_data == 0b1000) {
 			xil_printf("button 3\n");
 			XGpio_DiscreteWrite(&output, 1, 0x0c);
