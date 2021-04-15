@@ -32,3 +32,8 @@ int mount_drive();
 void xor_data_with_init_vector(unsigned int vector1, unsigned int vector2, unsigned int plaintext1, unsigned int plaintext2);
 FRESULT save_init_vector(u32 first_vector, u32 second_vector);
 void null_encrypted_data();
+
+int cipher_text_CFB_32bit();
+unsigned int xor_plaintext_with_init_vector(unsigned int vector, unsigned int plaintext);
+void unsigned_integer_to_array_CFB(u32 first_four_bytes);
+

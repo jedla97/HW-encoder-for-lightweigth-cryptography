@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Apr  8 16:34:46 2021
-# Process ID: 32904
+# Start of session at: Sat Apr 10 20:04:56 2021
+# Process ID: 7320
 # Current directory: C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/design_1_wrapper.vds
@@ -16,7 +16,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jakub/Desktop/vut_fe
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.cache/ip 
-add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1061.004 ; gain = 0.000
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1060.656 ; gain = 0.000
 Command: synth_design -top design_1_wrapper -part xc7z020clg400-1 -gated_clock_conversion auto
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
@@ -24,14 +24,14 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 45756
+INFO: [Synth 8-7075] Helper process launched with PID 6088
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1083.477 ; gain = 22.473
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:33 . Memory (MB): peak = 1083.152 ; gain = 22.496
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:42]
-INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1937' bound to instance 'design_1_i' of component 'design_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:71]
-INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1969]
-INFO: [Synth 8-3491] module 'design_1_LBlock_wrapper_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:56' bound to instance 'LBlock_wrapper' of component 'design_1_LBlock_wrapper_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2340]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1845' bound to instance 'design_1_i' of component 'design_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1877]
+INFO: [Synth 8-3491] module 'design_1_LBlock_wrapper_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:56' bound to instance 'LBlock_wrapper' of component 'design_1_LBlock_wrapper_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2246]
 INFO: [Synth 8-638] synthesizing module 'design_1_LBlock_wrapper_0_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:82]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
@@ -110,7 +110,7 @@ INFO: [Synth 8-256] done synthesizing module 'LBlockTOP' (17#1) [c:/Users/Jakub/
 INFO: [Synth 8-256] done synthesizing module 'LBlock_wrapper_v1_0_S00_AXI' (18#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0_S00_AXI.vhd:87]
 INFO: [Synth 8-256] done synthesizing module 'LBlock_wrapper_v1_0' (19#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/48f3/hdl/LBlock_wrapper_v1_0.vhd:49]
 INFO: [Synth 8-256] done synthesizing module 'design_1_LBlock_wrapper_0_0' (20#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LBlock_wrapper_0_0/synth/design_1_LBlock_wrapper_0_0.vhd:82]
-INFO: [Synth 8-3491] module 'design_1_LFSR32bit_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:56' bound to instance 'LFSR32bit' of component 'design_1_LFSR32bit_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2364]
+INFO: [Synth 8-3491] module 'design_1_LFSR32bit_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:56' bound to instance 'LFSR32bit' of component 'design_1_LFSR32bit_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2270]
 INFO: [Synth 8-638] synthesizing module 'design_1_LFSR32bit_0_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:63]
 INFO: [Synth 8-3491] module 'LFSR32bit' declared at 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/new/LFSR32bit.vhd:34' bound to instance 'U0' of component 'LFSR32bit' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:85]
 INFO: [Synth 8-638] synthesizing module 'LFSR32bit' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/new/LFSR32bit.vhd:40]
@@ -118,7 +118,7 @@ WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not 
 WARNING: [Synth 8-614] signal 'xnor_tap' is read in the process but is not in the sensitivity list [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/new/LFSR32bit.vhd:46]
 INFO: [Synth 8-256] done synthesizing module 'LFSR32bit' (21#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/new/LFSR32bit.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'design_1_LFSR32bit_0_0' (22#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_LFSR32bit_0_0/synth/design_1_LFSR32bit_0_0.vhd:63]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:59' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2369]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:59' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2275]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -281,14 +281,14 @@ INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (27#1) [c:/Users/Jakub/D
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (28#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (29#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (30#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:84]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:59' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2392]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:86]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:59' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2298]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_GPIO_WIDTH bound to: 32 - type: integer 
 	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
-	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
 	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
 	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
 	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
@@ -298,14 +298,14 @@ INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_0' [c:/Users/Jakub/
 	Parameter C_IS_DUAL bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
 	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
-INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:172]
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:168]
 INFO: [Synth 8-638] synthesizing module 'axi_gpio__parameterized1' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_GPIO_WIDTH bound to: 32 - type: integer 
 	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
-	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
 	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
 	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
 	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
@@ -327,7 +327,7 @@ INFO: [Synth 8-638] synthesizing module 'GPIO_Core__parameterized0' [c:/Users/Ja
 	Parameter C_IS_DUAL bound to: 0 - type: integer 
 	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
 	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
-	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
 	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
 	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
@@ -612,8 +612,8 @@ INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instanc
 INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (30#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized0' (30#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized1' (30#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_1_0' (31#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:86]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_2_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:59' bound to instance 'axi_gpio_2' of component 'design_1_axi_gpio_2_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2417]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_1_0' (31#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/synth/design_1_axi_gpio_1_0.vhd:84]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_2_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:59' bound to instance 'axi_gpio_2' of component 'design_1_axi_gpio_2_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2321]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_2_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -712,7 +712,7 @@ INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (31#1) [
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized1' (31#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized3' (31#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/bb35/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_2_0' (32#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/synth/design_1_axi_gpio_2_0.vhd:84]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2440]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2344]
 INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
@@ -793,7 +793,7 @@ WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_proc
 WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
 WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (37#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
-INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:999]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_1' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1001]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:61]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (38#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:61]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:168]
@@ -1581,7 +1581,7 @@ INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_b2
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_21_axi_protocol_converter' (58#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8dfa/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (59#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (60#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:605]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59' bound to instance 'xbar' of component 'design_1_xbar_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1784]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59' bound to instance 'xbar' of component 'design_1_xbar_0' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1692]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -1798,8 +1798,8 @@ INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' (68#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' (69#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (70#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_1' (71#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:999]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_125M_3' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_3/synth/design_1_rst_ps7_0_125M_3.vhd:59' bound to instance 'rst_ps7_0_125M' of component 'design_1_rst_ps7_0_125M_3' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2650]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_1' (71#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1001]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_125M_3' declared at 'c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_3/synth/design_1_rst_ps7_0_125M_3.vhd:59' bound to instance 'rst_ps7_0_125M' of component 'design_1_rst_ps7_0_125M_3' [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:2556]
 INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_125M_3' [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_3/synth/design_1_rst_ps7_0_125M_3.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -1872,23 +1872,23 @@ INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (74#1) [c:/Users/Jakub/De
 INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (75#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (76#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_125M_3' (77#1) [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_125M_3/synth/design_1_rst_ps7_0_125M_3.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (78#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1969]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (78#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/synth/design_1.vhd:1877]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (79#1) [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:42]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1293.453 ; gain = 232.449
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 1290.469 ; gain = 229.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 1297.508 ; gain = 236.504
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 1290.469 ; gain = 229.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 1297.508 ; gain = 236.504
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 1290.469 ; gain = 229.812
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.295 . Memory (MB): peak = 1297.508 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.282 . Memory (MB): peak = 1290.469 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 265 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -1914,6 +1914,15 @@ Finished Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/Git
 Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0.xdc] for cell 'design_1_i/axi_gpio_2/U0'
 Finished Parsing XDC File [c:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0.xdc] for cell 'design_1_i/axi_gpio_2/U0'
 Parsing XDC File [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rgb_led_0_tri_o[3]'. [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb_led_0_tri_o[4]'. [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgb_led_0_tri_o[5]'. [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.srcs/constrs_1/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -1923,22 +1932,22 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1346.148 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1341.883 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 265 instances were transformed.
   FDR => FDRE: 264 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 1346.148 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1341.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 1346.148 ; gain = 285.145
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:01:03 . Memory (MB): peak = 1341.883 ; gain = 281.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 1346.148 ; gain = 285.145
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:01:03 . Memory (MB): peak = 1341.883 ; gain = 281.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1960,7 +1969,7 @@ Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_1. (constraint fi
 Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 1346.148 ; gain = 285.145
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:01:04 . Memory (MB): peak = 1341.883 ; gain = 281.227
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'LBlockTOP'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
@@ -2002,7 +2011,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_21_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 1346.148 ; gain = 285.145
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:01:08 . Memory (MB): peak = 1341.883 ; gain = 281.227
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i' of module 'design_1'. So gated clock conversion will not be possible for this module.
 WARNING: [Synth 8-5866] 'dont_touch' attribute is found on instance 'design_1_i/LBlock_wrapper' of module 'design_1_LBlock_wrapper_0_0'. So gated clock conversion will not be possible for this module.
@@ -2052,7 +2061,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 12    
 	                3 Bit    Registers := 5     
 	                2 Bit    Registers := 20    
-	                1 Bit    Registers := 174   
+	                1 Bit    Registers := 142   
 +---Muxes : 
 	   3 Input   80 Bit        Muxes := 1     
 	   2 Input   66 Bit        Muxes := 4     
@@ -2077,7 +2086,7 @@ Detailed RTL Component Info :
 	   7 Input    2 Bit        Muxes := 3     
 	   4 Input    2 Bit        Muxes := 4     
 	   3 Input    1 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 150   
+	   2 Input    1 Bit        Muxes := 118   
 	   4 Input    1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -2095,25 +2104,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:07 . Memory (MB): peak = 1346.148 ; gain = 285.145
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:19 . Memory (MB): peak = 1341.883 ; gain = 281.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:19 . Memory (MB): peak = 1416.027 ; gain = 355.023
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:29 . Memory (MB): peak = 1415.410 ; gain = 354.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:23 . Memory (MB): peak = 1490.027 ; gain = 429.023
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:33 . Memory (MB): peak = 1488.680 ; gain = 428.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:26 . Memory (MB): peak = 1499.055 ; gain = 438.051
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:36 . Memory (MB): peak = 1497.727 ; gain = 437.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2212,37 +2221,37 @@ End Gated Clock Conversion
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:43 . Memory (MB): peak = 1497.727 ; gain = 437.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:43 . Memory (MB): peak = 1497.727 ; gain = 437.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:43 . Memory (MB): peak = 1497.727 ; gain = 437.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:43 . Memory (MB): peak = 1497.727 ; gain = 437.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:44 . Memory (MB): peak = 1497.727 ; gain = 437.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:44 . Memory (MB): peak = 1497.727 ; gain = 437.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2281,9 +2290,9 @@ Report Cell Usage:
 |4     |LUT1    |   130|
 |5     |LUT2    |   108|
 |6     |LUT3    |   409|
-|7     |LUT4    |   155|
-|8     |LUT5    |   270|
-|9     |LUT6    |   354|
+|7     |LUT4    |   153|
+|8     |LUT5    |   203|
+|9     |LUT6    |   386|
 |10    |MUXF7   |    32|
 |11    |PS7     |     1|
 |12    |SRL16   |     1|
@@ -2292,33 +2301,33 @@ Report Cell Usage:
 |15    |FDCE    |     7|
 |16    |FDPE    |     1|
 |17    |FDR     |   152|
-|18    |FDRE    |  1472|
+|18    |FDRE    |  1440|
 |19    |FDSE    |    69|
 |20    |IBUF    |     4|
 |21    |OBUF    |     6|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:33 . Memory (MB): peak = 1499.055 ; gain = 438.051
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:44 . Memory (MB): peak = 1497.727 ; gain = 437.070
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:27 . Memory (MB): peak = 1499.055 ; gain = 389.410
-Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:34 . Memory (MB): peak = 1499.055 ; gain = 438.051
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:01:36 . Memory (MB): peak = 1497.727 ; gain = 385.656
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:44 . Memory (MB): peak = 1497.727 ; gain = 437.070
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.211 . Memory (MB): peak = 1499.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 1497.727 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 203 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1502.938 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1504.543 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 153 instances were transformed.
   FDR => FDRE: 152 instances
   SRL16 => SRL16E: 1 instance 
 
 INFO: [Common 17-83] Releasing license: Synthesis
-404 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+404 Infos, 40 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:47 . Memory (MB): peak = 1502.938 ; gain = 441.934
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:58 . Memory (MB): peak = 1504.543 ; gain = 443.887
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/LBlock/LblockCipher.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  8 16:36:52 2021...
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 10 20:07:19 2021...

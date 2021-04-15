@@ -34,6 +34,7 @@ u8 DestAddr[SIZE_OF_READ] __attribute__ ((aligned(4)));
 u8 data_read1[SIZE_OF_READ] __attribute__ ((aligned(4)));
 u8 data_read2[SIZE_OF_READ] __attribute__ ((aligned(4)));
 u8 data_encrypted[SIZE_OF_READ + SIZE_OF_READ] __attribute__ ((aligned(8)));
+u8 data_encrypted_CFB[SIZE_OF_READ] __attribute__ ((aligned(8)));
 u8 init_vector[SIZE_OF_READ + SIZE_OF_READ] __attribute__ ((aligned(8)));
 #endif
 
@@ -448,6 +449,154 @@ int cipher_text_OFB() {
 	return XST_SUCCESS;
 }
 
+int cipher_text_CFB_32bit() {
+	FRESULT Res;
+	UINT NumBytesRead;
+	UINT NumBytesWritten;
+	unsigned int plaintext1 = 0;
+
+	// vectors
+	unsigned int init_vector1;
+	unsigned int init_vector2;
+	unsigned int help_init_vector;
+
+	int error = 0;
+	static char * toEncrypt;
+	int i;
+
+	//------ start of reading key --------
+	error = write_key();
+	if (error == 1) {
+		return XST_FAILURE;
+	}
+	//------ end of reading key --------
+
+	//------ start of encryption --------
+	// get file to encrypt
+	toEncrypt = scan_files(PATH);
+
+	//open file to encrypt with write access
+	Res = f_open(&fil, toEncrypt, FA_READ);
+	if (Res) {
+		return XST_FAILURE;
+	}
+	// create binary file to write encrypted data
+	Res = f_open(&fil2, ENCRYPTED_FILE, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	//------ start of reading and writing IV (inicialization vector) --------
+	init_vector1 = generate_inicialization_vector();
+	init_vector2 = generate_inicialization_vector();
+
+	Res = save_init_vector(init_vector1, init_vector2);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	//------ end of reading and writing IV (inicialization vector) --------
+	int size = f_size(&fil);
+	for (i = 0; i < (size - (size % 4)); i = i + (SIZE_OF_READ)) {
+		// look up for pointer on input file
+		Res = f_lseek(&fil, i);
+		if (Res) {
+			return XST_FAILURE;
+		}
+
+		Res = f_read(&fil, (void*) data_read1, SIZE_OF_READ, &NumBytesRead);
+		if (Res) {
+			return XST_FAILURE;
+		}
+
+		// read and switch plaintext to integer
+		plaintext1 = ascii_to_integer(data_read1);
+
+		Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR, init_vector1);
+		Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 4, init_vector2);
+
+		init_vector1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+		init_vector2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
+
+		xil_printf("%u	%u\n", init_vector1, init_vector2);
+
+		help_init_vector = xor_plaintext_with_init_vector(init_vector1,
+				plaintext1);
+		init_vector1 = init_vector2;
+		init_vector2 = help_init_vector;
+
+		unsigned_integer_to_array_CFB(help_init_vector);
+
+		Res = f_lseek(&fil2, i);
+		if (Res) {
+			return XST_FAILURE;
+		}
+
+		Res = f_write(&fil2, (void*) data_encrypted_CFB,
+		SIZE_OF_READ, &NumBytesWritten);
+		if (Res) {
+			return XST_FAILURE;
+		}
+
+	}
+
+	if (size % 4 != 0) {
+		Res = f_lseek(&fil, i);
+		if (Res) {
+			return XST_FAILURE;
+		}
+
+		Res = f_read(&fil, (void*) data_read1, SIZE_OF_READ, &NumBytesRead);
+		if (Res) {
+			return XST_FAILURE;
+		}
+
+		plaintext1 = ascii_to_integer(data_read1);
+
+		Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR, init_vector1);
+		Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 4, init_vector2);
+
+		init_vector1 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 20);
+		init_vector2 = Xil_In32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 24);
+
+		xil_printf("%u	%u\n", init_vector1, init_vector2);
+
+		help_init_vector = xor_plaintext_with_init_vector(init_vector1,
+				plaintext1);
+
+		xil_printf("%u\n", plaintext1);
+		xil_printf("%u\n", help_init_vector);
+
+		unsigned_integer_to_array_CFB(help_init_vector);
+
+		Res = f_lseek(&fil2, i);
+		if (Res) {
+			return XST_FAILURE;
+		}
+
+		Res = f_write(&fil2, (void*) data_encrypted_CFB, size % 4,
+				&NumBytesWritten);
+		if (Res) {
+			return XST_FAILURE;
+		}
+
+	}
+
+	//------ end of encryption --------
+	Res = f_close(&fil);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	Res = f_close(&fil2);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	return Res;
+
+}
+
 void xor_data_with_init_vector(unsigned int vector1, unsigned int vector2,
 		unsigned int plaintext1, unsigned int plaintext2) {
 	unsigned int first_part = vector1 ^ plaintext1;
@@ -455,3 +604,16 @@ void xor_data_with_init_vector(unsigned int vector1, unsigned int vector2,
 	unsigned_integer_to_array(first_part, second_part);
 }
 
+unsigned int xor_plaintext_with_init_vector(unsigned int vector,
+		unsigned int plaintext) {
+	return vector ^ plaintext;
+}
+
+void unsigned_integer_to_array_CFB(u32 first_four_bytes) {
+	unsigned char first[5];
+	unsigned_integer_to_char_array(first_four_bytes, first);
+	data_encrypted_CFB[0] = first[0];
+	data_encrypted_CFB[1] = first[1];
+	data_encrypted_CFB[2] = first[2];
+	data_encrypted_CFB[3] = first[3];
+}
