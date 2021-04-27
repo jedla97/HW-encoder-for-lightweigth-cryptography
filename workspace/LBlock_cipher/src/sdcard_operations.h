@@ -21,19 +21,44 @@
 
 FRESULT Res;
 
-char * scan_files (char* path); // return name of file to cipher
-int cipher_text();
-int cipher_text_OFB();
-unsigned int ascii_to_integer(u8 * ascii);
-void unsigned_integer_to_array(u32 first_four_bytes, u32 second_four_bytes);
-int write_key();
-int unmount_drive();
+// mount sd card
 int mount_drive();
+// unmount sd card
+int unmount_drive();
+
+char * scan_files (char* path); // return name of file to cipher
+
+//electronic code book cipher mode -- only for testing
+int cipher_text();
+
+//Output feedback cipher mode -- fully working
+int cipher_text_OFB();
+// xor 2 ciphered vectors with plaintext and call unsigned_integer_to_array
 void xor_data_with_init_vector(unsigned int vector1, unsigned int vector2, unsigned int plaintext1, unsigned int plaintext2);
+
+// Cipher feedback mode -- fully working at the moment is only one used
+int cipher_text_CFB_32bit();
+// call unsigned_integer_to_char_array and save returned char* to data_encrypted_CFB
+void unsigned_integer_to_array_CFB(u32 first_four_bytes);
+// return unsigned int of xor between two unsigned values
+unsigned int xor_plaintext_with_init_vector(unsigned int vector, unsigned int plaintext);
+
+// generate random key from LFSR and save it to the key.txt file
+FRESULT save_and_generate_key();
+// write key to PL part in key register for LBlock
+int write_key();
+
+// save generated initial vector to invector.bin file
 FRESULT save_init_vector(u32 first_vector, u32 second_vector);
+
+// call unsigned_integer_to_char_array and save returned char* to data_encrypted
+void unsigned_integer_to_array(u32 first_four_bytes, u32 second_four_bytes);
+// null array of data_encrypted
 void null_encrypted_data();
 
-int cipher_text_CFB_32bit();
-unsigned int xor_plaintext_with_init_vector(unsigned int vector, unsigned int plaintext);
-void unsigned_integer_to_array_CFB(u32 first_four_bytes);
+
+
+
+
+
 
