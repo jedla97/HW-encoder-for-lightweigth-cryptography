@@ -1,0 +1,13 @@
+#include "xparameters.h"
+#include "stdlib.h"
+#include "xil_io.h"
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xgpiops_hw.h"
+#include "xgpio.h"
+
+#define LENGHT_OF_KEY 4
+
+unsigned int generate_key();
+unsigned int generate_inicialization_vector();
+

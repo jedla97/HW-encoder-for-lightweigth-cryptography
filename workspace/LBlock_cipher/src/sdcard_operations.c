@@ -2,62 +2,28 @@
 
 /************************** Variable Definitions *****************************/
 /* File object */
+static FIL fil;
 static FIL fil2;
+static FIL fil3;
+static FIL key_file;
 static FATFS fatfs;
 /*
  * To test logical drive 0, FileName should be "0:/<File name>" or
  * "<file_name>". For logical drive 1, FileName should be "1:/<file_name>"
  */
-static char FileName[32] = "Testing.bin";
-static char *SD_File;
-static char TextName[32] = "FileName.txt";
-static char *SD_Text_File;
 
-#ifdef __ICCARM__
-#pragma data_alignment = 32
-u8 DestinationAddress[10*1024];
-#pragma data_alignment = 4
-u8 data_read1[SIZE_OF_READ];
-#pragma data_alignment = 4
-u8 data_read2[SIZE_OF_READ];
-#pragma data_alignment = 4
-u8 data_encrypted1[SIZE_OF_READ];
-#pragma data_alignment = 4
-u8 data_encrypted2[SIZE_OF_READ];
-#pragma data_alignment = 32
-u8 SourceAddress[10*1024];
-#else
-u8 DestinationAddress[10 * 1024] __attribute__ ((aligned(32)));
-u8 SourceAddress[10 * 1024] __attribute__ ((aligned(32)));
-u8 DestAddr[SIZE_OF_READ] __attribute__ ((aligned(4)));
+
+
+u8 key_writer[SIZE_OF_READ] __attribute__ ((aligned(4)));
 
 u8 data_read1[SIZE_OF_READ] __attribute__ ((aligned(4)));
 u8 data_read2[SIZE_OF_READ] __attribute__ ((aligned(4)));
 u8 data_encrypted[SIZE_OF_READ + SIZE_OF_READ] __attribute__ ((aligned(8)));
 u8 data_encrypted_CFB[SIZE_OF_READ] __attribute__ ((aligned(8)));
 u8 init_vector[SIZE_OF_READ + SIZE_OF_READ] __attribute__ ((aligned(8)));
-#endif
+u8 key_random[SIZE_OF_READ + SIZE_OF_READ + 2] __attribute__ ((aligned(8)));
 
-#define TEST 7
-static FIL key_file;
-static FIL fil;
-static FIL fil3;
 
-int cipher_text_init(void) {
-	int Status;
-	xil_printf("SD Polled File System Example Test \r\n");
-
-	//Status = FfsSdPolledExample();
-	if (Status != XST_SUCCESS) {
-		xil_printf("SD Polled File System Example Test failed \r\n");
-		return XST_FAILURE;
-	}
-
-	xil_printf("Successfully ran SD Polled File System Example Test test \r\n");
-
-	return XST_SUCCESS;
-
-}
 
 char * scan_files(char* path) {
 	FRESULT res;
@@ -141,6 +107,7 @@ FRESULT save_init_vector(u32 first_vector, u32 second_vector) {
 
 }
 
+
 void unsigned_integer_to_array(u32 first_four_bytes, u32 second_four_bytes) {
 	unsigned char first[5];
 	unsigned_integer_to_char_array(first_four_bytes, first);
@@ -168,6 +135,53 @@ void null_encrypted_data() {
 	data_encrypted[7] = 0;
 }
 
+FRESULT save_and_generate_key() {
+
+	FRESULT Res;
+	UINT NumBytesWritten;
+	unsigned int key_part1 = generate_random_bits();
+	unsigned int key_part2 = generate_random_bits();
+	unsigned int key_part3 = generate_random_bits();
+
+	unsigned char key_to_file1[4];
+	unsigned char key_to_file2[4];
+	unsigned char key_to_file3[4];
+	unsigned_integer_to_char_array(key_part1, key_to_file1);
+	unsigned_integer_to_char_array(key_part2, key_to_file2);
+	unsigned_integer_to_char_array(key_part3, key_to_file3);
+	key_random[0] = key_to_file1[0];
+	key_random[1] = key_to_file1[1];
+	key_random[2] = key_to_file1[2];
+	key_random[3] = key_to_file1[3];
+	key_random[4] = key_to_file2[0];
+	key_random[5] = key_to_file2[1];
+	key_random[6] = key_to_file2[2];
+	key_random[7] = key_to_file2[3];
+	key_random[8] = key_to_file3[0];
+	key_random[9] = key_to_file3[1];
+	Res = f_open(&fil3, KEY_FILE, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	Res = f_lseek(&fil3, 0);
+	if (Res) {
+		return XST_FAILURE;
+	}
+	Res = f_write(&fil3, (void*) key_random,
+	SIZE_OF_READ + SIZE_OF_READ + 2, &NumBytesWritten);
+	if (Res) {
+		return XST_FAILURE;
+	}
+	Res = f_close(&fil3);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	return XST_SUCCESS;
+
+}
+
 int write_key() {
 	FRESULT Res;
 	UINT NumBytesRead;
@@ -182,17 +196,17 @@ int write_key() {
 		return XST_FAILURE;
 	}
 	// read first 4 bytes from key file
-	Res = f_read(&key_file, (void*) DestAddr, SIZE_OF_READ, &NumBytesRead);
+	Res = f_read(&key_file, (void*) key_writer, SIZE_OF_READ, &NumBytesRead);
 	if (Res) {
 		return XST_FAILURE;
 	}
 	// rewrite ascii string to int
-	key = ascii_to_integer(DestAddr);
+	key = ascii_to_integer(key_writer);
 	//init array
-	DestAddr[0] = 0;
-	DestAddr[1] = 0;
-	DestAddr[2] = 0;
-	DestAddr[3] = 0;
+	key_writer[0] = 0;
+	key_writer[1] = 0;
+	key_writer[2] = 0;
+	key_writer[3] = 0;
 	// write to fpga on register address of key
 	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 8, key);
 
@@ -200,30 +214,30 @@ int write_key() {
 	if (Res) {
 		return XST_FAILURE;
 	}
-	Res = f_read(&key_file, (void*) DestAddr, SIZE_OF_READ, &NumBytesRead);
+	Res = f_read(&key_file, (void*) key_writer, SIZE_OF_READ, &NumBytesRead);
 	if (Res) {
 		return XST_FAILURE;
 	}
-	key = ascii_to_integer(DestAddr);
-	DestAddr[0] = 0;
-	DestAddr[1] = 0;
-	DestAddr[2] = 0;
-	DestAddr[3] = 0;
+	key = ascii_to_integer(key_writer);
+	key_writer[0] = 0;
+	key_writer[1] = 0;
+	key_writer[2] = 0;
+	key_writer[3] = 0;
 	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 12, key);
 
 	Res = f_lseek(&key_file, 8);
 	if (Res) {
 		return XST_FAILURE;
 	}
-	Res = f_read(&key_file, (void*) DestAddr, SIZE_OF_READ - 2, &NumBytesRead);
+	Res = f_read(&key_file, (void*) key_writer, SIZE_OF_READ - 2, &NumBytesRead);
 	if (Res) {
 		return XST_FAILURE;
 	}
-	key = ascii_to_integer(DestAddr);
-	DestAddr[0] = 0;
-	DestAddr[1] = 0;
-	DestAddr[2] = 0;
-	DestAddr[3] = 0;
+	key = ascii_to_integer(key_writer);
+	key_writer[0] = 0;
+	key_writer[1] = 0;
+	key_writer[2] = 0;
+	key_writer[3] = 0;
 	Xil_Out32(XPAR_LBLOCK_WRAPPER_S00_AXI_BASEADDR + 16, key);
 
 	Res = f_close(&key_file);
@@ -239,15 +253,8 @@ int cipher_text() {
 	UINT NumBytesWritten;
 	unsigned int data_in1 = 0;
 	unsigned int data_in2 = 0;
-	u32 data_in_read1;
-	u32 data_in_read2;
 	u32 data_out1;
 	u32 data_out2;
-	u32 data_key1;
-	u32 data_key2;
-	u32 data_key3;
-	char * data_writer1;
-	char * data_writer2;
 
 	int error = 0;
 	static char * toEncrypt;
@@ -375,8 +382,8 @@ int cipher_text_OFB() {
 	}
 
 	//------ start of reading and writing IV (inicialization vector) --------
-	init_vector1 = generate_inicialization_vector();
-	init_vector2 = generate_inicialization_vector();
+	init_vector1 = generate_random_bits();
+	init_vector2 = generate_random_bits();
 
 	Res = save_init_vector(init_vector1, init_vector2);
 	if (Res) {
@@ -487,8 +494,8 @@ int cipher_text_CFB_32bit() {
 	}
 
 	//------ start of reading and writing IV (inicialization vector) --------
-	init_vector1 = generate_inicialization_vector();
-	init_vector2 = generate_inicialization_vector();
+	init_vector1 = generate_random_bits();
+	init_vector2 = generate_random_bits();
 
 	Res = save_init_vector(init_vector1, init_vector2);
 	if (Res) {

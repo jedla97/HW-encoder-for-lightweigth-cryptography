@@ -8,7 +8,7 @@ unsigned int ascii_to_integer(u8 * ascii) {
 	}
 	return string_to_integer;
 }
-//, u32 second_four_bytes
+
 unsigned char * unsigned_integer_to_char_array(u32 first_four_bytes, unsigned char * arr) {
 	arr[0] = (first_four_bytes >> 24) & 0xff;
 	arr[1] = (first_four_bytes >> 16) & 0xff;
