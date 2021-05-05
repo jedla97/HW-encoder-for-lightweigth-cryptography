@@ -2,29 +2,34 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="to_char_array" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="XPAR_AXI_GPIO_2_BASEADDR"/>
-			<item value="_USE_LFN"/>
-			<item value="gpio"/>
-			<item value="ff_convert "/>
-			<item value="FF_MAX_SS"/>
-			<item value="data_encrypted"/>
-			<item value="data_out1"/>
-			<item value="data_in"/>
-			<item value="toEncrypt"/>
-			<item value="fil"/>
-			<item value="ret"/>
-			<item value="_FS_READONLY "/>
-			<item value="USE_STRFUNC "/>
-			<item value="}**/"/>
-			<item value="key_file"/>
+			<item value="to_char_array"/>
+			<item value="unsigned_integer_to_char_array"/>
+			<item value="1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000));"/>
+			<item value="printf(&quot;cipher took %.2f us.\n&quot;,"/>
+			<item value="XTime_GetTime(&amp;tStart);"/>
+			<item value="XTime_GetTime(&amp;tEnd);"/>
+			<item value="sector"/>
+			<item value="size"/>
+			<item value="ssize"/>
+			<item value="print"/>
+			<item value="ascii_to_integer"/>
+			<item value="save_init_vector"/>
+			<item value="null_encrypted_data"/>
+			<item value="write_key"/>
+			<item value="save_and_generate_key"/>
 		</list>
 		<list key="replacehistory">
+			<item value="//1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000000));"/>
+			<item value="//printf(&quot;cipher took %.2f us.\n&quot;,"/>
+			<item value="//XTime_GetTime(&amp;tStart);"/>
+			<item value="//XTime_GetTime(&amp;tEnd);"/>
+			<item value="key_writer"/>
 			<item value="arr"/>
 			<item value="ret"/>
 		</list>
@@ -33,7 +38,7 @@
 		<item value="336" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="454" key="DIALOG_HEIGHT"/>
-		<item value="1407" key="DIALOG_X_ORIGIN"/>
-		<item value="353" key="DIALOG_Y_ORIGIN"/>
+		<item value="1435" key="DIALOG_X_ORIGIN"/>
+		<item value="467" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

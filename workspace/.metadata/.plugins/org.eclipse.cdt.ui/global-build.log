@@ -1,6 +1,6 @@
 Nothing to build in platform 'LBlock'
 
-00:36:53 **** Incremental Build of configuration Debug for project LBlock_cipher ****
+00:27:19 **** Incremental Build of configuration Debug for project LBlock_cipher ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -9,23 +9,26 @@ make --no-print-directory main-build
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/sdcard_operations.h:13,
+                 from ../src/main.c:8:
+C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
 'Finished building: ../src/main.c'
+' '
+'Building file: ../src/uart_cipher.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cipher.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bspinclude/include -MMD -MP -MF"src/uart_cipher.d" -MT"src/uart_cipher.o" -o "src/uart_cipher.o" "../src/uart_cipher.c"
+'Finished building: ../src/uart_cipher.c'
 ' '
 'Building target: LBlock_cipher.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bsplib/lib -o "LBlock_cipher.elf"  ./src/data_operation.o ./src/generation.o ./src/main.o ./src/sdcard_operations.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bsplib/lib -o "LBlock_cipher.elf"  ./src/data_operation.o ./src/generation.o ./src/main.o ./src/sdcard_operations.o ./src/uart_cipher.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
 'Finished building target: LBlock_cipher.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size LBlock_cipher.elf  |tee "LBlock_cipher.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  58996	   1232	  27952	  88180	  15874	LBlock_cipher.elf
+  84196	   2652	  28016	 114864	  1c0b0	LBlock_cipher.elf
 'Finished building: LBlock_cipher.elf.size'
 ' '
-00:36:57 **** Incremental Build of configuration Debug for project LBlock_cipher_system ****
-make all 
-Generating bif file for the system project
-generate_system_bif.bat 64648 C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/LBlock.xpfm standalone_domain C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher_system/Debug/system.bif
-sdcard_gen --xpfm C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/LBlock.xpfm --sys_config LBlock --bif C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher_system/Debug/system.bif --bitstream C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit --elf C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/Debug/LBlock_cipher.elf,ps7_cortexa9_0
-creating BOOT.BIN using C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher/_ide/bitstream/LBlock_design.bit
-Running C:/Xilinx/Vitis/2020.1/bin/bootgen  -image C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock_cipher_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

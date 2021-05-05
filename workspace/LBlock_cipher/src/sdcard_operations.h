@@ -10,6 +10,7 @@
 #include "stdio.h"
 #include "data_operation.h"
 #include "generation.h"
+#include "xtime_l.h"
 
 #define f_unmount(path) f_mount(0, path, 0)
 #define SIZE_OF_READ 4
@@ -19,7 +20,6 @@
 #define ENCRYPTED_FILE "output.bin"
 #define INIT_VECTOR "invector.bin"
 
-FRESULT Res;
 
 // mount sd card
 int mount_drive();

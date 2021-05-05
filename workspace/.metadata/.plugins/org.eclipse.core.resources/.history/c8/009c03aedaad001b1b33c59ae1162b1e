@@ -1,0 +1,3 @@
+u8 cipher(u8 character){
+	return character;
+}

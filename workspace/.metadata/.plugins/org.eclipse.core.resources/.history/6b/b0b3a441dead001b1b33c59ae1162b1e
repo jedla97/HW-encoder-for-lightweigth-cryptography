@@ -1,0 +1,20 @@
+#include "uart_cipher.h"
+u8 cipher(u8 *character) {
+	return character;
+}
+
+u8 load_vector(u8 *vector, unsigned int init_vector1, unsigned int init_vector2) {
+
+}
+u8 key(u8 *key, unsigned int key1, unsigned int key2, unsigned int key3) {
+	key[0] = (key1 >> 24) & 0xff;
+	key[1] = (key1 >> 16) & 0xff;
+	key[2] = (key1 >> 8) & 0xff;
+	key[3] = (key1) & 0xff;
+	key[4] = (key2 >> 24) & 0xff;
+	key[5] = (key2 >> 16) & 0xff;
+	key[6] = (key2 >> 8) & 0xff;
+	key[7] = (key2) & 0xff;
+	key[8] = (key2 >> 24) & 0xff;
+	key[9] = (key2 >> 16) & 0xff;
+}
