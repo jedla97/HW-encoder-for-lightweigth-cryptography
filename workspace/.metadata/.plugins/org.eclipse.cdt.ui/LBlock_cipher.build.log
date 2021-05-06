@@ -1,4 +1,4 @@
-00:27:19 **** Incremental Build of configuration Debug for project LBlock_cipher ****
+12:15:44 **** Incremental Build of configuration Debug for project LBlock_cipher ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -14,11 +14,6 @@ C:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightwei
       |         ^~~~~~~
 'Finished building: ../src/main.c'
 ' '
-'Building file: ../src/uart_cipher.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_cipher.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bspinclude/include -MMD -MP -MF"src/uart_cipher.d" -MT"src/uart_cipher.o" -o "src/uart_cipher.o" "../src/uart_cipher.c"
-'Finished building: ../src/uart_cipher.c'
-' '
 'Building target: LBlock_cipher.elf'
 'Invoking: ARM v7 gcc linker'
 arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Jakub/Desktop/vut_fekt/bajkalarka/zaloha/GitHub/HW-encoder-for-lightweigth-cryptography/workspace/LBlock/export/LBlock/sw/LBlock/standalone_domain/bsplib/lib -o "LBlock_cipher.elf"  ./src/data_operation.o ./src/generation.o ./src/main.o ./src/sdcard_operations.o ./src/uart_cipher.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
@@ -31,5 +26,5 @@ arm-none-eabi-size LBlock_cipher.elf  |tee "LBlock_cipher.elf.size"
 'Finished building: LBlock_cipher.elf.size'
 ' '
 
-00:27:25 Build Finished (took 5s.129ms)
+12:15:59 Build Finished (took 15s.299ms)
 

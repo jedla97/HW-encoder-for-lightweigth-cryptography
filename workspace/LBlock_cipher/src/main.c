@@ -50,6 +50,7 @@ int main() {
 			u32 totalsend = 0;
 			int end_status = 0;
 
+
 			unsigned int init_vector1 = generate_random_bits();
 			unsigned int init_vector2 = generate_random_bits();
 
@@ -137,6 +138,7 @@ int main() {
 
 			}
 			free(buffer);
+			sleep(1);
 
 		}
 		// button BTN1

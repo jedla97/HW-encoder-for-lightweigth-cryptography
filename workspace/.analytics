@@ -1205,3 +1205,14 @@ timestamp=[2021-05-06 00:18:50], mode=BUILD, duration=0:00:03.591, duration_ms=3
 timestamp=[2021-05-06 00:19:11], mode=BUILD, duration=0:00:03.050, duration_ms=3050, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
 timestamp=[2021-05-06 00:26:30], mode=BUILD, duration=0:00:02.257, duration_ms=2257, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
 timestamp=[2021-05-06 00:27:25], mode=BUILD, duration=0:00:05.150, duration_ms=5150, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
+timestamp=[2021-05-06 11:49:29], mode=WORKBENCH_START, duration=0:01:13.374, duration_ms=73374, data={}
+timestamp=[2021-05-06 11:49:37], mode=WORKBENCH_UI_INIT, duration=0:00:08.215, duration_ms=8215, data={editors_count=9, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=LBlock,LBlock_cipher,LBlock_cipher_system,RemoteSystemsTempFiles}
+timestamp=[2021-05-06 11:49:37], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.402, duration_ms=2402, data={}
+timestamp=[2021-05-06 11:57:14], mode=BUILD, duration=0:00:03.086, duration_ms=3086, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
+timestamp=[2021-05-06 12:03:51], mode=BUILD, duration=0:00:05.255, duration_ms=5255, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
+timestamp=[2021-05-06 12:06:08], mode=BUILD, duration=0:00:03.048, duration_ms=3048, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
+timestamp=[2021-05-06 12:08:54], mode=BUILD, duration=0:00:04.536, duration_ms=4536, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
+timestamp=[2021-05-06 12:11:38], mode=BUILD, duration=0:00:11.484, duration_ms=11484, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
+timestamp=[2021-05-06 12:11:58], mode=BUILD, duration=0:00:10.626, duration_ms=10626, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
+timestamp=[2021-05-06 12:13:27], mode=BUILD, duration=0:00:09.772, duration_ms=9772, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
+timestamp=[2021-05-06 12:15:59], mode=BUILD, duration=0:00:15.355, duration_ms=15355, data={name=LBlock_cipher, configuration=Debug, clean_build=false}
