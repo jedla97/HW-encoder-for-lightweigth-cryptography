@@ -1,9 +1,0 @@
-#include "xparameters.h"
-#include "xil_printf.h"
-#include "xil_cache.h"
-#include "xplatform_info.h"
-#include "strings.h"
-#include "stdlib.h"
-#include "stdio.h"
-
-void cipher(u8 *character);

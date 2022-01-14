@@ -1,4 +1,0 @@
-#include "uart_cipher.h"
-void cipher(u8 *character){
-	return character;
-}
